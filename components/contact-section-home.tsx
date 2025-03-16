@@ -1,15 +1,10 @@
 "use client"
 
 import type React from "react"
-
-import { useEffect, useRef, useState } from "react"
-import Link from "next/link"
-import { gsap } from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { Mail, Phone, Send, ArrowRight, AlertCircle } from "lucide-react"
+import { useState } from "react"
+import { Mail, MapPin, Phone, Send, AlertCircle, CheckCircle } from "lucide-react"
 
 export function ContactSectionHome() {
-  const sectionRef = useRef<HTMLElement>(null)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,318 +14,319 @@ export function ContactSectionHome() {
   })
 
   const [submitted, setSubmitted] = useState(false)
-  const [error, setError] = useState("")
-
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger)
-
-    const section = sectionRef.current
-    if (!section) return
-
-    // Animate section title
-    gsap.fromTo(
-      ".contact-home-title",
-      { y: 50, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.8,
-        scrollTrigger: {
-          trigger: ".contact-home-title",
-          start: "top 80%",
-        },
-      },
-    )
-
-    // Animate form
-    gsap.fromTo(
-      ".contact-home-form",
-      { y: 50, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.8,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".contact-home-form",
-          start: "top 75%",
-        },
-      },
-    )
-
-    // Animate contact info
-    gsap.fromTo(
-      ".contact-home-info",
-      { y: 50, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.8,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".contact-home-info",
-          start: "top 75%",
-        },
-      },
-    )
-
-    return () => {
-      ScrollTrigger.getAll().forEach((t) => t.kill())
-    }
-  }, [])
+  const [errors, setErrors] = useState<{ [key: string]: string }>({})
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
+
+    // Clear error when user starts typing
+    if (errors[name]) {
+      setErrors((prev) => ({ ...prev, [name]: "" }))
+    }
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const validateForm = () => {
+    const newErrors: { [key: string]: string } = {}
+
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required"
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required"
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Email is invalid"
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required"
+    }
+
+    setErrors(newErrors)
+    return Object.keys(newErrors).length === 0
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    // Basic validation
-    if (!formData.name || !formData.email || !formData.message) {
-      setError("Please fill in all required fields.")
+    if (!validateForm()) {
       return
     }
 
-    // In a real application, you would send this data to your backend
-    console.log("Form submitted:", formData)
+    setIsSubmitting(true)
 
-    // Show success message and reset form
-    setSubmitted(true)
-    setError("")
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      service: "",
-      message: "",
-    })
+    try {
+      // Simulate API call
+      const res = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          service: formData.service,
+          message: formData.message,
+        }),
+      })
 
-    // Reset success message after 5 seconds
-    setTimeout(() => {
-      setSubmitted(false)
-    }, 5000)
+      if (!res.ok) {
+        throw new Error("Failed to submit form")
+      }
+
+
+      // Show success message
+      setSubmitted(true)
+
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        service: "",
+        message: "",
+      })
+
+      // Reset form after some time
+      setTimeout(() => {
+        setSubmitted(false)
+      }, 5000)
+    } catch (error) {
+      console.error("Error submitting form:", error)
+      setErrors({ form: "There was an error submitting the form. Please try again." })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
     <section
       id="contact"
-      ref={sectionRef}
-      className="py-12 bg-gray-900 text-white"
+      className="py-16 bg-gray-100"
       style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
         position: "relative",
+        zIndex: 9999,
+        display: "block",
+        visibility: "visible",
+        opacity: 1,
+        border: "4px solid #FF7A00",
+        marginTop: "2rem",
+        marginBottom: "2rem",
+        backgroundColor: "#f3f4f6",
       }}
     >
-      <div className="absolute inset-0 bg-gray-900/90"></div>
-      <div className="container mx-auto px-4 md:px-6 relative z-10">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-10">
-          <h2 className="contact-home-title text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Ready to start your project? Contact us today for a free consultation and quote.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-2 contact-home-form">
-            {submitted ? (
-              <div className="bg-primary/10 p-8 rounded-lg text-center">
-                <div className="bg-primary/20 text-primary rounded-full p-3 inline-flex mb-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                  </svg>
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white rounded-lg shadow-xl overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-5">
+              {/* Contact Info */}
+              <div className="lg:col-span-2 bg-primary text-white p-8">
+                <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
+
+                <div className="space-y-6">
+                  <div className="flex items-start">
+                    <div className="bg-white/20 p-3 rounded-full mr-4">
+                      <MapPin className="h-6 w-6" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">Our Location</h4>
+                      <p className="text-white/80">
+                        123 Construction Avenue
+                        <br />
+                        Building District, NY 10001
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start">
+                    <div className="bg-white/20 p-3 rounded-full mr-4">
+                      <Phone className="h-6 w-6" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">Phone Number</h4>
+                      <p className="text-white/80">
+                        +1 (555) 123-4567
+                        <br />
+                        Mon-Fri, 8:00 AM - 6:00 PM
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start">
+                    <div className="bg-white/20 p-3 rounded-full mr-4">
+                      <Mail className="h-6 w-6" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">Email Address</h4>
+                      <p className="text-white/80">
+                        info@horizonfix.com
+                        <br />
+                        support@horizonfix.com
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-2">Thank You!</h3>
-                <p className="text-gray-300 mb-6">
-                  Your message has been sent successfully. We&apos;ll get back to you as soon as possible.
-                </p>
-                <Link
-                  href="/services"
-                  className="inline-flex items-center bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-md transition-colors"
-                >
-                  Explore Our Services <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
               </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="bg-white/5 backdrop-blur-sm p-6 rounded-lg">
-                {error && (
-                  <div className="bg-red-500/20 text-red-100 p-4 rounded-md mb-6 flex items-start">
-                    <AlertCircle className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>{error}</span>
-                  </div>
-                )}
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
-                      Your Name <span className="text-red-400">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      className="w-full px-4 py-2 bg-white/10 border border-gray-700 rounded-md focus:ring-primary focus:border-primary text-white"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
-                      Email Address <span className="text-red-400">*</span>
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="w-full px-4 py-2 bg-white/10 border border-gray-700 rounded-md focus:ring-primary focus:border-primary text-white"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-1">
-                      Phone Number
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className="w-full px-4 py-2 bg-white/10 border border-gray-700 rounded-md focus:ring-primary focus:border-primary text-white"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="service" className="block text-sm font-medium text-gray-300 mb-1">
-                      Service Interested In
-                    </label>
-                    <select
-                      id="service"
-                      name="service"
-                      value={formData.service}
-                      onChange={handleChange}
-                      className="w-full px-4 py-2 bg-white/10 border border-gray-700 rounded-md focus:ring-primary focus:border-primary text-white"
+              {/* Contact Form */}
+              <div className="lg:col-span-3 p-8">
+                {submitted ? (
+                  <div className="text-center py-8">
+                    <div className="bg-green-100 text-green-600 rounded-full p-3 inline-flex mb-4">
+                      <CheckCircle size={40} />
+                    </div>
+                    <h3 className="text-2xl font-bold mb-2">Thank You!</h3>
+                    <p className="text-gray-600 mb-6">
+                      Your message has been sent successfully. We&apos;ll get back to you as soon as possible.
+                    </p>
+                    <button
+                      onClick={() => setSubmitted(false)}
+                      className="inline-flex items-center bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-md transition-colors"
                     >
-                      <option value="">Select a service</option>
-                      <option value="construction">Construction</option>
-                      <option value="renovation">Renovation</option>
-                      <option value="interior">Interior Design</option>
-                      <option value="architecture">Architecture</option>
-                      <option value="maintenance">Maintenance</option>
-                      <option value="material">Material Supply</option>
-                    </select>
+                      Send Another Message
+                    </button>
                   </div>
-                </div>
+                ) : (
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    {errors.form && (
+                      <div className="bg-red-50 text-red-500 p-4 rounded-md flex items-start">
+                        <AlertCircle className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
+                        <span>{errors.form}</span>
+                      </div>
+                    )}
 
-                <div className="mb-6">
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
-                    Your Message <span className="text-red-400">*</span>
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    value={formData.message}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 bg-white/10 border border-gray-700 rounded-md focus:ring-primary focus:border-primary text-white"
-                    placeholder="Tell us about your project..."
-                    required
-                  ></textarea>
-                </div>
+                    <div>
+                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                        Your Name <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        className={`w-full px-4 py-2 border ${errors.name ? "border-red-500 bg-red-50" : "border-gray-300"} rounded-md focus:ring-primary focus:border-primary`}
+                        placeholder="John Doe"
+                      />
+                      {errors.name && <p className="mt-1 text-sm text-red-500">{errors.name}</p>}
+                    </div>
 
-                <div className="flex items-center mb-6">
-                  <input
-                    type="checkbox"
-                    id="privacy-home"
-                    className="h-4 w-4 text-primary focus:ring-primary border-gray-700 rounded bg-white/10"
-                    required
-                  />
-                  <label htmlFor="privacy-home" className="ml-2 block text-sm text-gray-300">
-                    I agree to the{" "}
-                    <a href="#" className="text-primary hover:underline">
-                      Privacy Policy
-                    </a>{" "}
-                    and consent to being contacted regarding my inquiry.
-                  </label>
-                </div>
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                        Email Address <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        className={`w-full px-4 py-2 border ${errors.email ? "border-red-500 bg-red-50" : "border-gray-300"} rounded-md focus:ring-primary focus:border-primary`}
+                        placeholder="john@example.com"
+                      />
+                      {errors.email && <p className="mt-1 text-sm text-red-500">{errors.email}</p>}
+                    </div>
 
-                <button
-                  type="submit"
-                  className="w-full bg-primary hover:bg-primary/90 text-white py-3 px-6 rounded-md transition-colors flex items-center justify-center"
-                >
-                  <Send className="h-4 w-4 mr-2" /> Send Message
-                </button>
-              </form>
-            )}
-          </div>
+                    <div>
+                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                        Phone Number
+                      </label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleChange}
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"
+                        placeholder="+1 (555) 123-4567"
+                      />
+                    </div>
 
-          <div className="contact-home-info space-y-6">
-            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-lg">
-              <div className="flex items-start">
-                <div className="bg-primary/20 p-3 rounded-full mr-4">
-                  <Phone className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">Call Us</h3>
-                  <p className="text-gray-300">+1 (555) 123-4567</p>
-                  <p className="text-gray-400 text-sm">Mon-Fri, 8:00 AM - 6:00 PM</p>
-                </div>
+                    <div>
+                      <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-1">
+                        Service Interested In
+                      </label>
+                      <select
+                        id="service"
+                        name="service"
+                        value={formData.service}
+                        onChange={handleChange}
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"
+                      >
+                        <option value="">Select a service</option>
+                        <option value="construction">Construction</option>
+                        <option value="renovation">Renovation</option>
+                        <option value="interior">Interior Design</option>
+                        <option value="architecture">Architecture</option>
+                        <option value="maintenance">Maintenance</option>
+                        <option value="material">Material Supply</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                        Your Message <span className="text-red-500">*</span>
+                      </label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        rows={4}
+                        value={formData.message}
+                        onChange={handleChange}
+                        className={`w-full px-4 py-2 border ${errors.message ? "border-red-500 bg-red-50" : "border-gray-300"} rounded-md focus:ring-primary focus:border-primary`}
+                        placeholder="Tell us about your project..."
+                      ></textarea>
+                      {errors.message && <p className="mt-1 text-sm text-red-500">{errors.message}</p>}
+                    </div>
+
+                    <button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="w-full bg-primary hover:bg-primary/90 text-white py-3 px-6 rounded-md transition-colors flex items-center justify-center disabled:opacity-70"
+                    >
+                      {isSubmitting ? (
+                        <>
+                          <svg
+                            className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                          >
+                            <circle
+                              className="opacity-25"
+                              cx="12"
+                              cy="12"
+                              r="10"
+                              stroke="currentColor"
+                              strokeWidth="4"
+                            ></circle>
+                            <path
+                              className="opacity-75"
+                              fill="currentColor"
+                              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                            ></path>
+                          </svg>
+                          Sending...
+                        </>
+                      ) : (
+                        <>
+                          <Send className="h-5 w-5 mr-2" /> Send Message
+                        </>
+                      )}
+                    </button>
+                  </form>
+                )}
               </div>
-            </div>
-
-            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-lg">
-              <div className="flex items-start">
-                <div className="bg-primary/20 p-3 rounded-full mr-4">
-                  <Mail className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">Email Us</h3>
-                  <p className="text-gray-300">info@horizonfix.com</p>
-                  <p className="text-gray-400 text-sm">We&apos;ll respond within 24 hours</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-primary p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3">Emergency Service</h3>
-              <p className="mb-4">Need urgent assistance? Our emergency team is available 24/7.</p>
-              <div className="text-xl font-bold flex items-center">
-                <Phone className="h-5 w-5 mr-2 animate-pulse" />
-                +1 (555) 911-HELP
-              </div>
-            </div>
-
-            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3">Visit Our Office</h3>
-              <p className="text-gray-300 mb-2">
-                123 Construction Avenue
-                <br />
-                Building District, NY 10001
-              </p>
-              <Link href="/contact" className="inline-flex items-center text-primary hover:underline">
-                Get Directions <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
             </div>
           </div>
         </div>

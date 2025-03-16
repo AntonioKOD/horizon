@@ -1,5 +1,5 @@
-import { ContactForm } from "@/components/contact-form"
-import { Mail, MapPin, Phone, Clock, Send, CheckCircle } from "lucide-react"
+import { ContactSectionHome } from "@/components/contact-section-home"
+import { Mail, MapPin, Phone, Clock } from "lucide-react"
 
 export const metadata = {
   title: "Contact Us - Horizon Fix",
@@ -74,67 +74,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Form and Map */}
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <div className="bg-primary/5 p-6 rounded-lg mb-6">
-                <h2 className="text-2xl font-bold mb-2 flex items-center">
-                  <Send className="h-5 w-5 mr-2 text-primary" /> Send Us a Message
-                </h2>
-                <p className="text-gray-600 mb-0">
-                  Fill out the form below and our team will get back to you as soon as possible.
-                </p>
-              </div>
-
-              <ContactForm />
-            </div>
-
-            <div>
-              <div className="bg-primary/5 p-6 rounded-lg mb-6">
-                <h2 className="text-2xl font-bold mb-2 flex items-center">
-                  <MapPin className="h-5 w-5 mr-2 text-primary" /> Our Location
-                </h2>
-                <p className="text-gray-600 mb-0">
-                  Visit our office to discuss your project in person. We&apos;re conveniently located in the heart of the
-                  city.
-                </p>
-              </div>
-
-              <div className="h-[400px] bg-gray-200 rounded-lg overflow-hidden shadow-md">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.11976397304605!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1616603736742!5m2!1sen!2sus"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen={true}
-                  loading="lazy"
-                  title="Horizon Fix Location"
-                ></iframe>
-              </div>
-
-              <div className="mt-6 bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 className="text-lg font-semibold mb-3">Getting Here</h3>
-                <div className="space-y-3">
-                  <div className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-primary mr-2 mt-1 flex-shrink-0" />
-                    <p className="text-gray-600">Convenient parking available in our building garage</p>
-                  </div>
-                  <div className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-primary mr-2 mt-1 flex-shrink-0" />
-                    <p className="text-gray-600">5-minute walk from Central Station subway stop</p>
-                  </div>
-                  <div className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-primary mr-2 mt-1 flex-shrink-0" />
-                    <p className="text-gray-600">Bus routes 42, 53, and 67 stop directly in front of our building</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Contact Form and Map - Replace with ContactSectionVisible */}
+      <ContactSectionHome />
 
       {/* FAQ Section */}
       <section className="py-12 bg-gray-50">

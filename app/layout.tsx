@@ -1,7 +1,6 @@
 import type React from "react"
 import "./globals.css"
 import { Navbar } from "@/components/navbar"
-import { ThemeProvider } from "@/components/theme-provider"
 import { Footer } from "@/components/footer"
 import { EmergencyButton } from "@/components/emergency-button"
 
@@ -19,12 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ThemeProvider attribute="class" defaultTheme="light">
           <Navbar />
           {children}
           <Footer />
           <EmergencyButton />
-        </ThemeProvider>
       </body>
     </html>
   )
