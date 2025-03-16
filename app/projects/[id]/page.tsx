@@ -165,7 +165,7 @@ const getProjectData = (id: number): Project | undefined => {
   return projects.find((project) => project.id === id)
 }
 
-export async function generateMetadata({ params }: { params: { id: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
 const resolvedParams = await params
   const id = Number.parseInt(resolvedParams.id)
   const project = getProjectData(id)
@@ -183,7 +183,7 @@ const resolvedParams = await params
   }
 }
 
-export default async function ProjectPage({ params }: { params: { id: string } }) {
+export default async function ProjectPage({ params }: { params: Promise<{ id: string }>}) {
     const resolvedParams = await params
   const id = Number.parseInt(resolvedParams.id)
   const project = getProjectData(id)
