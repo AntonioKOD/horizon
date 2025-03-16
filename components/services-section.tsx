@@ -4,7 +4,11 @@ import { useEffect, useRef } from "react"
 import Link from "next/link"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { Building2, Hammer, PaintBucket, Ruler, Truck, Wrench, ArrowRight } from "lucide-react"
+import { ArrowRight, AirVent, Home, UtilityPole } from "lucide-react"
+import { Icon } from "lucide-react"
+import { faucet } from '@lucide/lab'
+
+const Plumbing = ({ className }: { className?: string }) => <Icon iconNode={faucet} size={24} className={className} />
 
 export function ServicesSection() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -54,34 +58,69 @@ export function ServicesSection() {
 
   const services = [
     {
-      title: "Construction",
-      description: "Full-service construction for residential and commercial projects with expert craftsmanship.",
-      icon: <Building2 className="h-10 w-10 text-primary" />,
+      id: "plumbing",
+      title: "Plumbing",
+      description: "Our expert plumbing teams ensure efficient and reliable solutions for both residential and commercial properties.",
+      icon: <Plumbing className="h-12 w-12 text-primary" />,
+      image:
+        "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
+      features: [
+        "Installation and repair services",
+        "Water heater services",
+        "Pipe maintenance and repair",
+        "Drain cleaning services",
+        "Emergency plumbing services",
+        "Commercial plumbing solutions",
+      ],
     },
     {
-      title: "Renovation",
-      description: "Transform your existing space with our comprehensive renovation services.",
-      icon: <Hammer className="h-10 w-10 text-primary" />,
+      id: "Electrical Services",
+      title: "Electrical Services",
+      description: "Professional electrical services for residential and commercial properties to ensure safety and efficiency.",
+      icon: <UtilityPole className="h-12 w-12 text-primary" />,
+      image:
+        "https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
+      features: [
+        "Wiring and rewiring services",
+        "Electrical panel upgrades",
+        "Lighting installation and repair",
+        "Outlet and switch installation",
+        "Emergency electrical services",
+        "Commercial electrical solutions",
+      ],
     },
     {
-      title: "Interior Design",
-      description: "Creative interior design solutions that blend functionality with aesthetic appeal.",
-      icon: <PaintBucket className="h-10 w-10 text-primary" />,
+      id: "roofing-services",
+      title: "Roofing Services",
+      description: "Professional roofing services to protect your property and enhance its curb appeal.",
+      icon: <Home className="h-12 w-12 text-primary" />,
+      image:
+        "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
+      features: [
+        "Roof installation and replacement",
+        "Roof repair and maintenance",
+        "Gutter installation and repair",
+        "Roof inspection services",
+        "Emergency roofing services",
+        "Commercial roofing solutions",
+
+      ],
     },
     {
-      title: "Architecture",
-      description: "Innovative architectural designs that bring your vision to life with precision.",
-      icon: <Ruler className="h-10 w-10 text-primary" />,
-    },
-    {
-      title: "Maintenance",
-      description: "Regular maintenance services to keep your property in optimal condition.",
-      icon: <Wrench className="h-10 w-10 text-primary" />,
-    },
-    {
-      title: "Material Supply",
-      description: "Quality construction materials delivered on time for your project needs.",
-      icon: <Truck className="h-10 w-10 text-primary" />,
+      id: "hvac-services",
+      title: "HVAC Services",
+      description: "Heating, ventilation, and air conditioning services to keep your property comfortable and energy-efficient.",
+      icon: <AirVent className="h-12 w-12 text-primary" />,
+      image:
+        "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
+      features: [
+        "System installation and replacement",
+        "HVAC repair and maintenance",
+        "Duct cleaning and repair",
+        "Indoor air quality services",
+        "Emergency HVAC services",
+        "Commercial HVAC solutions",
+      ],
     },
   ]
 

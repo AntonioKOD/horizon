@@ -7,6 +7,9 @@ import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
+import logo from '@/public/logohorizon.svg'
+import Image from "next/image"
+import logoLight from '@/public/logohorizon-light.svg'
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -49,14 +52,14 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center">
-            <span
-              className={`text-2xl font-bold transition-colors duration-300 ${
-                scrolled ? "text-primary" : "text-white drop-shadow-sm"
-              }`}
-            >
-              Horizon Fix
-            </span>
+        <Link href="/" className="flex items-center">
+            <div className="relative h-10 w-40">
+              {scrolled ? (
+              <Image src={logo} alt="Horizon Fix Logo" fill/>
+              ) : (
+              <Image src={logoLight} alt="Horizon Fix Logo" fill />
+              )}
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

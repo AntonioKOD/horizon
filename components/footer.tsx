@@ -1,5 +1,7 @@
 import Link from "next/link"
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react"
+import { Mail, Phone,} from "lucide-react"
+import logoLight from '@/public/logohorizon-light.svg'
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -7,28 +9,14 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Horizon Fix</h3>
+            <Link href="/" className="flex items-center">
+              <div className="relative h-10 w-40">
+                <Image src={logoLight} alt="Horizon Fix Logo" fill />
+              </div>
+            </Link>
             <p className="mb-4">
               Building Tomorrow&apos;s Infrastructure Today with precision, reliability, and innovation.
             </p>
-            <div className="flex space-x-4">
-              <Link href="#" className="hover:text-primary transition-colors">
-                <Facebook size={20} />
-                <span className="sr-only">Facebook</span>
-              </Link>
-              <Link href="#" className="hover:text-primary transition-colors">
-                <Twitter size={20} />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link href="#" className="hover:text-primary transition-colors">
-                <Instagram size={20} />
-                <span className="sr-only">Instagram</span>
-              </Link>
-              <Link href="#" className="hover:text-primary transition-colors">
-                <Linkedin size={20} />
-                <span className="sr-only">LinkedIn</span>
-              </Link>
-            </div>
           </div>
 
           <div>
@@ -66,28 +54,23 @@ export function Footer() {
             <h3 className="text-white text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/#services" className="hover:text-primary transition-colors">
-                  Construction
+                <Link href="/services" className="hover:text-primary transition-colors">
+                  Plumbing
                 </Link>
               </li>
               <li>
-                <Link href="/#services" className="hover:text-primary transition-colors">
-                  Renovation
+                <Link href="/services" className="hover:text-primary transition-colors">
+                  Electrical
                 </Link>
               </li>
               <li>
-                <Link href="/#services" className="hover:text-primary transition-colors">
-                  Interior Design
+                <Link href="/services" className="hover:text-primary transition-colors">
+                  Roofing
                 </Link>
               </li>
               <li>
-                <Link href="/#services" className="hover:text-primary transition-colors">
-                  Architecture
-                </Link>
-              </li>
-              <li>
-                <Link href="/#services" className="hover:text-primary transition-colors">
-                  Maintenance
+                <Link href="/services" className="hover:text-primary transition-colors">
+                  HVAC
                 </Link>
               </li>
             </ul>
@@ -97,12 +80,8 @@ export function Footer() {
             <h3 className="text-white text-lg font-semibold mb-4">Contact Info</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <MapPin className="h-5 w-5 mr-3 text-primary" />
-                <span>123 Construction Avenue, Building District, NY 10001</span>
-              </li>
-              <li className="flex items-start">
                 <Phone className="h-5 w-5 mr-3 text-primary" />
-                <span>+1 (555) 123-4567</span>
+                <span>+1 (617) 415-8731</span>
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-3 text-primary" />

@@ -8,36 +8,6 @@ export const metadata = {
 }
 
 export default function AboutPage() {
-  const teamMembers = [
-    {
-      name: "Michael Johnson",
-      role: "Founder & CEO",
-      image:
-        "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      bio: "With over 25 years of experience in the construction industry, Michael founded Horizon Fix with a vision to deliver exceptional quality and innovative solutions.",
-    },
-    {
-      name: "Sarah Williams",
-      role: "Chief Architect",
-      image:
-        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      bio: "Sarah brings creative vision and technical expertise to every project, ensuring designs are both beautiful and functional.",
-    },
-    {
-      name: "David Chen",
-      role: "Project Manager",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      bio: "David's meticulous attention to detail and organizational skills ensure that all projects are completed on time and within budget.",
-    },
-    {
-      name: "Lisa Rodriguez",
-      role: "Interior Designer",
-      image:
-        "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      bio: "Lisa transforms spaces with her innovative design concepts, creating environments that are both functional and aesthetically pleasing.",
-    },
-  ]
 
   const values = [
     {
@@ -84,8 +54,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-5xl font-bold mb-6">About Horizon Fix</h1>
             <p className="text-lg md:text-xl text-gray-300">
-              Building excellence through innovation, quality craftsmanship, and unwavering commitment to customer
-              satisfaction.
+            At Horizon Fix, we prioritize exceptional customer experiences by offering top-quality services at competitive prices. Our dedicated Customer Success Team ensures seamless communication and personalized support throughout your project. We are committed to delivering outstanding results that meet your needs and budget.
             </p>
           </div>
         </div>
@@ -107,19 +76,16 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <p className="text-lg text-gray-700 mb-6">
-                Founded in 1998, Horizon Fix began as a small residential construction company with a big vision. Our
-                founder, Michael Johnson, had spent years working in various aspects of the construction industry and
-                saw an opportunity to create a company that would prioritize quality, innovation, and customer
-                satisfaction.
+              At Horizon Fix, we recognize that customer satisfaction is the cornerstone of our success. To ensure that every decision aligns with our clients&apos;
+               needs and expectations, we&apos;ve adopted a customer-centric business model. This approach places our customers at the heart of our operations, guiding our strategies and actions from project inception to completion.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-                Over the past 25 years, we have grown from a team of 5 to over 100 professionals, expanding our services
-                to include commercial construction, renovation, interior design, and more. Throughout our growth, we
-                have maintained our commitment to excellence and our personalized approach to each project.
+              By fostering a culture that prioritizes the customer experience, we aim to build lasting relationships and deliver outcomes that consistently exceed expectations. Our commitment to understanding and addressing our clients&apos;
+               unique requirements ensures that we not only meet but often surpass their project goals.
               </p>
               <p className="text-lg text-gray-700">
-                Today, Horizon Fix is recognized as a leader in the construction industry, known for our exceptional
-                craftsmanship, innovative solutions, and dedication to building lasting relationships with our clients.
+              This customer-focused strategy has proven to be a key driver of our long-term success. By aligning our services with our clients&apos;
+               aspirations, we enhance customer trust, satisfaction, and loyalty, leading to sustained growth and a strong reputation in the industry.
               </p>
             </div>
           </div>
@@ -152,36 +118,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Team */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Meet Our Leadership Team</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Our experienced team of professionals brings expertise, passion, and dedication to every project.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
-              >
-                <div className="relative h-80">
-                  <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
-                  <p className="text-primary font-medium mb-4">{member.role}</p>
-                  <p className="text-gray-600 text-sm">{member.bio}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Achievements */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
@@ -197,29 +133,22 @@ export default function AboutPage() {
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Best Construction Company 2023</h3>
-                    <p className="text-gray-600">Awarded by the National Association of Home Builders</p>
+                    <h3 className="font-semibold">Comprehensive Training</h3>
+                    <p className="text-gray-600">Our team undergoes regular training to stay updated on best practices in customer service and the latest industry trends.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Green Building Certification</h3>
-                    <p className="text-gray-600">LEED Platinum certification for sustainable construction practices</p>
+                    <h3 className="font-semibold">Advanced Technology Integration</h3>
+                    <p className="text-gray-600">Utilizing cuttin-edge tools to streamline proecesses and improve communication with our clients</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Safety Excellence Award</h3>
-                    <p className="text-gray-600">5 consecutive years of outstanding workplace safety</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold">Innovation in Construction</h3>
-                    <p className="text-gray-600">Recognized for implementing cutting-edge technologies</p>
+                    <h3 className="font-semibold">Feedback-Driven Improvements</h3>
+                    <p className="text-gray-600">Actively seeking and analyzing client feedback to continually refine our services and address any areas for improvement.</p>
                   </div>
                 </div>
               </div>
@@ -250,14 +179,7 @@ export default function AboutPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-64 rounded-lg overflow-hidden">
-                <Image
-                  src="https://images.unsplash.com/photo-1556156653-e5a7676c4821?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                  alt="Team Collaboration"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+  
             </div>
           </div>
         </div>

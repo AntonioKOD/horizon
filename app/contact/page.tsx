@@ -1,5 +1,5 @@
 import { ContactSectionHome } from "@/components/contact-section-home"
-import { Mail, MapPin, Phone, Clock } from "lucide-react"
+import { Mail, Phone, Clock } from "lucide-react"
 
 export const metadata = {
   title: "Contact Us - Horizon Fix",
@@ -9,24 +9,19 @@ export const metadata = {
 export default function ContactPage() {
   const contactInfo = [
     {
-      icon: <MapPin className="h-6 w-6 text-primary" />,
-      title: "Our Location",
-      details: ["123 Construction Avenue", "Building District, NY 10001", "United States"],
-    },
-    {
       icon: <Phone className="h-6 w-6 text-primary" />,
       title: "Phone Number",
-      details: ["+1 (555) 123-4567", "+1 (555) 987-6543"],
+      details: ["+1 (617) 415-8731",],
     },
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: "Email Address",
-      details: ["info@horizonfix.com", "support@horizonfix.com"],
+      details: ["info@horizonfix.com",],
     },
     {
       icon: <Clock className="h-6 w-6 text-primary" />,
       title: "Business Hours",
-      details: ["Monday - Friday: 8:00 AM - 6:00 PM", "Saturday: 9:00 AM - 4:00 PM", "Sunday: Closed"],
+      details: ["24/7 Emergency Services"],
     },
   ]
 
@@ -91,8 +86,7 @@ export default function ContactPage() {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-3">What areas do you serve?</h3>
               <p className="text-gray-600">
-                We primarily serve the greater New York metropolitan area, including all five boroughs, Long Island, and
-                parts of New Jersey and Connecticut. For larger projects, we may consider locations outside of our
+                We primarily serve Massachusetts. For larger projects, we may consider locations outside of our
                 primary service area.
               </p>
             </div>
@@ -107,10 +101,9 @@ export default function ContactPage() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-3">Are you licensed and insured?</h3>
+              <h3 className="text-xl font-semibold mb-3">How does Horizon Fix ensure that professionals are licensed and insured</h3>
               <p className="text-gray-600">
-                Yes, Horizon Fix is fully licensed and insured. We carry comprehensive liability insurance and workers&apos;
-                compensation coverage for all our employees and projects.
+              At Horizon Fix, we prioritize connecting you with professionals who meet your project&apos;s specific requirements. While we strive to match you with qualified experts, it’s essential to verify that any professional you consider hiring possesses the necessary licenses and insurance for your area. We recommend discussing these credentials directly with the professional and, if needed, contacting their licensing authority or insurance provider for confirmation.
               </p>
             </div>
 
@@ -131,11 +124,11 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-2xl font-bold mb-3">24/7 Emergency Services</h2>
           <p className="text-lg mb-4 max-w-3xl mx-auto">
-            For urgent construction or maintenance issues, our emergency team is available 24/7.
+            For urgent issues, our emergency team is available 24/7.
           </p>
           <div className="text-2xl font-bold flex items-center justify-center">
             <Phone className="h-6 w-6 mr-2 animate-pulse" />
-            Emergency Hotline: +1 (555) 911-HELP
+            Emergency Hotline: +1 (617) 415-8731
           </div>
         </div>
       </section>

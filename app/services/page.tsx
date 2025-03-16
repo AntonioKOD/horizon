@@ -1,108 +1,82 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Building2, Hammer, PaintBucket, Ruler, Truck, Wrench, CheckCircle } from "lucide-react"
+import { CheckCircle, AirVent, Home, UtilityPole } from "lucide-react"
+import { Icon } from "lucide-react"
+import {faucet} from '@lucide/lab'
 
 export const metadata = {
   title: "Services - Horizon Fix",
   description: "Explore our comprehensive range of construction and renovation services.",
 }
 
+const Plumbing = ({ className }: { className?: string }) => <Icon iconNode={faucet} size={24} className={className} />
+
+
 export default function ServicesPage() {
   const services = [
     {
-      id: "construction",
-      title: "Construction",
-      description: "Full-service construction for residential and commercial projects with expert craftsmanship.",
-      icon: <Building2 className="h-12 w-12 text-primary" />,
+      id: "plumbing",
+      title: "Plumbing",
+      description: "Our expert plumbing teams ensure efficient and reliable solutions for both residential and commercial properties.",
+      icon: <Plumbing className="h-12 w-12 text-primary" />,
       image:
         "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
       features: [
-        "New residential construction",
-        "Commercial building development",
-        "Industrial facility construction",
-        "Project management and oversight",
-        "Regulatory compliance and permitting",
-        "Sustainable building practices",
+        "Installation and repair services",
+        "Water heater services",
+        "Pipe maintenance and repair",
+        "Drain cleaning services",
+        "Emergency plumbing services",
+        "Commercial plumbing solutions",
       ],
     },
     {
-      id: "renovation",
-      title: "Renovation",
-      description: "Transform your existing space with our comprehensive renovation services.",
-      icon: <Hammer className="h-12 w-12 text-primary" />,
+      id: "Electrical Services",
+      title: "Electrical Services",
+      description: "Professional electrical services for residential and commercial properties to ensure safety and efficiency.",
+      icon: <UtilityPole className="h-12 w-12 text-primary" />,
       image:
         "https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
       features: [
-        "Complete home renovations",
-        "Kitchen and bathroom remodeling",
-        "Basement finishing and conversions",
-        "Historic building restoration",
-        "Commercial space renovations",
-        "Structural modifications and additions",
+        "Wiring and rewiring services",
+        "Electrical panel upgrades",
+        "Lighting installation and repair",
+        "Outlet and switch installation",
+        "Emergency electrical services",
+        "Commercial electrical solutions",
       ],
     },
     {
-      id: "interior-design",
-      title: "Interior Design",
-      description: "Creative interior design solutions that blend functionality with aesthetic appeal.",
-      icon: <PaintBucket className="h-12 w-12 text-primary" />,
+      id: "roofing-services",
+      title: "Roofing Services",
+      description: "Professional roofing services to protect your property and enhance its curb appeal.",
+      icon: <Home className="h-12 w-12 text-primary" />,
       image:
         "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
       features: [
-        "Residential interior design",
-        "Commercial space planning",
-        "Color consultation and material selection",
-        "Custom furniture design",
-        "Lighting design and implementation",
-        "Sustainable and eco-friendly design solutions",
+        "Roof installation and replacement",
+        "Roof repair and maintenance",
+        "Gutter installation and repair",
+        "Roof inspection services",
+        "Emergency roofing services",
+        "Commercial roofing solutions",
+
       ],
     },
     {
-      id: "architecture",
-      title: "Architecture",
-      description: "Innovative architectural designs that bring your vision to life with precision.",
-      icon: <Ruler className="h-12 w-12 text-primary" />,
+      id: "hvac-services",
+      title: "HVAC Services",
+      description: "Heating, ventilation, and air conditioning services to keep your property comfortable and energy-efficient.",
+      icon: <AirVent className="h-12 w-12 text-primary" />,
       image:
         "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
       features: [
-        "Custom home design",
-        "Commercial building architecture",
-        "3D modeling and visualization",
-        "Sustainable and green architecture",
-        "Building code compliance",
-        "Architectural consulting services",
-      ],
-    },
-    {
-      id: "maintenance",
-      title: "Maintenance",
-      description: "Regular maintenance services to keep your property in optimal condition.",
-      icon: <Wrench className="h-12 w-12 text-primary" />,
-      image:
-        "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
-      features: [
-        "Preventative maintenance programs",
-        "Emergency repair services",
-        "Seasonal property inspections",
-        "HVAC system maintenance",
-        "Plumbing and electrical maintenance",
-        "Property management services",
-      ],
-    },
-    {
-      id: "material-supply",
-      title: "Material Supply",
-      description: "Quality construction materials delivered on time for your project needs.",
-      icon: <Truck className="h-12 w-12 text-primary" />,
-      image:
-        "https://images.unsplash.com/photo-1581092921461-39b9d08a9b21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
-      features: [
-        "Building materials procurement",
-        "Custom material fabrication",
-        "Just-in-time delivery services",
-        "Sustainable and eco-friendly materials",
-        "Material cost estimation",
-        "Bulk ordering and discounts",
+        "System installation and replacement",
+        "HVAC repair and maintenance",
+        "Duct cleaning and repair",
+        "Indoor air quality services",
+        "Emergency HVAC services",
+        "Commercial HVAC solutions",
       ],
     },
   ]

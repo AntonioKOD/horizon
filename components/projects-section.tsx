@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import Link from "next/link"
+import { ArrowRight } from "lucide-react"
 
 export function ProjectsSection() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -156,24 +158,35 @@ export function ProjectsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
             <div key={project.id} className="project-card group">
-              <div className="relative h-64 overflow-hidden rounded-lg">
-                <Image
-                  src={project.image || "/placeholder.svg"}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="text-center p-4">
-                    <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
-                    <span className="inline-block px-3 py-1 bg-primary text-white text-sm rounded-full capitalize">
-                      {project.category}
-                    </span>
+              <Link href={`/projects/${project.id}`}>
+                <div className="relative h-64 overflow-hidden rounded-lg">
+                  <Image
+                    src={project.image || "/placeholder.svg"}
+                    alt={project.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-center p-4">
+                      <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
+                      <span className="inline-block px-3 py-1 bg-primary text-white text-sm rounded-full capitalize">
+                        {project.category}
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           ))}
+        </div>
+
+        <div className="mt-8 text-center">
+          <Link
+            href="/projects"
+            className="inline-flex items-center bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-md transition-colors"
+          >
+            View All Projects <ArrowRight className="ml-2 h-4 w-4" />
+          </Link>
         </div>
       </div>
     </section>

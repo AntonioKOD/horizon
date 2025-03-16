@@ -28,7 +28,7 @@ export function TestimonialForm() {
     setFormData((prev) => ({ ...prev, rating }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
     // Basic validation
@@ -38,7 +38,25 @@ export function TestimonialForm() {
     }
 
     // In a real application, you would send this data to your backend
-    console.log("Testimonial submitted:", formData)
+    try{
+      const response = await fetch("/api/send-testimonial", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        const { error } = await response.json()
+        setError(error)
+        return
+      }
+    }catch (error){
+      console.log(error)
+      setError("An error occurred. Please try again later.")
+      return
+    }
 
     // Show success message and reset form
     setSubmitted(true)

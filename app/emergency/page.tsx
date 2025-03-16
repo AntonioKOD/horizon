@@ -50,10 +50,10 @@ export default function EmergencyPage() {
             <p className="text-xl md:text-2xl mb-8">Immediate response when you need it most.</p>
             <div className="text-3xl font-bold mb-8 flex items-center justify-center">
               <Phone className="h-8 w-8 mr-3 animate-pulse" />
-              +1 (555) 911-HELP
+              +1 (617) 415-8731 
             </div>
             <Link
-              href="tel:+15559114357"
+              href="tel:+16174158731"
               className="bg-white text-red-600 hover:bg-gray-100 px-8 py-3 rounded-md text-lg font-bold transition-colors inline-flex items-center"
             >
               <Phone className="h-5 w-5 mr-2" />
@@ -106,7 +106,7 @@ export default function EmergencyPage() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Call Our Emergency Line</h3>
               <p className="text-gray-600">
-                Contact our 24/7 emergency hotline at +1 (555) 911-HELP to speak with our emergency response team.
+                Contact our 24/7 emergency hotline at +1 (617) 415-8731 to speak with our emergency response team.
               </p>
             </div>
 
@@ -149,7 +149,7 @@ export default function EmergencyPage() {
                   <Phone className="h-6 w-6 mr-4 flex-shrink-0" />
                   <div>
                     <h3 className="text-xl font-semibold">Emergency Hotline</h3>
-                    <p className="text-xl">+1 (555) 911-HELP</p>
+                    <p className="text-xl">+1 (617) 415-8731</p>
                   </div>
                 </div>
 
@@ -157,14 +157,14 @@ export default function EmergencyPage() {
                   <Clock className="h-6 w-6 mr-4 flex-shrink-0" />
                   <div>
                     <h3 className="text-xl font-semibold">Response Time</h3>
-                    <p>Typically within 1 hour in metropolitan areas</p>
+                    <p>Typically within 1 hour</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-8">
                 <Link
-                  href="tel:+15559114357"
+                  href="tel:+16174158731"
                   className="bg-white text-red-600 hover:bg-gray-100 px-8 py-3 rounded-md text-lg font-bold transition-colors inline-flex items-center"
                 >
                   <Phone className="h-5 w-5 mr-2" />
@@ -195,18 +195,17 @@ export default function EmergencyPage() {
 
           <div className="max-w-4xl mx-auto space-y-6">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-3">What constitutes a construction emergency?</h3>
+              <h3 className="text-xl font-semibold mb-3">How does Horizon Fix handle emergency service requests?</h3>
               <p className="text-gray-600">
-                Construction emergencies include structural damage that poses safety risks, severe water damage from
-                flooding or leaks, electrical hazards, fire damage, and damage from severe weather events.
+              At Horizon Fix, we understand that emergencies can occur at any time. Our platform partners with professionals who offer 24/7
+              emergency services to address urgent issues promptly. When you submit an emergency request, we prioritize matching you with available experts in your area to ensure a swift response.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-3">How quickly can you respond to an emergency?</h3>
+              <h3 className="text-xl font-semibold mb-3">Are there additional charges for emergency services</h3>
               <p className="text-gray-600">
-                Our typical response time is within 1 hour for metropolitan areas. Response times may vary based on your
-                location and current demand, but we prioritize all emergency calls.
+              Service fees, including any additional charges for emergency responses, are determined by the individual professionals. We recommend discussing pricing details directly with the service provider before confirming any work to ensure transparency and alignment with your budget.
               </p>
             </div>
 
@@ -220,10 +219,9 @@ export default function EmergencyPage() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-3">Do you work with insurance companies?</h3>
+              <h3 className="text-xl font-semibold mb-3">How quickly can I expect a response to my emergency request?</h3>
               <p className="text-gray-600">
-                Yes, we work directly with insurance companies for emergency repairs. We can help document the damage
-                for your claim and coordinate with your insurance provider throughout the process.
+              Response times can vary based on factors such as the time of day and the availability of professionals in your area. However, our platform is designed to facilitate rapid connections, aiming to have a qualified professional address your emergency as quickly as possible.
               </p>
             </div>
           </div>

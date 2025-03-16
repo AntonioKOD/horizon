@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useState } from "react"
-import { Mail, MapPin, Phone, Send, AlertCircle, CheckCircle } from "lucide-react"
+import { Mail,Phone, Send, AlertCircle, CheckCircle } from "lucide-react"
 
 export function ContactSectionHome() {
   const [formData, setFormData] = useState({
@@ -134,19 +134,6 @@ export function ContactSectionHome() {
                 <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
 
                 <div className="space-y-6">
-                  <div className="flex items-start">
-                    <div className="bg-white/20 p-3 rounded-full mr-4">
-                      <MapPin className="h-6 w-6" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-1">Our Location</h4>
-                      <p className="text-white/80">
-                        123 Construction Avenue
-                        <br />
-                        Building District, NY 10001
-                      </p>
-                    </div>
-                  </div>
 
                   <div className="flex items-start">
                     <div className="bg-white/20 p-3 rounded-full mr-4">
@@ -155,9 +142,9 @@ export function ContactSectionHome() {
                     <div>
                       <h4 className="font-semibold mb-1">Phone Number</h4>
                       <p className="text-white/80">
-                        +1 (555) 123-4567
+                        +1 (617) 415-8731
                         <br />
-                        Mon-Fri, 8:00 AM - 6:00 PM
+                        24/7 Emergency Services
                       </p>
                     </div>
                   </div>
@@ -170,8 +157,6 @@ export function ContactSectionHome() {
                       <h4 className="font-semibold mb-1">Email Address</h4>
                       <p className="text-white/80">
                         info@horizonfix.com
-                        <br />
-                        support@horizonfix.com
                       </p>
                     </div>
                   </div>
