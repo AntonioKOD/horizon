@@ -3,6 +3,7 @@ import Link from "next/link"
 import { CheckCircle, AirVent, Home, UtilityPole } from "lucide-react"
 import { Icon } from "lucide-react"
 import {faucet} from '@lucide/lab'
+import Head from "next/head"
 
 export const metadata = {
   title: "Services - Horizon Fix",
@@ -82,6 +83,21 @@ export default function ServicesPage() {
   ]
 
   return (
+    <>
+    <Head>
+        <title>Our Services | Horizon Fix – Comprehensive Construction & Renovation Solutions</title>
+        <meta name="description" content="Explore the full range of services at Horizon Fix – from construction, renovation, interior design, and architecture to maintenance and material supply. We deliver expert solutions for plumbing, electrical, HVAC, and remodeling needs." />
+        <link rel="canonical" href="https://horizonfix.com/services" />
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Our Services | Horizon Fix – Comprehensive Construction & Renovation Solutions" />
+        <meta property="og:description" content="Discover expert construction, renovation, plumbing, electrical, HVAC, and remodeling services at Horizon Fix. We tailor our solutions to meet your project needs." />
+        <meta property="og:url" content="https://horizonfix.com/services" />
+        <meta property="og:type" content="website" />
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Our Services | Horizon Fix – Comprehensive Construction & Renovation Solutions" />
+        <meta name="twitter:description" content="Explore a full range of services at Horizon Fix – expert solutions in construction, renovation, plumbing, electrical, HVAC, and remodeling." />
+      </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 bg-gray-900 text-white">
@@ -194,6 +210,7 @@ export default function ServicesPage() {
         </div>
       </section>
     </main>
+    </>
   )
 }
 

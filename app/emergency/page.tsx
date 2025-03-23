@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Phone, Clock, ShieldAlert, AlertTriangle } from "lucide-react"
-
+import Head from "next/head"
 export const metadata = {
   title: "Emergency Services - Horizon Fix",
   description: "24/7 emergency construction and repair services from Horizon Fix.",
@@ -32,6 +32,21 @@ export default function EmergencyPage() {
   ]
 
   return (
+    <>
+    <Head>
+        <title>Emergency Services | Horizon Fix – 24/7 Rapid Repairs & Support</title>
+        <meta name="description" content="When emergencies strike, Horizon Fix is here 24/7 to deliver rapid, reliable repairs in plumbing, electrical, HVAC, and remodeling. Count on our expert team to restore comfort fast." />
+        <link rel="canonical" href="https://horizonfix.com/emergency" />
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Emergency Services | Horizon Fix – 24/7 Rapid Repairs & Support" />
+        <meta property="og:description" content="For urgent repairs in plumbing, electrical, HVAC, or remodeling, trust Horizon Fix’s emergency services. We provide swift, expert support around the clock." />
+        <meta property="og:url" content="https://horizonfix.com/emergency" />
+        <meta property="og:type" content="website" />
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Emergency Services | Horizon Fix – 24/7 Rapid Repairs & Support" />
+        <meta name="twitter:description" content="Need immediate repairs? Horizon Fix offers 24/7 emergency services for plumbing, electrical, HVAC, and remodeling needs, ensuring your home stays safe and comfortable." />
+      </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 bg-red-600 text-white">
@@ -228,6 +243,7 @@ export default function EmergencyPage() {
         </div>
       </section>
     </main>
+    </>
   )
 }
 

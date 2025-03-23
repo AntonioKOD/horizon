@@ -1,5 +1,6 @@
 import { ContactSectionHome } from "@/components/contact-section-home"
 import { Mail, Phone, Clock } from "lucide-react"
+import Head from "next/head"
 
 export const metadata = {
   title: "Contact Us - Horizon Fix",
@@ -26,6 +27,21 @@ export default function ContactPage() {
   ]
 
   return (
+    <>
+    <Head>
+        <title>Contact Horizon Fix | Get in Touch for Your Next Project</title>
+        <meta name="description" content="Reach out to Horizon Fix for consultations on construction, renovation, remodeling, and expert home service solutions including plumbing, electrical, and HVAC. Our team is ready to assist you." />
+        <link rel="canonical" href="https://horizonfix.com/contact" />
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Contact Horizon Fix | Get in Touch for Your Next Project" />
+        <meta property="og:description" content="Contact Horizon Fix today for expert guidance and support in construction, renovation, plumbing, electrical, HVAC, and remodeling services." />
+        <meta property="og:url" content="https://horizonfix.com/contact" />
+        <meta property="og:type" content="website" />
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Horizon Fix | Get in Touch for Your Next Project" />
+        <meta name="twitter:description" content="Reach out to Horizon Fix for expert consultations and quality service in construction, renovation, plumbing, electrical, HVAC, and remodeling." />
+      </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 bg-gray-900 text-white">
@@ -133,6 +149,7 @@ export default function ContactPage() {
         </div>
       </section>
     </main>
+    </>
   )
 }
 

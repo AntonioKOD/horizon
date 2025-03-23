@@ -97,7 +97,7 @@ export function Navbar() {
               Testimonials
             </Link>
             <Link
-              href="/#contact"
+              href="/contact"
               onClick={scrollToContact}
               className="bg-primary text-white hover:bg-primary/90 px-5 py-2 rounded-md transition-colors shadow-md"
             >

@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { CheckCircle, Award, Users, Clock, Target, Shield } from "lucide-react"
-
+import Head from "next/head"
 export const metadata = {
   title: "About Us - Horizon Fix",
   description: "Learn about Horizon Fix, our mission, values, and the team behind our success.",
@@ -38,6 +38,21 @@ export default function AboutPage() {
   ]
 
   return (
+    <>
+   <Head>
+        <title>About Us | Horizon Fix – Building Tomorrow&apos;s Infrastructure Today</title>
+        <meta name="description" content="Learn about Horizon Fix, a leader in construction, renovation, and remodeling with over 25 years of expertise. Our commitment to quality, innovation, and customer satisfaction sets us apart." />
+        <link rel="canonical" href="https://horizonfix.com/about" />
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="About Us | Horizon Fix – Building Tomorrow's Infrastructure Today" />
+        <meta property="og:description" content="Discover our story, values, and commitment to excellence at Horizon Fix. We deliver expert construction, renovation, and remodeling services that transform spaces." />
+        <meta property="og:url" content="https://horizonfix.com/about" />
+        <meta property="og:type" content="website" />
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Us | Horizon Fix – Building Tomorrow's Infrastructure Today" />
+        <meta name="twitter:description" content="Learn more about Horizon Fix’s legacy in construction, renovation, and remodeling. Our expert team is dedicated to building tomorrow’s infrastructure with precision and innovation." />
+      </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 bg-gray-900 text-white">
@@ -209,6 +224,7 @@ export default function AboutPage() {
         </div>
       </section>
     </main>
+    </>
   )
 }
 
