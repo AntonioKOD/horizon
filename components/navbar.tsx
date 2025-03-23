@@ -16,14 +16,7 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
 
   // Add this function to the Navbar component to ensure smooth scrolling to the contact section
-  const scrollToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault()
-    const contactSection = document.getElementById("contact")
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" })
-    }
-    setIsMenuOpen(false)
-  }
+  
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
@@ -98,7 +91,6 @@ export function Navbar() {
             </Link>
             <Link
               href="/contact"
-              onClick={scrollToContact}
               className="bg-primary text-white hover:bg-primary/90 px-5 py-2 rounded-md transition-colors shadow-md"
             >
               Contact Us
@@ -152,7 +144,6 @@ export function Navbar() {
             <Link
               href="/contact"
               className="bg-primary text-white hover:bg-primary/90 px-5 py-2 rounded-md transition-colors inline-block"
-              onClick={scrollToContact}
             >
               Contact Us
             </Link>
