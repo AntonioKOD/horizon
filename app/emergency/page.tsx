@@ -211,7 +211,7 @@ export default function EmergencyPage() {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-3">How does Horizon Fix handle emergency service requests?</h3>
               <p className="text-gray-600">
-              At Horizon Fix, we understand that emergencies can occur at any time. We're always on call with expert tradespeople available 24/7
+              At Horizon Fix, we understand that emergencies can occur at any time. We&apos;re always on call with expert tradespeople available 24/7
               to address urgent HVAC, plumbing, electrical, masonry, and handyman issues promptly. When you call our emergency line, we prioritize your request and dispatch the right professional to your location for a swift response.
               </p>
             </div>

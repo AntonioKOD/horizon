@@ -66,7 +66,7 @@ export function HeroSection() {
           Your Trusted Handyman & Home Service Experts
         </h1>
         <p className="hero-subtitle text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
-          Always on call for HVAC, plumbing, electrical, masonry, and handyman services. No job too small—from quick repairs to home renovations, we're here 24/7.
+          Always on call for HVAC, plumbing, electrical, masonry, and handyman services. No job too small—from quick repairs to home renovations, we&apos;re here 24/7.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link

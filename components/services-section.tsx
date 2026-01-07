@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react"
 import Link from "next/link"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { ArrowRight, Wrench, Home, Wind, Droplet, Zap, Hammer, Building, Paintbrush, Building2 } from "lucide-react"
+import { ArrowRight, Wrench, Home, Wind, Droplet, Zap, Building, Paintbrush, Building2 } from "lucide-react"
 
 export function ServicesSection() {
   const sectionRef = useRef<HTMLElement>(null)

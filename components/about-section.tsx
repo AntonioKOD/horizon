@@ -93,8 +93,8 @@ export function AboutSection() {
           <div className="about-content">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">About Horizon Fix</h2>
             <p className="text-lg text-gray-700 mb-4">
-              Horizon Fix is your trusted partner for all home service needs. We're always on call for HVAC, plumbing, electrical, masonry, and handyman services. 
-              From small repairs to home renovations, we provide expert tradespeople who respond quickly and deliver quality work. No job is too small—we're here 24/7.
+              Horizon Fix is your trusted partner for all home service needs. We&apos;re always on call for HVAC, plumbing, electrical, masonry, and handyman services. 
+              From small repairs to home renovations, we provide expert tradespeople who respond quickly and deliver quality work. No job is too small—we&apos;re here 24/7.
             </p>
 
             <div className="about-features grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">

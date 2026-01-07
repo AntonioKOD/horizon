@@ -69,7 +69,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-5xl font-bold mb-6">About Horizon Fix</h1>
             <p className="text-lg md:text-xl text-gray-300">
-            At Horizon Fix, we're always on call for all your home service needs. From HVAC and plumbing to electrical, masonry, and handyman services, we provide expert tradespeople who respond quickly and deliver quality work. No job is too small—we're here 24/7 to help with everything from quick repairs to home renovations.
+            At Horizon Fix, we&apos;re always on call for all your home service needs. From HVAC and plumbing to electrical, masonry, and handyman services, we provide expert tradespeople who respond quickly and deliver quality work. No job is too small—we&apos;re here 24/7 to help with everything from quick repairs to home renovations.
             </p>
           </div>
         </div>
@@ -91,13 +91,13 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <p className="text-lg text-gray-700 mb-6">
-              Horizon Fix was founded on the principle that homeowners need reliable, always-available service professionals. We recognized that whether it's a small leak, a broken outlet, or a heating emergency, you need someone who will respond quickly and get the job done right. That's why we're always on call, ready to help with HVAC, plumbing, electrical, masonry, and handyman services.
+              Horizon Fix was founded on the principle that homeowners need reliable, always-available service professionals. We recognized that whether it&apos;s a small leak, a broken outlet, or a heating emergency, you need someone who will respond quickly and get the job done right. That&apos;s why we&apos;re always on call, ready to help with HVAC, plumbing, electrical, masonry, and handyman services.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-              We've built a team of expert tradespeople across all disciplines, ensuring that no matter what your home needs, we have the right person for the job. From small repairs to full home renovations, we approach every project with the same commitment to quality, professionalism, and customer satisfaction. No job is too small, and we're always ready to help.
+              We&apos;ve built a team of expert tradespeople across all disciplines, ensuring that no matter what your home needs, we have the right person for the job. From small repairs to full home renovations, we approach every project with the same commitment to quality, professionalism, and customer satisfaction. No job is too small, and we&apos;re always ready to help.
               </p>
               <p className="text-lg text-gray-700">
-              Our customer-centric approach means we prioritize quick response times, transparent communication, and quality workmanship. We understand that home service needs don't always happen during business hours, which is why we're available 24/7. Your satisfaction is our success, and we're committed to being your trusted home service partner.
+              Our customer-centric approach means we prioritize quick response times, transparent communication, and quality workmanship. We understand that home service needs don&apos;t always happen during business hours, which is why we&apos;re available 24/7. Your satisfaction is our success, and we&apos;re committed to being your trusted home service partner.
               </p>
             </div>
           </div>

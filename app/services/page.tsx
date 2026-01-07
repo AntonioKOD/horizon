@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { CheckCircle, Wrench, Home, Wind, Droplet, Zap, Hammer, Building, Paintbrush, Building2 } from "lucide-react"
+import { CheckCircle, Wrench, Home, Wind, Droplet, Zap, Building, Paintbrush, Building2 } from "lucide-react"
 import Head from "next/head"
 
 export const metadata = {
