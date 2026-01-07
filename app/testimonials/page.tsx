@@ -4,7 +4,7 @@ import { TestimonialForm } from "@/components/testimonial-form"
 
 export const metadata = {
   title: "Testimonials - Horizon Fix",
-  description: "Read what our clients say about their experience working with Horizon Fix.",
+  description: "Read what our clients say about their experience working with Horizon Fix for HVAC, plumbing, electrical, masonry, handyman, and home renovation services.",
 }
 
 export default function TestimonialsPage() {

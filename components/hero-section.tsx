@@ -55,7 +55,7 @@ export function HeroSection() {
       className="relative h-screen flex items-center justify-center overflow-hidden"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')",
+          "url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -63,11 +63,10 @@ export function HeroSection() {
       <div className="hero-overlay absolute inset-0 bg-black opacity-70"></div>
       <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
         <h1 className="hero-title text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-          Building Tomorrow&apos;s Infrastructure Today
+          Your Trusted Handyman & Home Service Experts
         </h1>
         <p className="hero-subtitle text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
-          Horizon Fix delivers exceptional construction and renovation services with precision, reliability, and
-          innovation.
+          Always on call for HVAC, plumbing, electrical, masonry, and handyman services. No job too small—from quick repairs to home renovations, we're here 24/7.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link

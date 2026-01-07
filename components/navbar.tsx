@@ -58,6 +58,14 @@ export function Navbar() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             <Link
+              href="/"
+              className={`text-base font-medium transition-colors duration-300 ${
+                scrolled ? "text-gray-800 hover:text-primary" : "text-white hover:text-primary drop-shadow-sm"
+              }`}
+            >
+              Home
+            </Link>
+            <Link
               href="/services"
               className={`text-base font-medium transition-colors duration-300 ${
                 scrolled ? "text-gray-800 hover:text-primary" : "text-white hover:text-primary drop-shadow-sm"
@@ -72,22 +80,6 @@ export function Navbar() {
               }`}
             >
               About
-            </Link>
-            <Link
-              href="/projects"
-              className={`text-base font-medium transition-colors duration-300 ${
-                scrolled ? "text-gray-800 hover:text-primary" : "text-white hover:text-primary drop-shadow-sm"
-              }`}
-            >
-              Projects
-            </Link>
-            <Link
-              href="/testimonials"
-              className={`text-base font-medium transition-colors duration-300 ${
-                scrolled ? "text-gray-800 hover:text-primary" : "text-white hover:text-primary drop-shadow-sm"
-              }`}
-            >
-              Testimonials
             </Link>
             <Link
               href="/contact"
@@ -114,6 +106,13 @@ export function Navbar() {
         <div className="md:hidden bg-white/95 backdrop-blur-md absolute top-full left-0 right-0 shadow-md">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <Link
+              href="/"
+              className="text-base font-medium text-gray-800 hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </Link>
+            <Link
               href="/services"
               className="text-base font-medium text-gray-800 hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
@@ -126,20 +125,6 @@ export function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               About
-            </Link>
-            <Link
-              href="/projects"
-              className="text-base font-medium text-gray-800 hover:text-primary transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Projects
-            </Link>
-            <Link
-              href="/testimonials"
-              className="text-base font-medium text-gray-800 hover:text-primary transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Testimonials
             </Link>
             <Link
               href="/contact"

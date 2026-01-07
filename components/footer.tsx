@@ -15,13 +15,18 @@ export function Footer() {
               </div>
             </Link>
             <p className="mb-4">
-              Building Tomorrow&apos;s Infrastructure Today with precision, reliability, and innovation.
+              Your trusted partner for handyman services and smart home automation solutions. Quality work, reliable service, and innovative technology.
             </p>
           </div>
 
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
+              <li>
+                <Link href="/" className="hover:text-primary transition-colors">
+                  Home
+                </Link>
+              </li>
               <li>
                 <Link href="/#services" className="hover:text-primary transition-colors">
                   Our Services
@@ -30,16 +35,6 @@ export function Footer() {
               <li>
                 <Link href="/#about" className="hover:text-primary transition-colors">
                   About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/#projects" className="hover:text-primary transition-colors">
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link href="/#testimonials" className="hover:text-primary transition-colors">
-                  Testimonials
                 </Link>
               </li>
               <li>

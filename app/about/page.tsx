@@ -40,18 +40,18 @@ export default function AboutPage() {
   return (
     <>
    <Head>
-        <title>About Us | Horizon Fix – Building Tomorrow&apos;s Infrastructure Today</title>
-        <meta name="description" content="Learn about Horizon Fix, a leader in construction, renovation, and remodeling with over 25 years of expertise. Our commitment to quality, innovation, and customer satisfaction sets us apart." />
+        <title>About Us | Horizon Fix – Always On Call Handyman & Home Service Experts</title>
+        <meta name="description" content="Learn about Horizon Fix, your trusted handyman and home service experts. Always on call for HVAC, plumbing, electrical, masonry, and handyman services. No job too small, quick response times, 24/7 availability." />
         <link rel="canonical" href="https://horizonfix.com/about" />
         {/* Open Graph Tags */}
-        <meta property="og:title" content="About Us | Horizon Fix – Building Tomorrow's Infrastructure Today" />
-        <meta property="og:description" content="Discover our story, values, and commitment to excellence at Horizon Fix. We deliver expert construction, renovation, and remodeling services that transform spaces." />
+        <meta property="og:title" content="About Us | Horizon Fix – Always On Call Handyman & Home Service Experts" />
+        <meta property="og:description" content="Discover our story and commitment to excellence at Horizon Fix. Always on call for HVAC, plumbing, electrical, masonry, and handyman services. Expert tradespeople available 24/7." />
         <meta property="og:url" content="https://horizonfix.com/about" />
         <meta property="og:type" content="website" />
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Us | Horizon Fix – Building Tomorrow's Infrastructure Today" />
-        <meta name="twitter:description" content="Learn more about Horizon Fix’s legacy in construction, renovation, and remodeling. Our expert team is dedicated to building tomorrow’s infrastructure with precision and innovation." />
+        <meta name="twitter:title" content="About Us | Horizon Fix – Always On Call Handyman & Home Service Experts" />
+        <meta name="twitter:description" content="Learn more about Horizon Fix's commitment to always being on call for all your home service needs. Expert tradespeople, quick response times, no job too small." />
       </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
@@ -69,7 +69,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-5xl font-bold mb-6">About Horizon Fix</h1>
             <p className="text-lg md:text-xl text-gray-300">
-            At Horizon Fix, we prioritize exceptional customer experiences by offering top-quality services at competitive prices. Our dedicated Customer Success Team ensures seamless communication and personalized support throughout your project. We are committed to delivering outstanding results that meet your needs and budget.
+            At Horizon Fix, we're always on call for all your home service needs. From HVAC and plumbing to electrical, masonry, and handyman services, we provide expert tradespeople who respond quickly and deliver quality work. No job is too small—we're here 24/7 to help with everything from quick repairs to home renovations.
             </p>
           </div>
         </div>
@@ -91,16 +91,13 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <p className="text-lg text-gray-700 mb-6">
-              At Horizon Fix, we recognize that customer satisfaction is the cornerstone of our success. To ensure that every decision aligns with our clients&apos;
-               needs and expectations, we&apos;ve adopted a customer-centric business model. This approach places our customers at the heart of our operations, guiding our strategies and actions from project inception to completion.
+              Horizon Fix was founded on the principle that homeowners need reliable, always-available service professionals. We recognized that whether it's a small leak, a broken outlet, or a heating emergency, you need someone who will respond quickly and get the job done right. That's why we're always on call, ready to help with HVAC, plumbing, electrical, masonry, and handyman services.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-              By fostering a culture that prioritizes the customer experience, we aim to build lasting relationships and deliver outcomes that consistently exceed expectations. Our commitment to understanding and addressing our clients&apos;
-               unique requirements ensures that we not only meet but often surpass their project goals.
+              We've built a team of expert tradespeople across all disciplines, ensuring that no matter what your home needs, we have the right person for the job. From small repairs to full home renovations, we approach every project with the same commitment to quality, professionalism, and customer satisfaction. No job is too small, and we're always ready to help.
               </p>
               <p className="text-lg text-gray-700">
-              This customer-focused strategy has proven to be a key driver of our long-term success. By aligning our services with our clients&apos;
-               aspirations, we enhance customer trust, satisfaction, and loyalty, leading to sustained growth and a strong reputation in the industry.
+              Our customer-centric approach means we prioritize quick response times, transparent communication, and quality workmanship. We understand that home service needs don't always happen during business hours, which is why we're available 24/7. Your satisfaction is our success, and we're committed to being your trusted home service partner.
               </p>
             </div>
           </div>
@@ -172,7 +169,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 gap-6">
               <div className="relative h-64 rounded-lg overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1626885930974-4b69aa21bbf9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
                   alt="Award Ceremony"
                   fill
                   className="object-cover"
@@ -180,7 +177,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
                   alt="Green Building"
                   fill
                   className="object-cover"
@@ -188,7 +185,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
                   alt="Completed Project"
                   fill
                   className="object-cover"

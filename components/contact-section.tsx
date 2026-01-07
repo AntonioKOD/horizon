@@ -74,7 +74,7 @@ export function ContactSection() {
       className="py-20 bg-gray-50"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')",
+          "url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
@@ -201,12 +201,17 @@ export function ContactSection() {
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"
                 >
                   <option value="">Select a service</option>
-                  <option value="construction">Construction</option>
-                  <option value="renovation">Renovation</option>
-                  <option value="interior">Interior Design</option>
-                  <option value="architecture">Architecture</option>
-                  <option value="maintenance">Maintenance</option>
-                  <option value="material">Material Supply</option>
+                  <option value="hvac">HVAC Services</option>
+                  <option value="plumbing">Plumbing Services</option>
+                  <option value="electrical">Electrical Services</option>
+                  <option value="masonry">Masonry Services</option>
+                  <option value="handyman">Handyman Services</option>
+                  <option value="painting">Painting Services</option>
+                  <option value="roofing">Roofing Services</option>
+                  <option value="siding">Siding Services</option>
+                  <option value="renovations">Home Renovations</option>
+                  <option value="emergency">Emergency Services</option>
+                  <option value="other">Other</option>
                 </select>
               </div>
 

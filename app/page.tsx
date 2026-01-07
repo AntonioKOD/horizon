@@ -1,36 +1,32 @@
 import { HeroSection } from "@/components/hero-section"
 import { ServicesSection } from "@/components/services-section"
 import { AboutSection } from "@/components/about-section"
-import { TestimonialsSection } from "@/components/testimonials-section"
 import { ContactSectionHome } from "@/components/contact-section-home"
 import { StatsSection } from "@/components/stats-section"
-import { ProjectsSection } from "@/components/projects-section"
 import Head from "next/head"
 
 export default function Home() {
   return (
     <>
     <Head>
-        <title>Horizon Fix | Expert Construction, Remodeling & Home Service Solutions</title>
-        <meta name="description" content="Horizon Fix delivers precision construction, renovation, and remodeling services. From plumbing and electrical upgrades to HVAC solutions and modern remodels, we build tomorrow’s infrastructure today." />
+        <title>Horizon Fix | Always On Call Handyman & Home Service Experts</title>
+        <meta name="description" content="Horizon Fix - Always on call for HVAC, plumbing, electrical, masonry, and handyman services. No job too small. Quick response times, expert tradespeople, 24/7 availability for all your home service needs." />
         <link rel="canonical" href="https://horizonfix.com" />
         {/* Open Graph Tags */}
-        <meta property="og:title" content="Horizon Fix | Expert Construction, Remodeling & Home Service Solutions" />
-        <meta property="og:description" content="Discover Horizon Fix – a trusted partner for construction, renovation, plumbing, electrical, HVAC, and remodeling services that transform your home." />
+        <meta property="og:title" content="Horizon Fix | Always On Call Handyman & Home Service Experts" />
+        <meta property="og:description" content="Always on call for HVAC, plumbing, electrical, masonry, and handyman services. From small repairs to home renovations, we're your trusted home service experts available 24/7." />
         <meta property="og:url" content="https://horizonfix.com" />
         <meta property="og:type" content="website" />
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Horizon Fix | Expert Construction, Remodeling & Home Service Solutions" />
-        <meta name="twitter:description" content="Horizon Fix delivers precision in construction, renovation, and remodeling, including plumbing, electrical, and HVAC upgrades. Explore our services today!" />
+        <meta name="twitter:title" content="Horizon Fix | Always On Call Handyman & Home Service Experts" />
+        <meta name="twitter:description" content="Always on call for HVAC, plumbing, electrical, masonry, and handyman services. No job too small. Expert tradespeople available 24/7 for all your home service needs." />
       </Head>
     <main className="flex min-h-screen flex-col">
       <HeroSection />
       <ServicesSection />
       <AboutSection />
       <StatsSection />
-      <ProjectsSection/>
-      <TestimonialsSection />
       <ContactSectionHome/>
     </main>
     </>

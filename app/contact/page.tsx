@@ -4,7 +4,7 @@ import Head from "next/head"
 
 export const metadata = {
   title: "Contact Us - Horizon Fix",
-  description: "Get in touch with Horizon Fix for all your construction and renovation needs.",
+  description: "Get in touch with Horizon Fix for all your HVAC, plumbing, electrical, masonry, handyman, and home renovation needs. Always on call, always ready to help.",
 }
 
 export default function ContactPage() {
@@ -29,18 +29,18 @@ export default function ContactPage() {
   return (
     <>
     <Head>
-        <title>Contact Horizon Fix | Get in Touch for Your Next Project</title>
-        <meta name="description" content="Reach out to Horizon Fix for consultations on construction, renovation, remodeling, and expert home service solutions including plumbing, electrical, and HVAC. Our team is ready to assist you." />
+        <title>Contact Horizon Fix | Always On Call Handyman & Home Service Experts</title>
+        <meta name="description" content="Reach out to Horizon Fix for HVAC, plumbing, electrical, masonry, handyman, and home renovation services. Always on call, quick response times, expert tradespeople available 24/7." />
         <link rel="canonical" href="https://horizonfix.com/contact" />
         {/* Open Graph Tags */}
-        <meta property="og:title" content="Contact Horizon Fix | Get in Touch for Your Next Project" />
-        <meta property="og:description" content="Contact Horizon Fix today for expert guidance and support in construction, renovation, plumbing, electrical, HVAC, and remodeling services." />
+        <meta property="og:title" content="Contact Horizon Fix | Always On Call Handyman & Home Service Experts" />
+        <meta property="og:description" content="Contact Horizon Fix today for expert HVAC, plumbing, electrical, masonry, handyman, and home renovation services. Always on call, always ready to help." />
         <meta property="og:url" content="https://horizonfix.com/contact" />
         <meta property="og:type" content="website" />
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact Horizon Fix | Get in Touch for Your Next Project" />
-        <meta name="twitter:description" content="Reach out to Horizon Fix for expert consultations and quality service in construction, renovation, plumbing, electrical, HVAC, and remodeling." />
+        <meta name="twitter:title" content="Contact Horizon Fix | Always On Call Handyman & Home Service Experts" />
+        <meta name="twitter:description" content="Reach out to Horizon Fix for expert HVAC, plumbing, electrical, masonry, handyman, and home renovation services. Always on call, quick response times." />
       </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
@@ -49,7 +49,7 @@ export default function ContactPage() {
           className="absolute inset-0 opacity-30"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')",
+              "url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -58,7 +58,7 @@ export default function ContactPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-5xl font-bold mb-4">Contact Us</h1>
             <p className="text-lg md:text-xl text-gray-300">
-              Have questions or ready to start your project? Get in touch with our team today.
+              Always on call for all your home service needs. Have questions or ready to start your project? Get in touch with our team today.
             </p>
           </div>
         </div>

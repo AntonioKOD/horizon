@@ -249,12 +249,17 @@ export function ContactSectionHome() {
                         className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"
                       >
                         <option value="">Select a service</option>
-                        <option value="construction">Construction</option>
-                        <option value="renovation">Renovation</option>
-                        <option value="interior">Interior Design</option>
-                        <option value="architecture">Architecture</option>
-                        <option value="maintenance">Maintenance</option>
-                        <option value="material">Material Supply</option>
+                        <option value="hvac">HVAC Services</option>
+                        <option value="plumbing">Plumbing Services</option>
+                        <option value="electrical">Electrical Services</option>
+                        <option value="masonry">Masonry Services</option>
+                        <option value="handyman">Handyman Services</option>
+                        <option value="painting">Painting Services</option>
+                        <option value="roofing">Roofing Services</option>
+                        <option value="siding">Siding Services</option>
+                        <option value="renovations">Home Renovations</option>
+                        <option value="emergency">Emergency Services</option>
+                        <option value="other">Other</option>
                       </select>
                     </div>
 

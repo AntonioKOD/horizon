@@ -1,83 +1,159 @@
 import Image from "next/image"
 import Link from "next/link"
-import { CheckCircle, AirVent, Home, UtilityPole } from "lucide-react"
-import { Icon } from "lucide-react"
-import {faucet} from '@lucide/lab'
+import { CheckCircle, Wrench, Home, Wind, Droplet, Zap, Hammer, Building, Paintbrush, Building2 } from "lucide-react"
 import Head from "next/head"
 
 export const metadata = {
   title: "Services - Horizon Fix",
-  description: "Explore our comprehensive range of construction and renovation services.",
+  description: "Explore our comprehensive range of handyman and home automation services.",
 }
 
-const Plumbing = ({ className }: { className?: string }) => <Icon iconNode={faucet} size={24} className={className} />
 
 
 export default function ServicesPage() {
   const services = [
     {
-      id: "plumbing",
-      title: "Plumbing",
-      description: "Our expert plumbing teams ensure efficient and reliable solutions for both residential and commercial properties.",
-      icon: <Plumbing className="h-12 w-12 text-primary" />,
+      id: "hvac-services",
+      title: "HVAC Services",
+      description: "Expert HVAC repairs, maintenance, and installations. Always on call for heating and cooling emergencies. Quick response times for all your HVAC needs.",
+      icon: <Wind className="h-12 w-12 text-primary" />,
       image:
-        "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1621905251918-48116d1b5b21?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       features: [
-        "Installation and repair services",
-        "Water heater services",
-        "Pipe maintenance and repair",
-        "Drain cleaning services",
-        "Emergency plumbing services",
-        "Commercial plumbing solutions",
+        "AC repair and maintenance",
+        "Heating system repairs",
+        "Ductwork cleaning",
+        "Thermostat installation",
+        "Filter replacement",
+        "Emergency HVAC service",
       ],
     },
     {
-      id: "Electrical Services",
-      title: "Electrical Services",
-      description: "Professional electrical services for residential and commercial properties to ensure safety and efficiency.",
-      icon: <UtilityPole className="h-12 w-12 text-primary" />,
+      id: "plumbing-services",
+      title: "Plumbing Services",
+      description: "Quick response plumbing services for leaks, repairs, and installations. No job too small. Licensed plumbers available 24/7 for all your plumbing needs.",
+      icon: <Droplet className="h-12 w-12 text-primary" />,
       image:
-        "https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       features: [
-        "Wiring and rewiring services",
-        "Electrical panel upgrades",
-        "Lighting installation and repair",
+        "Leak repairs",
+        "Faucet and fixture installation",
+        "Drain cleaning",
+        "Toilet repair",
+        "Pipe repairs",
+        "Water heater service",
+      ],
+    },
+    {
+      id: "electrical-services",
+      title: "Electrical Services",
+      description: "Licensed electricians for outlets, switches, repairs, and safety inspections. Always available for electrical emergencies and routine work.",
+      icon: <Zap className="h-12 w-12 text-primary" />,
+      image:
+        "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      features: [
         "Outlet and switch installation",
-        "Emergency electrical services",
-        "Commercial electrical solutions",
+        "Circuit breaker repairs",
+        "Lighting installation",
+        "Electrical troubleshooting",
+        "Panel upgrades",
+        "Safety inspections",
+      ],
+    },
+    {
+      id: "masonry-services",
+      title: "Masonry Services",
+      description: "Expert masonry work from small repairs to larger projects. Brick, stone, and concrete specialists. Quality craftsmanship for all your masonry needs.",
+      icon: <Building className="h-12 w-12 text-primary" />,
+      image:
+        "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      features: [
+        "Brick and stone repairs",
+        "Chimney repair",
+        "Patio and walkway work",
+        "Foundation repairs",
+        "Tuckpointing",
+        "Masonry restoration",
+      ],
+    },
+    {
+      id: "handyman-services",
+      title: "Handyman Services",
+      description: "Complete handyman solutions for all your home repair and maintenance needs. No job too small! Quick, reliable service for all your odd jobs.",
+      icon: <Wrench className="h-12 w-12 text-primary" />,
+      image:
+        "https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      features: [
+        "Furniture assembly",
+        "Door and window repairs",
+        "Cabinet work",
+        "Painting and touch-ups",
+        "Drywall repairs",
+        "General maintenance",
+      ],
+    },
+    {
+      id: "home-renovations",
+      title: "Home Renovations",
+      description: "Full-service home renovations from kitchen and bathroom remodels to complete home transformations. Expert project management from start to finish.",
+      icon: <Home className="h-12 w-12 text-primary" />,
+      image:
+        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      features: [
+        "Kitchen renovations",
+        "Bathroom renovations",
+        "Room additions",
+        "Basement finishing",
+        "Whole home renovations",
+        "Design consultation",
+      ],
+    },
+    {
+      id: "painting-services",
+      title: "Painting Services",
+      description: "Professional interior and exterior painting services. Quality finishes for your home or business. Expert painters with attention to detail.",
+      icon: <Paintbrush className="h-12 w-12 text-primary" />,
+      image:
+        "https://images.unsplash.com/photo-1563453392212-326f5e854473?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      features: [
+        "Interior painting",
+        "Exterior painting",
+        "Cabinet painting",
+        "Deck and fence staining",
+        "Color consultation",
+        "Pressure washing prep",
       ],
     },
     {
       id: "roofing-services",
       title: "Roofing Services",
-      description: "Professional roofing services to protect your property and enhance its curb appeal.",
+      description: "Expert roofing installation, repair, and maintenance. Protect your home with quality roofing solutions. Licensed and insured roofers.",
       icon: <Home className="h-12 w-12 text-primary" />,
       image:
-        "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       features: [
-        "Roof installation and replacement",
-        "Roof repair and maintenance",
-        "Gutter installation and repair",
-        "Roof inspection services",
-        "Emergency roofing services",
-        "Commercial roofing solutions",
-
+        "Roof installation",
+        "Roof repairs",
+        "Roof replacement",
+        "Leak detection and repair",
+        "Gutter installation",
+        "Roof inspections",
       ],
     },
     {
-      id: "hvac-services",
-      title: "HVAC Services",
-      description: "Heating, ventilation, and air conditioning services to keep your property comfortable and energy-efficient.",
-      icon: <AirVent className="h-12 w-12 text-primary" />,
+      id: "siding-services",
+      title: "Siding Services",
+      description: "Professional siding installation and repair. Enhance your home's curb appeal and protection. Expert installation for all siding types.",
+      icon: <Building2 className="h-12 w-12 text-primary" />,
       image:
-        "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       features: [
-        "System installation and replacement",
-        "HVAC repair and maintenance",
-        "Duct cleaning and repair",
-        "Indoor air quality services",
-        "Emergency HVAC services",
-        "Commercial HVAC solutions",
+        "Siding installation",
+        "Siding repair",
+        "Siding replacement",
+        "Vinyl siding",
+        "Fiber cement siding",
+        "Siding maintenance",
       ],
     },
   ]
@@ -85,18 +161,18 @@ export default function ServicesPage() {
   return (
     <>
     <Head>
-        <title>Our Services | Horizon Fix – Comprehensive Construction & Renovation Solutions</title>
-        <meta name="description" content="Explore the full range of services at Horizon Fix – from construction, renovation, interior design, and architecture to maintenance and material supply. We deliver expert solutions for plumbing, electrical, HVAC, and remodeling needs." />
+        <title>Our Services | Horizon Fix – Always On Call Handyman & Home Service Experts</title>
+        <meta name="description" content="Always on call for HVAC, plumbing, electrical, masonry, handyman services, painting, roofing, siding, and home renovations. No job too small. Expert tradespeople available 24/7 for all your home service needs." />
         <link rel="canonical" href="https://horizonfix.com/services" />
         {/* Open Graph Tags */}
-        <meta property="og:title" content="Our Services | Horizon Fix – Comprehensive Construction & Renovation Solutions" />
-        <meta property="og:description" content="Discover expert construction, renovation, plumbing, electrical, HVAC, and remodeling services at Horizon Fix. We tailor our solutions to meet your project needs." />
+        <meta property="og:title" content="Our Services | Horizon Fix – Always On Call Handyman & Home Service Experts" />
+        <meta property="og:description" content="Discover expert HVAC, plumbing, electrical, masonry, handyman, painting, roofing, siding, and home renovation services at Horizon Fix. Always on call, quick response times, no job too small." />
         <meta property="og:url" content="https://horizonfix.com/services" />
         <meta property="og:type" content="website" />
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Our Services | Horizon Fix – Comprehensive Construction & Renovation Solutions" />
-        <meta name="twitter:description" content="Explore a full range of services at Horizon Fix – expert solutions in construction, renovation, plumbing, electrical, HVAC, and remodeling." />
+        <meta name="twitter:title" content="Our Services | Horizon Fix – Always On Call Handyman & Home Service Experts" />
+        <meta name="twitter:description" content="Always on call for HVAC, plumbing, electrical, masonry, handyman services, painting, roofing, siding, and home renovations. Expert tradespeople available 24/7." />
       </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
@@ -105,7 +181,7 @@ export default function ServicesPage() {
           className="absolute inset-0 opacity-30"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')",
+              "url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -114,8 +190,7 @@ export default function ServicesPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-5xl font-bold mb-6">Our Services</h1>
             <p className="text-lg md:text-xl text-gray-300">
-              We offer a comprehensive range of construction and renovation services tailored to meet your specific
-              needs and exceed your expectations.
+              Always on call for HVAC, plumbing, electrical, masonry, handyman services, painting, roofing, siding, and home renovations. No job too small—quick response times, expert tradespeople available 24/7.
             </p>
           </div>
         </div>
@@ -125,10 +200,9 @@ export default function ServicesPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Comprehensive Construction Solutions</h2>
+            <h2 className="text-3xl font-bold mb-4">Comprehensive Home Solutions</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              From initial concept to final completion, we provide end-to-end services to bring your construction and
-              renovation projects to life.
+              From small repairs to full home renovations, we provide expert services across all trades including HVAC, plumbing, electrical, masonry, handyman, painting, roofing, and siding. Always on call, quick response times, and no job too small.
             </p>
           </div>
 
@@ -191,7 +265,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Contact us today to discuss your construction or renovation needs and get a free consultation.
+            Contact us today to discuss your HVAC, plumbing, electrical, masonry, handyman, painting, roofing, siding, or renovation needs. Always on call, always ready to help.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link

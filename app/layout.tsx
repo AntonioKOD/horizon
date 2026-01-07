@@ -2,12 +2,11 @@ import type React from "react"
 import "./globals.css"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import { EmergencyButton } from "@/components/emergency-button"
 
 export const metadata = {
-  title: "Horizon Fix - Building Tomorrow's Infrastructure Today",
+  title: "Horizon Fix - Always On Call Handyman & Home Service Experts",
   description:
-    "Horizon Fix delivers exceptional construction and renovation services with precision, reliability, and innovation.",
+    "Horizon Fix - Always on call for HVAC, plumbing, electrical, masonry, and handyman services. No job too small, quick response times, expert tradespeople available 24/7.",
 }
 
 export default function RootLayout({
@@ -21,7 +20,6 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
-          <EmergencyButton />
       </body>
     </html>
   )

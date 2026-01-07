@@ -4,11 +4,7 @@ import { useEffect, useRef } from "react"
 import Link from "next/link"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { ArrowRight, AirVent, Home, UtilityPole } from "lucide-react"
-import { Icon } from "lucide-react"
-import { faucet } from '@lucide/lab'
-
-const Plumbing = ({ className }: { className?: string }) => <Icon iconNode={faucet} size={24} className={className} />
+import { ArrowRight, Wrench, Home, Wind, Droplet, Zap, Hammer, Building, Paintbrush, Building2 } from "lucide-react"
 
 export function ServicesSection() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -58,68 +54,147 @@ export function ServicesSection() {
 
   const services = [
     {
-      id: "plumbing",
-      title: "Plumbing",
-      description: "Our expert plumbing teams ensure efficient and reliable solutions for both residential and commercial properties.",
-      icon: <Plumbing className="h-12 w-12 text-primary" />,
+      id: "hvac-services",
+      title: "HVAC Services",
+      description: "Expert HVAC repairs, maintenance, and installations. Always on call for heating and cooling emergencies.",
+      icon: <Wind className="h-12 w-12 text-primary" />,
       image:
-        "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1621905251918-48116d1b5b21?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       features: [
-        "Installation and repair services",
-        "Water heater services",
-        "Pipe maintenance and repair",
-        "Drain cleaning services",
-        "Emergency plumbing services",
-        "Commercial plumbing solutions",
+        "AC repair and maintenance",
+        "Heating system repairs",
+        "Ductwork cleaning",
+        "Thermostat installation",
+        "Filter replacement",
+        "Emergency HVAC service",
       ],
     },
     {
-      id: "Electrical Services",
-      title: "Electrical Services",
-      description: "Professional electrical services for residential and commercial properties to ensure safety and efficiency.",
-      icon: <UtilityPole className="h-12 w-12 text-primary" />,
+      id: "plumbing-services",
+      title: "Plumbing Services",
+      description: "Quick response plumbing services for leaks, repairs, and installations. No job too small.",
+      icon: <Droplet className="h-12 w-12 text-primary" />,
       image:
-        "https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       features: [
-        "Wiring and rewiring services",
-        "Electrical panel upgrades",
-        "Lighting installation and repair",
+        "Leak repairs",
+        "Faucet and fixture installation",
+        "Drain cleaning",
+        "Toilet repair",
+        "Pipe repairs",
+        "Water heater service",
+      ],
+    },
+    {
+      id: "electrical-services",
+      title: "Electrical Services",
+      description: "Licensed electricians for outlets, switches, repairs, and safety inspections. Always available.",
+      icon: <Zap className="h-12 w-12 text-primary" />,
+      image:
+        "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      features: [
         "Outlet and switch installation",
-        "Emergency electrical services",
-        "Commercial electrical solutions",
+        "Circuit breaker repairs",
+        "Lighting installation",
+        "Electrical troubleshooting",
+        "Panel upgrades",
+        "Safety inspections",
+      ],
+    },
+    {
+      id: "masonry-services",
+      title: "Masonry Services",
+      description: "Expert masonry work from small repairs to larger projects. Brick, stone, and concrete specialists.",
+      icon: <Building className="h-12 w-12 text-primary" />,
+      image:
+        "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      features: [
+        "Brick and stone repairs",
+        "Chimney repair",
+        "Patio and walkway work",
+        "Foundation repairs",
+        "Tuckpointing",
+        "Masonry restoration",
+      ],
+    },
+    {
+      id: "handyman-services",
+      title: "Handyman Services",
+      description: "Complete handyman solutions for all your home repair and maintenance needs. No job too small!",
+      icon: <Wrench className="h-12 w-12 text-primary" />,
+      image:
+        "https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      features: [
+        "Furniture assembly",
+        "Door and window repairs",
+        "Cabinet work",
+        "Painting and touch-ups",
+        "Drywall repairs",
+        "General maintenance",
+      ],
+    },
+    {
+      id: "home-renovations",
+      title: "Home Renovations",
+      description: "Full-service home renovations from kitchen and bathroom remodels to complete home transformations.",
+      icon: <Home className="h-12 w-12 text-primary" />,
+      image:
+        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      features: [
+        "Kitchen renovations",
+        "Bathroom renovations",
+        "Room additions",
+        "Basement finishing",
+        "Whole home renovations",
+        "Design consultation",
+      ],
+    },
+    {
+      id: "painting-services",
+      title: "Painting Services",
+      description: "Professional interior and exterior painting services. Quality finishes for your home or business.",
+      icon: <Paintbrush className="h-12 w-12 text-primary" />,
+      image:
+        "https://images.unsplash.com/photo-1563453392212-326f5e854473?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      features: [
+        "Interior painting",
+        "Exterior painting",
+        "Cabinet painting",
+        "Deck and fence staining",
+        "Color consultation",
+        "Pressure washing prep",
       ],
     },
     {
       id: "roofing-services",
       title: "Roofing Services",
-      description: "Professional roofing services to protect your property and enhance its curb appeal.",
+      description: "Expert roofing installation, repair, and maintenance. Protect your home with quality roofing solutions.",
       icon: <Home className="h-12 w-12 text-primary" />,
       image:
-        "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       features: [
-        "Roof installation and replacement",
-        "Roof repair and maintenance",
-        "Gutter installation and repair",
-        "Roof inspection services",
-        "Emergency roofing services",
-        "Commercial roofing solutions",
-
+        "Roof installation",
+        "Roof repairs",
+        "Roof replacement",
+        "Leak detection and repair",
+        "Gutter installation",
+        "Roof inspections",
       ],
     },
     {
-      id: "hvac-services",
-      title: "HVAC Services",
-      description: "Heating, ventilation, and air conditioning services to keep your property comfortable and energy-efficient.",
-      icon: <AirVent className="h-12 w-12 text-primary" />,
+      id: "siding-services",
+      title: "Siding Services",
+      description: "Professional siding installation and repair. Enhance your home's curb appeal and protection.",
+      icon: <Building2 className="h-12 w-12 text-primary" />,
       image:
-        "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       features: [
-        "System installation and replacement",
-        "HVAC repair and maintenance",
-        "Duct cleaning and repair",
-        "Indoor air quality services",
-        "Emergency HVAC services",
-        "Commercial HVAC solutions",
+        "Siding installation",
+        "Siding repair",
+        "Siding replacement",
+        "Vinyl siding",
+        "Fiber cement siding",
+        "Siding maintenance",
       ],
     },
   ]
@@ -131,7 +206,7 @@ export function ServicesSection() {
       className="py-12 bg-gray-50"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')",
+          "url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
@@ -143,7 +218,7 @@ export function ServicesSection() {
         <div className="text-center mb-10">
           <h2 className="services-title text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            We offer a comprehensive range of construction and renovation services to meet all your building needs.
+            Always on call for HVAC, plumbing, electrical, masonry, handyman services, painting, roofing, siding, and home renovations. No job too small—quick response times, expert tradespeople.
           </p>
         </div>
 
@@ -157,7 +232,7 @@ export function ServicesSection() {
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
               <p className="text-gray-600 mb-3">{service.description}</p>
               <Link
-                href={`/services#${service.title.toLowerCase()}`}
+                href={`/services#${service.id}`}
                 className="text-primary font-medium flex items-center hover:underline"
               >
                 Learn more <ArrowRight className="ml-1 h-4 w-4" />

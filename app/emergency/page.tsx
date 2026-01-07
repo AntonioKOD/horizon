@@ -10,23 +10,23 @@ export const metadata = {
 export default function EmergencyPage() {
   const emergencyServices = [
     {
-      title: "Structural Damage",
-      description: "Immediate assessment and temporary solutions for structural issues that pose safety risks.",
+      title: "HVAC Emergencies",
+      description: "24/7 emergency HVAC service for heating and cooling failures, especially during extreme weather conditions.",
       icon: <ShieldAlert className="h-10 w-10 text-red-500" />,
     },
     {
-      title: "Water Damage",
-      description: "Rapid response to flooding, leaks, and water damage to prevent further destruction.",
+      title: "Plumbing Emergencies",
+      description: "Rapid response to flooding, leaks, burst pipes, and water damage to prevent further destruction.",
       icon: <AlertTriangle className="h-10 w-10 text-red-500" />,
     },
     {
-      title: "Electrical Issues",
-      description: "Emergency electrical repairs to restore power and address safety hazards.",
+      title: "Electrical Emergencies",
+      description: "Emergency electrical repairs to restore power and address safety hazards, including outages and sparking.",
       icon: <AlertTriangle className="h-10 w-10 text-red-500" />,
     },
     {
-      title: "Storm Damage",
-      description: "Quick assessment and temporary repairs following severe weather events.",
+      title: "Masonry & Structural",
+      description: "Immediate assessment and temporary solutions for structural issues, foundation problems, and masonry damage that pose safety risks.",
       icon: <ShieldAlert className="h-10 w-10 text-red-500" />,
     },
   ]
@@ -35,17 +35,17 @@ export default function EmergencyPage() {
     <>
     <Head>
         <title>Emergency Services | Horizon Fix – 24/7 Rapid Repairs & Support</title>
-        <meta name="description" content="When emergencies strike, Horizon Fix is here 24/7 to deliver rapid, reliable repairs in plumbing, electrical, HVAC, and remodeling. Count on our expert team to restore comfort fast." />
+        <meta name="description" content="When emergencies strike, Horizon Fix is here 24/7 to deliver rapid, reliable repairs in HVAC, plumbing, electrical, masonry, and handyman services. Always on call, always ready to help." />
         <link rel="canonical" href="https://horizonfix.com/emergency" />
         {/* Open Graph Tags */}
         <meta property="og:title" content="Emergency Services | Horizon Fix – 24/7 Rapid Repairs & Support" />
-        <meta property="og:description" content="For urgent repairs in plumbing, electrical, HVAC, or remodeling, trust Horizon Fix’s emergency services. We provide swift, expert support around the clock." />
+        <meta property="og:description" content="For urgent repairs in HVAC, plumbing, electrical, masonry, or handyman services, trust Horizon Fix's emergency services. We provide swift, expert support around the clock." />
         <meta property="og:url" content="https://horizonfix.com/emergency" />
         <meta property="og:type" content="website" />
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Emergency Services | Horizon Fix – 24/7 Rapid Repairs & Support" />
-        <meta name="twitter:description" content="Need immediate repairs? Horizon Fix offers 24/7 emergency services for plumbing, electrical, HVAC, and remodeling needs, ensuring your home stays safe and comfortable." />
+        <meta name="twitter:description" content="Need immediate repairs? Horizon Fix offers 24/7 emergency services for HVAC, plumbing, electrical, masonry, and handyman needs, ensuring your home stays safe and comfortable." />
       </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
@@ -84,8 +84,7 @@ export default function EmergencyPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Our Emergency Services</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              We provide rapid response to urgent construction and maintenance issues to protect your property and
-              ensure safety.
+              We provide rapid response to urgent HVAC, plumbing, electrical, masonry, and handyman emergencies to protect your property and ensure safety. Always on call, always ready.
             </p>
           </div>
 
@@ -190,7 +189,7 @@ export default function EmergencyPage() {
 
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
                 alt="Emergency Response Team"
                 fill
                 className="object-cover"
@@ -212,8 +211,8 @@ export default function EmergencyPage() {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-3">How does Horizon Fix handle emergency service requests?</h3>
               <p className="text-gray-600">
-              At Horizon Fix, we understand that emergencies can occur at any time. Our platform partners with professionals who offer 24/7
-              emergency services to address urgent issues promptly. When you submit an emergency request, we prioritize matching you with available experts in your area to ensure a swift response.
+              At Horizon Fix, we understand that emergencies can occur at any time. We're always on call with expert tradespeople available 24/7
+              to address urgent HVAC, plumbing, electrical, masonry, and handyman issues promptly. When you call our emergency line, we prioritize your request and dispatch the right professional to your location for a swift response.
               </p>
             </div>
 

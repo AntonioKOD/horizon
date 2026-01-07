@@ -71,10 +71,10 @@ export function AboutSection() {
   }, [])
 
   const features = [
-    "25+ years of industry experience",
-    "Certified and skilled professionals",
-    "Quality materials and craftsmanship",
-    "On-time project completion",
+    "Always on call - 24/7 availability",
+    "Expert tradespeople in all fields",
+    "No job too small",
+    "Quick response times",
   ]
 
   return (
@@ -83,7 +83,7 @@ export function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="about-image relative h-[400px] rounded-lg overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
               alt="About Horizon Fix"
               fill
               className="object-cover"
@@ -93,9 +93,8 @@ export function AboutSection() {
           <div className="about-content">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">About Horizon Fix</h2>
             <p className="text-lg text-gray-700 mb-4">
-              Since our founding, Horizon Fix has been at the forefront of the construction industry, delivering
-              exceptional building solutions that stand the test of time. Our commitment to quality, innovation, and
-              customer satisfaction has made us a trusted partner for projects of all sizes.
+              Horizon Fix is your trusted partner for all home service needs. We're always on call for HVAC, plumbing, electrical, masonry, and handyman services. 
+              From small repairs to home renovations, we provide expert tradespeople who respond quickly and deliver quality work. No job is too small—we're here 24/7.
             </p>
 
             <div className="about-features grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
