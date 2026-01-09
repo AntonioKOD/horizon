@@ -59,7 +59,7 @@ export function ServicesSection() {
       description: "Expert HVAC repairs, maintenance, and installations. Always on call for heating and cooling emergencies.",
       icon: <Wind className="h-12 w-12 text-primary" />,
       image:
-        "https://images.unsplash.com/photo-1621905251918-48116d1b5b21?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/eTzBJAcNEkNEblop.jpg",
       features: [
         "AC repair and maintenance",
         "Heating system repairs",
@@ -75,7 +75,7 @@ export function ServicesSection() {
       description: "Quick response plumbing services for leaks, repairs, and installations. No job too small.",
       icon: <Droplet className="h-12 w-12 text-primary" />,
       image:
-        "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/VLwawltljfTVIhKk.jpg",
       features: [
         "Leak repairs",
         "Faucet and fixture installation",
@@ -91,7 +91,7 @@ export function ServicesSection() {
       description: "Licensed electricians for outlets, switches, repairs, and safety inspections. Always available.",
       icon: <Zap className="h-12 w-12 text-primary" />,
       image:
-        "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/yfVBWFIqlCOmzCZq.jpg",
       features: [
         "Outlet and switch installation",
         "Circuit breaker repairs",
@@ -107,7 +107,7 @@ export function ServicesSection() {
       description: "Expert masonry work from small repairs to larger projects. Brick, stone, and concrete specialists.",
       icon: <Building className="h-12 w-12 text-primary" />,
       image:
-        "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/oqDtRorPcRNtKeAK.jpg",
       features: [
         "Brick and stone repairs",
         "Chimney repair",
@@ -123,7 +123,7 @@ export function ServicesSection() {
       description: "Complete handyman solutions for all your home repair and maintenance needs. No job too small!",
       icon: <Wrench className="h-12 w-12 text-primary" />,
       image:
-        "https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/ePwFtRArjRhKTYan.webp",
       features: [
         "Furniture assembly",
         "Door and window repairs",
@@ -139,7 +139,7 @@ export function ServicesSection() {
       description: "Full-service home renovations from kitchen and bathroom remodels to complete home transformations.",
       icon: <Home className="h-12 w-12 text-primary" />,
       image:
-        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/TVTfgVmTqsleMkAd.jpg",
       features: [
         "Kitchen renovations",
         "Bathroom renovations",
@@ -155,7 +155,7 @@ export function ServicesSection() {
       description: "Professional interior and exterior painting services. Quality finishes for your home or business.",
       icon: <Paintbrush className="h-12 w-12 text-primary" />,
       image:
-        "https://images.unsplash.com/photo-1563453392212-326f5e854473?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/vyOzVoPWZGJBPMWg.jpg",
       features: [
         "Interior painting",
         "Exterior painting",
@@ -171,7 +171,7 @@ export function ServicesSection() {
       description: "Expert roofing installation, repair, and maintenance. Protect your home with quality roofing solutions.",
       icon: <Home className="h-12 w-12 text-primary" />,
       image:
-        "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/RFnZpnSPcjCwERUt.jpg",
       features: [
         "Roof installation",
         "Roof repairs",
@@ -187,7 +187,7 @@ export function ServicesSection() {
       description: "Professional siding installation and repair. Enhance your home's curb appeal and protection.",
       icon: <Building2 className="h-12 w-12 text-primary" />,
       image:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/yEUwZqMREbANDbkM.jpg",
       features: [
         "Siding installation",
         "Siding repair",

@@ -49,7 +49,7 @@ export default function ContactPage() {
           className="absolute inset-0 opacity-30"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')",
+              "url('https://files.manuscdn.com/user_upload_by_module/session_file/110397790/KBLcXbqbAbNUkoee.jpeg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

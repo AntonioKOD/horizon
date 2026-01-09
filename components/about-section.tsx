@@ -83,7 +83,7 @@ export function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="about-image relative h-[400px] rounded-lg overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/110397790/sEXtsZuhzSZMyOHQ.jpg"
               alt="About Horizon Fix"
               fill
               className="object-cover"
