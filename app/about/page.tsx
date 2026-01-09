@@ -137,8 +137,8 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Achievements</h2>
               <p className="text-lg text-gray-700 mb-6">
-                Over the years, Horizon Fix has been recognized for our commitment to excellence, innovation, and
-                sustainable practices in the construction industry.
+                Over the years, Horizon Fix has been recognized for our commitment to excellence, quick response times, and
+                quality workmanship in home services. We&apos;re proud of the trust our customers place in us.
               </p>
 
               <div className="space-y-4">
@@ -169,24 +169,24 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 gap-6">
               <div className="relative h-64 rounded-lg overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                  alt="Award Ceremony"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/110397790/sEXtsZuhzSZMyOHQ.jpg"
+                  alt="Professional Team"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                  alt="Green Building"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/110397790/ePwFtRArjRhKTYan.webp"
+                  alt="Expert Handyman Services"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                  alt="Completed Project"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/110397790/TVTfgVmTqsleMkAd.jpg"
+                  alt="Completed Renovation Project"
                   fill
                   className="object-cover"
                 />
