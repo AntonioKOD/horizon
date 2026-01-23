@@ -2,6 +2,7 @@ import type React from "react"
 import "./globals.css"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import {GoogleAnalytics} from "@next/third-parties/google"
 
 export const metadata = {
   title: "Horizon Fix - Always On Call Handyman & Home Service Experts",
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <GoogleAnalytics gaId="G-DX5YDB1X36" />
           <Navbar />
           {children}
           <Footer />
