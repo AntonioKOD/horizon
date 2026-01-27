@@ -5,9 +5,9 @@ import { Footer } from "@/components/footer"
 import {GoogleAnalytics} from "@next/third-parties/google"
 
 export const metadata = {
-  title: "Horizon Fix - Always On Call Handyman & Home Service Experts",
+  title: "Horizon Fix - Always On Call Handyman & Home Service Experts | South Shore MA",
   description:
-    "Horizon Fix - Always on call for HVAC, plumbing, electrical, masonry, and handyman services. No job too small, quick response times, expert tradespeople available 24/7.",
+    "Horizon Fix - Always on call for HVAC, plumbing, electrical, masonry, and handyman services throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. No job too small, quick response times, expert tradespeople available 24/7.",
 }
 
 export default function RootLayout({

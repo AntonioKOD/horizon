@@ -3,27 +3,27 @@ import { ProjectsGrid } from "@/components/projects-grid"
 import Head from "next/head"
 
 export const metadata = {
-  title: "Our Projects - Horizon Fix",
+  title: "Our Projects - Horizon Fix | South Shore MA",
   description:
-    "Explore our portfolio of completed construction and renovation projects showcasing our expertise and craftsmanship.",
+    "Explore our portfolio of completed construction and renovation projects throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. Showcasing our expertise and craftsmanship.",
 }
 
 export default function ProjectsPage() {
   return (
     <>
     <Head>
-        <title>Our Projects | Horizon Fix – Innovative Construction & Renovation Portfolio</title>
-        <meta name="description" content="Browse our portfolio to see how Horizon Fix brings visions to life with expert craftsmanship in construction, renovation, plumbing, electrical, HVAC, and remodeling projects." />
+        <title>Our Projects | Horizon Fix – Innovative Construction & Renovation Portfolio | South Shore MA</title>
+        <meta name="description" content="Browse our portfolio to see how Horizon Fix brings visions to life with expert craftsmanship in construction, renovation, plumbing, electrical, HVAC, and remodeling projects throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns." />
         <link rel="canonical" href="https://horizonfix.com/projects" />
         {/* Open Graph Tags */}
-        <meta property="og:title" content="Our Projects | Horizon Fix – Innovative Construction & Renovation Portfolio" />
-        <meta property="og:description" content="View our diverse portfolio showcasing quality construction, renovation, and remodeling projects. See examples of our work in plumbing, electrical, HVAC, and more." />
+        <meta property="og:title" content="Our Projects | Horizon Fix – Innovative Construction & Renovation Portfolio | South Shore MA" />
+        <meta property="og:description" content="View our diverse portfolio showcasing quality construction, renovation, and remodeling projects throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. See examples of our work in plumbing, electrical, HVAC, and more." />
         <meta property="og:url" content="https://horizonfix.com/projects" />
         <meta property="og:type" content="website" />
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Our Projects | Horizon Fix – Innovative Construction & Renovation Portfolio" />
-        <meta name="twitter:description" content="Explore Horizon Fix’s portfolio of innovative projects covering construction, renovation, plumbing, electrical, HVAC, and remodeling services." />
+        <meta name="twitter:title" content="Our Projects | Horizon Fix – Innovative Construction & Renovation Portfolio | South Shore MA" />
+        <meta name="twitter:description" content="Explore Horizon Fix’s portfolio of innovative projects covering construction, renovation, plumbing, electrical, HVAC, and remodeling services throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns." />
       </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}

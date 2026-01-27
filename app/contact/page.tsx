@@ -29,18 +29,18 @@ export default function ContactPage() {
   return (
     <>
     <Head>
-        <title>Contact Horizon Fix | Always On Call Handyman & Home Service Experts</title>
-        <meta name="description" content="Reach out to Horizon Fix for HVAC, plumbing, electrical, masonry, handyman, and home renovation services. Always on call, quick response times, expert tradespeople available 24/7." />
+        <title>Contact Horizon Fix | Always On Call Handyman & Home Service Experts | South Shore MA</title>
+        <meta name="description" content="Reach out to Horizon Fix for HVAC, plumbing, electrical, masonry, handyman, and home renovation services throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. Always on call, quick response times, expert tradespeople available 24/7." />
         <link rel="canonical" href="https://horizonfix.com/contact" />
         {/* Open Graph Tags */}
-        <meta property="og:title" content="Contact Horizon Fix | Always On Call Handyman & Home Service Experts" />
-        <meta property="og:description" content="Contact Horizon Fix today for expert HVAC, plumbing, electrical, masonry, handyman, and home renovation services. Always on call, always ready to help." />
+        <meta property="og:title" content="Contact Horizon Fix | Always On Call Handyman & Home Service Experts | South Shore MA" />
+        <meta property="og:description" content="Contact Horizon Fix today for expert HVAC, plumbing, electrical, masonry, handyman, and home renovation services throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. Always on call, always ready to help." />
         <meta property="og:url" content="https://horizonfix.com/contact" />
         <meta property="og:type" content="website" />
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact Horizon Fix | Always On Call Handyman & Home Service Experts" />
-        <meta name="twitter:description" content="Reach out to Horizon Fix for expert HVAC, plumbing, electrical, masonry, handyman, and home renovation services. Always on call, quick response times." />
+        <meta name="twitter:title" content="Contact Horizon Fix | Always On Call Handyman & Home Service Experts | South Shore MA" />
+        <meta name="twitter:description" content="Reach out to Horizon Fix for expert HVAC, plumbing, electrical, masonry, handyman, and home renovation services throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. Always on call, quick response times." />
       </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
@@ -102,7 +102,7 @@ export default function ContactPage() {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-3">What areas do you serve?</h3>
               <p className="text-gray-600">
-                We primarily serve Massachusetts. For larger projects, we may consider locations outside of our
+                We primarily serve the South Shore area of Massachusetts, including communities from Quincy to Plymouth and surrounding towns. For larger projects, we may consider locations outside of our
                 primary service area.
               </p>
             </div>

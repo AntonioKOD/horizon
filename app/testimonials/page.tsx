@@ -3,8 +3,8 @@ import Link from "next/link"
 import { TestimonialForm } from "@/components/testimonial-form"
 
 export const metadata = {
-  title: "Testimonials - Horizon Fix",
-  description: "Read what our clients say about their experience working with Horizon Fix for HVAC, plumbing, electrical, masonry, handyman, and home renovation services.",
+  title: "Testimonials - Horizon Fix | South Shore MA",
+  description: "Read what our clients say about their experience working with Horizon Fix for HVAC, plumbing, electrical, masonry, handyman, and home renovation services throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns.",
 }
 
 export default function TestimonialsPage() {

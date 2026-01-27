@@ -3,8 +3,8 @@ import Link from "next/link"
 import { Phone, Clock, ShieldAlert, AlertTriangle } from "lucide-react"
 import Head from "next/head"
 export const metadata = {
-  title: "Emergency Services - Horizon Fix",
-  description: "24/7 emergency construction and repair services from Horizon Fix.",
+  title: "Emergency Services - Horizon Fix | South Shore MA",
+  description: "24/7 emergency construction and repair services from Horizon Fix throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns.",
 }
 
 export default function EmergencyPage() {
@@ -34,18 +34,18 @@ export default function EmergencyPage() {
   return (
     <>
     <Head>
-        <title>Emergency Services | Horizon Fix – 24/7 Rapid Repairs & Support</title>
-        <meta name="description" content="When emergencies strike, Horizon Fix is here 24/7 to deliver rapid, reliable repairs in HVAC, plumbing, electrical, masonry, and handyman services. Always on call, always ready to help." />
+        <title>Emergency Services | Horizon Fix – 24/7 Rapid Repairs & Support | South Shore MA</title>
+        <meta name="description" content="When emergencies strike, Horizon Fix is here 24/7 to deliver rapid, reliable repairs in HVAC, plumbing, electrical, masonry, and handyman services throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. Always on call, always ready to help." />
         <link rel="canonical" href="https://horizonfix.com/emergency" />
         {/* Open Graph Tags */}
-        <meta property="og:title" content="Emergency Services | Horizon Fix – 24/7 Rapid Repairs & Support" />
-        <meta property="og:description" content="For urgent repairs in HVAC, plumbing, electrical, masonry, or handyman services, trust Horizon Fix's emergency services. We provide swift, expert support around the clock." />
+        <meta property="og:title" content="Emergency Services | Horizon Fix – 24/7 Rapid Repairs & Support | South Shore MA" />
+        <meta property="og:description" content="For urgent repairs in HVAC, plumbing, electrical, masonry, or handyman services throughout the South Shore of Massachusetts, trust Horizon Fix's emergency services. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. We provide swift, expert support around the clock." />
         <meta property="og:url" content="https://horizonfix.com/emergency" />
         <meta property="og:type" content="website" />
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Emergency Services | Horizon Fix – 24/7 Rapid Repairs & Support" />
-        <meta name="twitter:description" content="Need immediate repairs? Horizon Fix offers 24/7 emergency services for HVAC, plumbing, electrical, masonry, and handyman needs, ensuring your home stays safe and comfortable." />
+        <meta name="twitter:title" content="Emergency Services | Horizon Fix – 24/7 Rapid Repairs & Support | South Shore MA" />
+        <meta name="twitter:description" content="Need immediate repairs? Horizon Fix offers 24/7 emergency services for HVAC, plumbing, electrical, masonry, and handyman needs throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. Ensuring your home stays safe and comfortable." />
       </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
