@@ -17,7 +17,7 @@ export default function ContactPage() {
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: "Email Address",
-      details: ["info@horizonfix.com",],
+      details: ["hello@horizonfix.com",],
     },
     {
       icon: <Clock className="h-6 w-6 text-primary" />,

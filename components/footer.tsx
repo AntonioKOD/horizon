@@ -80,7 +80,7 @@ export function Footer() {
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-3 text-primary" />
-                <span>info@horizonfix.com</span>
+                <span>hello@horizonfix.com</span>
               </li>
             </ul>
           </div>

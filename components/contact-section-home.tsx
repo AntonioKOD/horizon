@@ -156,7 +156,7 @@ export function ContactSectionHome() {
                     <div>
                       <h4 className="font-semibold mb-1">Email Address</h4>
                       <p className="text-white/80">
-                        info@horizonfix.com
+                        hello@horizonfix.com
                       </p>
                     </div>
                   </div>
