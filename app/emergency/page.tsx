@@ -65,10 +65,10 @@ export default function EmergencyPage() {
             <p className="text-xl md:text-2xl mb-8">Immediate response when you need it most.</p>
             <div className="text-3xl font-bold mb-8 flex items-center justify-center">
               <Phone className="h-8 w-8 mr-3 animate-pulse" />
-              +1 (617) 415-8731 
+              +1 978 893 7728 
             </div>
             <Link
-              href="tel:+16174158731"
+              href="tel:+19788937728"
               className="bg-white text-red-600 hover:bg-gray-100 px-8 py-3 rounded-md text-lg font-bold transition-colors inline-flex items-center"
             >
               <Phone className="h-5 w-5 mr-2" />
@@ -120,7 +120,7 @@ export default function EmergencyPage() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Call Our Emergency Line</h3>
               <p className="text-gray-600">
-                Contact our 24/7 emergency hotline at +1 (617) 415-8731 to speak with our emergency response team.
+                Contact our 24/7 emergency hotline at +1 978 893 7728 to speak with our emergency response team.
               </p>
             </div>
 
@@ -163,7 +163,7 @@ export default function EmergencyPage() {
                   <Phone className="h-6 w-6 mr-4 flex-shrink-0" />
                   <div>
                     <h3 className="text-xl font-semibold">Emergency Hotline</h3>
-                    <p className="text-xl">+1 (617) 415-8731</p>
+                    <p className="text-xl">+1 978 893 7728</p>
                   </div>
                 </div>
 
@@ -178,7 +178,7 @@ export default function EmergencyPage() {
 
               <div className="mt-8">
                 <Link
-                  href="tel:+16174158731"
+                  href="tel:+19788937728"
                   className="bg-white text-red-600 hover:bg-gray-100 px-8 py-3 rounded-md text-lg font-bold transition-colors inline-flex items-center"
                 >
                   <Phone className="h-5 w-5 mr-2" />

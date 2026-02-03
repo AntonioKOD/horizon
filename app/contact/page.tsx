@@ -12,7 +12,7 @@ export default function ContactPage() {
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
       title: "Phone Number",
-      details: ["+1 (617) 415-8731",],
+      details: ["+1 978 893 7728",],
     },
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
@@ -144,7 +144,7 @@ export default function ContactPage() {
           </p>
           <div className="text-2xl font-bold flex items-center justify-center">
             <Phone className="h-6 w-6 mr-2 animate-pulse" />
-            Emergency Hotline: +1 (617) 415-8731
+            Emergency Hotline: +1 978 893 7728
           </div>
         </div>
       </section>
