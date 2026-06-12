@@ -1,10 +1,16 @@
 import { ContactSectionHome } from "@/components/contact-section-home"
 import { Mail, Phone, Clock } from "lucide-react"
-import Head from "next/head"
 
 export const metadata = {
-  title: "Contact Us - Horizon Fix",
+  title: "Contact Us | South Shore MA",
   description: "Get in touch with Horizon Fix Plumbing for emergency repairs, drain cleaning, water heater service, and fixture installation.",
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact Horizon Fix Plumbing | South Shore MA",
+    description: "Need a plumber? Contact Horizon Fix Plumbing for fast service, clear communication, and reliable repairs.",
+    url: "https://horizonfix.com/contact",
+    type: "website",
+  },
 }
 
 export default function ContactPage() {
@@ -27,21 +33,6 @@ export default function ContactPage() {
   ]
 
   return (
-    <>
-    <Head>
-        <title>Contact Horizon Fix Plumbing | South Shore MA</title>
-        <meta name="description" content="Reach out to Horizon Fix Plumbing for emergency service, leak repair, drain cleaning, water heater work, and plumbing inspections throughout South Shore Massachusetts." />
-        <link rel="canonical" href="https://horizonfix.com/contact" />
-        {/* Open Graph Tags */}
-        <meta property="og:title" content="Contact Horizon Fix Plumbing | South Shore MA" />
-        <meta property="og:description" content="Need a plumber? Contact Horizon Fix Plumbing for fast service, clear communication, and reliable repairs." />
-        <meta property="og:url" content="https://horizonfix.com/contact" />
-        <meta property="og:type" content="website" />
-        {/* Twitter Card Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact Horizon Fix Plumbing | South Shore MA" />
-        <meta name="twitter:description" content="Contact Horizon Fix Plumbing for emergency plumbing, clogs, leaks, water heaters, and fixture installation." />
-      </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 bg-gray-900 text-white">
@@ -148,7 +139,6 @@ export default function ContactPage() {
         </div>
       </section>
     </main>
-    </>
   )
 }
 

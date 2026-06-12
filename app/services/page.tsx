@@ -1,11 +1,17 @@
 import Image from "next/image"
 import Link from "next/link"
 import { CheckCircle, Wrench, Flame, Droplet, Waves, ShowerHead, AlertTriangle } from "lucide-react"
-import Head from "next/head"
 
 export const metadata = {
-  title: "Plumbing Services - Horizon Fix | South Shore MA",
+  title: "Plumbing Services | South Shore MA",
   description: "Explore plumbing services from Horizon Fix, including emergency plumbing, drain cleaning, water heater repair, leak detection, and fixture installation throughout South Shore Massachusetts.",
+  alternates: { canonical: "/services" },
+  openGraph: {
+    title: "Plumbing Services | Horizon Fix Plumbing | South Shore MA",
+    description: "Need dependable plumbing service? We provide emergency repairs, clog removal, water heater work, and leak solutions for homes and small businesses.",
+    url: "https://horizonfix.com/services",
+    type: "website",
+  },
 }
 
 export default function ServicesPage() {
@@ -109,21 +115,6 @@ export default function ServicesPage() {
   ]
 
   return (
-    <>
-    <Head>
-        <title>Plumbing Services | Horizon Fix Plumbing | South Shore MA</title>
-        <meta name="description" content="Explore our full plumbing service list: emergency plumbing, drain cleaning, water heater repair, leak detection, sewer support, and fixture installation across South Shore Massachusetts." />
-        <link rel="canonical" href="https://horizonfix.com/services" />
-        {/* Open Graph Tags */}
-        <meta property="og:title" content="Plumbing Services | Horizon Fix Plumbing | South Shore MA" />
-        <meta property="og:description" content="Need dependable plumbing service? We provide emergency repairs, clog removal, water heater work, and leak solutions for homes and small businesses." />
-        <meta property="og:url" content="https://horizonfix.com/services" />
-        <meta property="og:type" content="website" />
-        {/* Twitter Card Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Plumbing Services | Horizon Fix Plumbing | South Shore MA" />
-        <meta name="twitter:description" content="From urgent leaks to planned installations, Horizon Fix Plumbing delivers fast, professional plumbing services across South Shore MA." />
-      </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 bg-gray-900 text-white">
@@ -235,6 +226,5 @@ export default function ServicesPage() {
         </div>
       </section>
     </main>
-    </>
   )
 }

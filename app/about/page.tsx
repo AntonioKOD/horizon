@@ -1,10 +1,17 @@
 import Image from "next/image"
 import Link from "next/link"
 import { CheckCircle, Award, Users, Clock, Target, Shield } from "lucide-react"
-import Head from "next/head"
+
 export const metadata = {
-  title: "About Us - Horizon Fix | South Shore MA",
+  title: "About Us | South Shore MA",
   description: "Learn about Horizon Fix Plumbing, our mission, values, and licensed plumbing team serving the South Shore of Massachusetts.",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About Us | Horizon Fix Plumbing | South Shore MA",
+    description: "Meet the team behind Horizon Fix Plumbing and our customer-first approach to emergency and everyday plumbing repairs.",
+    url: "https://horizonfix.com/about",
+    type: "website",
+  },
 }
 
 export default function AboutPage() {
@@ -38,21 +45,6 @@ export default function AboutPage() {
   ]
 
   return (
-    <>
-   <Head>
-        <title>About Us | Horizon Fix Plumbing | South Shore MA</title>
-        <meta name="description" content="Learn about Horizon Fix Plumbing and our commitment to fast, professional plumbing service throughout South Shore Massachusetts." />
-        <link rel="canonical" href="https://horizonfix.com/about" />
-        {/* Open Graph Tags */}
-        <meta property="og:title" content="About Us | Horizon Fix Plumbing | South Shore MA" />
-        <meta property="og:description" content="Meet the team behind Horizon Fix Plumbing and our customer-first approach to emergency and everyday plumbing repairs." />
-        <meta property="og:url" content="https://horizonfix.com/about" />
-        <meta property="og:type" content="website" />
-        {/* Twitter Card Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Us | Horizon Fix Plumbing | South Shore MA" />
-        <meta name="twitter:description" content="Horizon Fix Plumbing is built on honest communication, quality workmanship, and fast response across South Shore MA." />
-      </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 bg-gray-900 text-white">
@@ -226,7 +218,6 @@ export default function AboutPage() {
         </div>
       </section>
     </main>
-    </>
   )
 }
 

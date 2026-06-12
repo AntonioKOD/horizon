@@ -1,30 +1,21 @@
 import Link from "next/link"
 import { ProjectsGrid } from "@/components/projects-grid"
-import Head from "next/head"
 
 export const metadata = {
-  title: "Our Projects - Horizon Fix | South Shore MA",
+  title: "Plumbing Projects | South Shore MA",
   description:
     "Explore our portfolio of completed plumbing projects throughout the South Shore of Massachusetts.",
+  alternates: { canonical: "/projects" },
+  openGraph: {
+    title: "Our Plumbing Projects | Horizon Fix Plumbing | South Shore MA",
+    description: "See real plumbing projects from emergency repairs to full system upgrades completed by Horizon Fix Plumbing.",
+    url: "https://horizonfix.com/projects",
+    type: "website",
+  },
 }
 
 export default function ProjectsPage() {
   return (
-    <>
-    <Head>
-        <title>Our Plumbing Projects | Horizon Fix Plumbing | South Shore MA</title>
-        <meta name="description" content="Browse our plumbing project portfolio including leak repairs, repiping, drain solutions, water heater upgrades, and fixture installations." />
-        <link rel="canonical" href="https://horizonfix.com/projects" />
-        {/* Open Graph Tags */}
-        <meta property="og:title" content="Our Plumbing Projects | Horizon Fix Plumbing | South Shore MA" />
-        <meta property="og:description" content="See real plumbing projects from emergency repairs to full system upgrades completed by Horizon Fix Plumbing." />
-        <meta property="og:url" content="https://horizonfix.com/projects" />
-        <meta property="og:type" content="website" />
-        {/* Twitter Card Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Our Plumbing Projects | Horizon Fix Plumbing | South Shore MA" />
-        <meta name="twitter:description" content="Explore plumbing case studies from Horizon Fix Plumbing across South Shore Massachusetts." />
-      </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 bg-gray-900 text-white">
@@ -74,7 +65,6 @@ export default function ProjectsPage() {
         </div>
       </section>
     </main>
-    </>
   )
 }
 

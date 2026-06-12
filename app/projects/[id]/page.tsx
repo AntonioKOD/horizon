@@ -196,14 +196,15 @@ const resolvedParams = await params
 
   if (!project) {
     return {
-      title: "Project Not Found - Horizon Fix Plumbing",
+      title: "Project Not Found",
       description: "The requested project could not be found.",
     }
   }
 
   return {
-    title: `${project.title} - Horizon Fix Plumbing Projects`,
+    title: project.title,
     description: project.description,
+    alternates: { canonical: `/projects/${project.id}` },
   }
 }
 

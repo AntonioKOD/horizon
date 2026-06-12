@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Mail, Phone,} from "lucide-react"
 import logoLight from '@/public/logohorizon-light.svg'
 import Image from "next/image"
+import { TOWNS } from "@/lib/towns"
 
 export function Footer() {
   return (
@@ -43,6 +44,11 @@ export function Footer() {
                   Contact Us
                 </Link>
               </li>
+              <li>
+                <Link href="/service-areas" className="hover:text-primary transition-colors">
+                  Service Areas
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -50,23 +56,33 @@ export function Footer() {
             <h3 className="text-white text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services" className="hover:text-primary transition-colors">
-                  Plumbing
-                </Link>
-              </li>
-              <li>
-                <Link href="/services#emergency-plumbing" className="hover:text-primary transition-colors">
+                <Link href="/services/emergency-plumbing" className="hover:text-primary transition-colors">
                   Emergency Plumbing
                 </Link>
               </li>
               <li>
-                <Link href="/services#drain-cleaning" className="hover:text-primary transition-colors">
+                <Link href="/services/drain-cleaning" className="hover:text-primary transition-colors">
                   Drain Cleaning
                 </Link>
               </li>
               <li>
-                <Link href="/services#water-heater-services" className="hover:text-primary transition-colors">
+                <Link href="/services/water-heater-services" className="hover:text-primary transition-colors">
                   Water Heaters
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/pipe-leak-repair" className="hover:text-primary transition-colors">
+                  Pipe &amp; Leak Repair
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/fixture-installation" className="hover:text-primary transition-colors">
+                  Fixture Installation
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/sewer-line-services" className="hover:text-primary transition-colors">
+                  Sewer &amp; Main Line
                 </Link>
               </li>
             </ul>
@@ -87,7 +103,21 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-gray-800 mt-12 pt-8">
+          <h3 className="text-white text-sm font-semibold mb-3">Serving the South Shore of Massachusetts</h3>
+          <p className="text-sm leading-relaxed">
+            {TOWNS.map((town, i) => (
+              <span key={town.slug}>
+                <Link href={`/plumber/${town.slug}`} className="hover:text-primary transition-colors">
+                  {town.name}
+                </Link>
+                {i < TOWNS.length - 1 && <span className="text-gray-600"> · </span>}
+              </span>
+            ))}
+          </p>
+        </div>
+
+        <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p>&copy; {new Date().getFullYear()} Horizon Fix. All rights reserved.</p>
           <div className="mt-4 md:mt-0">
             <ul className="flex space-x-6">

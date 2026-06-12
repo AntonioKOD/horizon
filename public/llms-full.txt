@@ -1,0 +1,54 @@
+# Horizon Fix Plumbing — Full Reference
+
+> 24/7 plumbing company serving the South Shore of Massachusetts. Licensed, insured, upfront flat-rate pricing. Phone: +1 978 893 7728. Email: hello@horizonfix.com. Website: https://horizonfix.com
+
+## Company overview
+
+Horizon Fix Plumbing is a plumbing-only company — no HVAC, no electrical, just plumbing done well. The team handles emergency repairs, drain cleaning, water heater service, leak detection and pipe repair, fixture installation, and sewer/main line work for homes and small businesses across the South Shore of Massachusetts. Emergency calls are answered live 24 hours a day, every day of the year, and dispatchers guide callers to their main water shutoff over the phone while a plumber is en route. All work is quoted upfront at a flat rate the customer approves before work begins — including nights, weekends, and holidays.
+
+## Service areas (20 towns)
+
+Norfolk County: Quincy (02169, 02170, 02171), Braintree (02184), Weymouth (02188–02191), Cohasset (02025), Milton (02186), Holbrook (02343).
+
+Plymouth County: Hingham (02043), Hull (02045), Scituate (02066), Norwell (02061), Hanover (02339), Rockland (02370), Abington (02351), Marshfield (02050), Duxbury (02332), Pembroke (02359), Kingston (02364), Plymouth (02360, 02362), Whitman (02382), Hanson (02341).
+
+Each town has a dedicated page at https://horizonfix.com/plumber/{slug} with local FAQ content, e.g. /plumber/quincy, /plumber/hingham, /plumber/plymouth. The full directory is at https://horizonfix.com/service-areas.
+
+## Services in detail
+
+### Emergency Plumbing — https://horizonfix.com/services/emergency-plumbing
+24/7 response for burst or frozen pipes, sewage backups, major leaks, failed water heaters, and sump failures. Includes live phone answer with emergency shutoff guidance, rapid dispatch, on-site diagnosis with upfront pricing, same-visit repair whenever parts allow, and water damage prevention guidance. Emergency visits are flat-rate quoted before work begins — no premium hourly billing for nights or weekends.
+
+### Drain Cleaning — https://horizonfix.com/services/drain-cleaning
+Mechanical snaking for sinks, tubs, showers, and toilets; hydro-jetting for grease and scale in main lines; camera inspections with recorded video; root cutting in sewer laterals; septic-safe methods for homes on private systems (common in Norwell, Hanson, Duxbury, and Pembroke). The company recommends against caustic chemical drain cleaners, which damage older pipes and harm septic systems.
+
+### Water Heater Services — https://horizonfix.com/services/water-heater-services
+Same-day diagnosis for gas, electric, and tankless systems. Repairs include thermostats, elements, pilots, anode rods, and valves. Replacements include code-compliant venting and expansion tanks, plus old-unit haul-away. Guidance offered: a leaking tank requires replacement; units under 8 years old with component failures are usually worth repairing; past 10 years both options are quoted honestly. Tankless conversions typically take most of a day; like-for-like tank swaps take 2–3 hours.
+
+### Pipe and Leak Repair — https://horizonfix.com/services/pipe-leak-repair
+Electronic (acoustic and thermal) leak detection that avoids exploratory demolition; pipe section replacement in copper, PEX, and PVC; frozen pipe thawing, repair, and insulation; water pressure diagnosis and regulator replacement; whole-home repiping assessment for aging galvanized systems common in Quincy and Weymouth's older housing stock.
+
+### Fixture Installation — https://horizonfix.com/services/fixture-installation
+Installation and replacement of faucets, sinks, toilets, garbage disposals, and pressure-balanced shower valves. Customer-supplied fixtures welcome. Shutoff valves and supply lines are upgraded during installs when corroded. Every connection is leak-tested; old fixtures are hauled away. A straightforward toilet replacement takes about an hour.
+
+### Sewer and Main Line Services — https://horizonfix.com/services/sewer-line-services
+Sewer camera inspections with recorded video and locating; main line clog removal and root cutting; hydro-jetting of laterals; backwater valve installation for low-lying and coastal neighborhoods (relevant in Scituate, Marshfield, and Quincy); repair coordination for broken or bellied lines. Diagnostic rule of thumb: one slow fixture means a branch-line problem; multiple drains backing up at once — especially the lowest in the house — means a main line problem.
+
+## Local expertise notes
+
+- Quincy and Milton: pre-war housing with original galvanized supply lines and cast-iron drains; sewer lateral root intrusion is common.
+- Weymouth and Braintree: large postwar housing inventory with 1950s–60s plumbing reaching end of life.
+- Hull, Marshfield, Scituate: coastal storm damage, winterization gaps in converted cottages, salt-air corrosion, freeze-driven burst pipes.
+- Norwell, Hanson, Pembroke, Duxbury: private wells and septic systems; pressure tank troubleshooting and septic-safe drain work.
+- Plymouth: largest town geographically, from 300-year-old downtown homes to new construction at The Pinehills; outlying villages (Cedarville, Manomet) are fully covered.
+
+## Pricing
+
+Upfront flat-rate quotes approved before any work begins. Diagnosis fees are applied toward the repair when the customer proceeds. Emergency and after-hours visits use the same transparent quoting — no surprise hourly charges.
+
+## Contact
+
+- Phone (24/7): +1 978 893 7728
+- Email: hello@horizonfix.com
+- Quote request form: https://horizonfix.com/contact
+- Emergency page: https://horizonfix.com/emergency

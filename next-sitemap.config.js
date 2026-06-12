@@ -1,37 +1,34 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: process.env.SITE_URL || 'https://horizonfix.com',
-    generateRobotsTxt: true,
-    // Exclude any internal or non-public routes
-    exclude: ['/admin/*', '/api/*', '/auth/*'],
-    // The transform function lets you customize each entry
-    transform: async (config, path) => {
-      return {
-        loc: path, // This becomes the full URL as `${siteUrl}/${path}`
-        changefreq: 'weekly',
-        priority: path === '' ? 1 : 0.7,
-        lastmod: new Date().toISOString(),
-      };
-    },
-    // additionalPaths adds extra static routes to your sitemap
-    additionalPaths: async (config) => {
-      const staticRoutes = [
-        '/',              // Home page
-        '/contact/',      // Contact page
-        '/projects/',     // Projects overview page
-        '/services/',     // Services page
-        '/about/', 
-        '/testimonials/',
-        '/emergency/',
-      ];
-      
-      // Map over routes and return transformed entries.
-      return staticRoutes.map((route) => ({
-        loc: route,
-        changefreq: 'weekly',
-        priority: route === '/' ? 1 : 0.7,
-        lastmod: new Date().toISOString(),
-      }));
-    },
-  };
+  siteUrl: process.env.SITE_URL || 'https://horizonfix.com',
+  generateRobotsTxt: true,
+  // Exclude internal routes and the ads conversion page (noindexed)
+  exclude: ['/admin/*', '/api/*', '/auth/*', '/thank-you', '*opengraph-image*'],
+  transform: async (config, path) => {
+    // Town and service landing pages are core local-SEO targets
+    const isLanding = path.startsWith('/plumber/') || path.startsWith('/services/')
+    return {
+      loc: path,
+      changefreq: 'weekly',
+      priority: path === '/' ? 1 : isLanding ? 0.9 : 0.7,
+      lastmod: new Date().toISOString(),
+    }
+  },
+  robotsTxtOptions: {
+    policies: [
+      { userAgent: '*', allow: '/' },
+      // AI assistant crawlers — explicitly welcomed for AEO
+      { userAgent: 'GPTBot', allow: '/' },
+      { userAgent: 'ChatGPT-User', allow: '/' },
+      { userAgent: 'OAI-SearchBot', allow: '/' },
+      { userAgent: 'ClaudeBot', allow: '/' },
+      { userAgent: 'anthropic-ai', allow: '/' },
+      { userAgent: 'Claude-Web', allow: '/' },
+      { userAgent: 'PerplexityBot', allow: '/' },
+      { userAgent: 'Perplexity-User', allow: '/' },
+      { userAgent: 'Google-Extended', allow: '/' },
+      { userAgent: 'Applebot-Extended', allow: '/' },
+      { userAgent: 'CCBot', allow: '/' },
+    ],
+  },
+}

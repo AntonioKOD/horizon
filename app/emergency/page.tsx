@@ -1,10 +1,17 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Phone, Clock, ShieldAlert, AlertTriangle } from "lucide-react"
-import Head from "next/head"
+
 export const metadata = {
-  title: "Emergency Services - Horizon Fix | South Shore MA",
-  description: "24/7 emergency plumbing services from Horizon Fix throughout the South Shore of Massachusetts.",
+  title: "24/7 Emergency Plumber | South Shore MA",
+  description: "24/7 emergency plumbing from Horizon Fix: burst pipes, sewer backups, flooding, and water heater failures across the South Shore of Massachusetts.",
+  alternates: { canonical: "/emergency" },
+  openGraph: {
+    title: "Emergency Plumbing | Horizon Fix Plumbing | South Shore MA",
+    description: "24/7 emergency plumbers for burst pipes, sewer backups, major leaks, and water heater failures.",
+    url: "https://horizonfix.com/emergency",
+    type: "website",
+  },
 }
 
 export default function EmergencyPage() {
@@ -32,21 +39,6 @@ export default function EmergencyPage() {
   ]
 
   return (
-    <>
-    <Head>
-        <title>Emergency Plumbing | Horizon Fix Plumbing | South Shore MA</title>
-        <meta name="description" content="When plumbing emergencies strike, Horizon Fix is available 24/7 for burst pipes, sewer backups, flooding, and water heater failures throughout South Shore Massachusetts." />
-        <link rel="canonical" href="https://horizonfix.com/emergency" />
-        {/* Open Graph Tags */}
-        <meta property="og:title" content="Emergency Plumbing | Horizon Fix Plumbing | South Shore MA" />
-        <meta property="og:description" content="24/7 emergency plumbers for burst pipes, sewer backups, major leaks, and water heater failures." />
-        <meta property="og:url" content="https://horizonfix.com/emergency" />
-        <meta property="og:type" content="website" />
-        {/* Twitter Card Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Emergency Plumbing | Horizon Fix Plumbing | South Shore MA" />
-        <meta name="twitter:description" content="Need an emergency plumber now? Horizon Fix provides 24/7 rapid plumbing response across South Shore MA." />
-      </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 bg-red-600 text-white">
@@ -242,7 +234,6 @@ export default function EmergencyPage() {
         </div>
       </section>
     </main>
-    </>
   )
 }
 
