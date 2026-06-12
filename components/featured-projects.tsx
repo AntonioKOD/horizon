@@ -13,27 +13,27 @@ export function FeaturedProjects() {
   const projects = [
     {
       id: 1,
-      title: "Modern Apartment Complex",
-      category: "residential",
-      description: "A luxury apartment complex featuring modern amenities and sustainable design elements.",
+      title: "Basement Flood Emergency Repair",
+      category: "emergency",
+      description: "Emergency response to a burst supply line with immediate shutoff and same-day pipe replacement.",
       image:
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
     },
     {
       id: 2,
-      title: "Corporate Office Tower",
-      category: "commercial",
-      description: "A state-of-the-art office building designed for productivity and employee well-being.",
+      title: "Whole-Home Drain Cleaning",
+      category: "drain",
+      description: "Hydro-jetting and camera inspection to remove recurring clogs in a multi-bathroom property.",
       image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
     },
     {
       id: 3,
-      title: "Luxury Villa Renovation",
-      category: "residential",
-      description: "Complete renovation of a historic villa, preserving its character while adding modern comforts.",
+      title: "Tankless Water Heater Upgrade",
+      category: "water-heater",
+      description: "Replaced an aging tank system with a high-efficiency tankless unit and recirculation setup.",
       image:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
     },
   ]
 
@@ -86,7 +86,7 @@ export function FeaturedProjects() {
         <div className="text-center mb-10">
           <h2 className="featured-title text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Explore some of our recent work showcasing our expertise and quality craftsmanship.
+            Explore some of our recent plumbing work showcasing our expertise and quality workmanship.
           </p>
         </div>
 

@@ -4,7 +4,7 @@ import { CheckCircle, Award, Users, Clock, Target, Shield } from "lucide-react"
 import Head from "next/head"
 export const metadata = {
   title: "About Us - Horizon Fix | South Shore MA",
-  description: "Learn about Horizon Fix, our mission, values, and the team behind our success. Serving the South Shore of Massachusetts including Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns.",
+  description: "Learn about Horizon Fix Plumbing, our mission, values, and licensed plumbing team serving the South Shore of Massachusetts.",
 }
 
 export default function AboutPage() {
@@ -40,18 +40,18 @@ export default function AboutPage() {
   return (
     <>
    <Head>
-        <title>About Us | Horizon Fix – Always On Call Handyman & Home Service Experts | South Shore MA</title>
-        <meta name="description" content="Learn about Horizon Fix, your trusted handyman and home service experts throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. Always on call for HVAC, plumbing, electrical, masonry, and handyman services. No job too small, quick response times, 24/7 availability." />
+        <title>About Us | Horizon Fix Plumbing | South Shore MA</title>
+        <meta name="description" content="Learn about Horizon Fix Plumbing and our commitment to fast, professional plumbing service throughout South Shore Massachusetts." />
         <link rel="canonical" href="https://horizonfix.com/about" />
         {/* Open Graph Tags */}
-        <meta property="og:title" content="About Us | Horizon Fix – Always On Call Handyman & Home Service Experts | South Shore MA" />
-        <meta property="og:description" content="Discover our story and commitment to excellence at Horizon Fix. Always on call for HVAC, plumbing, electrical, masonry, and handyman services throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. Expert tradespeople available 24/7." />
+        <meta property="og:title" content="About Us | Horizon Fix Plumbing | South Shore MA" />
+        <meta property="og:description" content="Meet the team behind Horizon Fix Plumbing and our customer-first approach to emergency and everyday plumbing repairs." />
         <meta property="og:url" content="https://horizonfix.com/about" />
         <meta property="og:type" content="website" />
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Us | Horizon Fix – Always On Call Handyman & Home Service Experts | South Shore MA" />
-        <meta name="twitter:description" content="Learn more about Horizon Fix's commitment to always being on call for all your home service needs throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. Expert tradespeople, quick response times, no job too small." />
+        <meta name="twitter:title" content="About Us | Horizon Fix Plumbing | South Shore MA" />
+        <meta name="twitter:description" content="Horizon Fix Plumbing is built on honest communication, quality workmanship, and fast response across South Shore MA." />
       </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
@@ -69,7 +69,8 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-5xl font-bold mb-6">About Horizon Fix</h1>
             <p className="text-lg md:text-xl text-gray-300">
-            At Horizon Fix, we&apos;re always on call for all your home service needs. From HVAC and plumbing to electrical, masonry, and handyman services, we provide expert tradespeople who respond quickly and deliver quality work. No job is too small—we&apos;re here 24/7 to help with everything from quick repairs to home renovations.
+            At Horizon Fix, plumbing is all we do. Our team is focused on delivering fast, clean, and reliable service
+            for homes and small businesses 24/7.
             </p>
           </div>
         </div>
@@ -91,13 +92,17 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <p className="text-lg text-gray-700 mb-6">
-              Horizon Fix was founded on the principle that homeowners need reliable, always-available service professionals. We recognized that whether it&apos;s a small leak, a broken outlet, or a heating emergency, you need someone who will respond quickly and get the job done right. That&apos;s why we&apos;re always on call, ready to help with HVAC, plumbing, electrical, masonry, and handyman services.
+              Horizon Fix was founded on a simple belief: when plumbing fails, people need help quickly from someone
+              they can trust. We built our company around dependable response, transparent recommendations, and
+              long-term plumbing solutions.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-              We&apos;ve built a team of expert tradespeople across all disciplines, ensuring that no matter what your home needs, we have the right person for the job. From small repairs to full home renovations, we approach every project with the same commitment to quality, professionalism, and customer satisfaction. No job is too small, and we&apos;re always ready to help.
+              Today, our licensed plumbing team handles emergency calls, drain issues, water heaters, fixture
+              installations, and leak repair with the same care on every visit.
               </p>
               <p className="text-lg text-gray-700">
-              Our customer-centric approach means we prioritize quick response times, transparent communication, and quality workmanship. We understand that home service needs don&apos;t always happen during business hours, which is why we&apos;re available 24/7. Your satisfaction is our success, and we&apos;re committed to being your trusted home service partner.
+              Our customer-first approach means clear communication, upfront pricing, and quality workmanship at every
+              step. We are available 24/7 for urgent plumbing issues.
               </p>
             </div>
           </div>
@@ -137,8 +142,8 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Achievements</h2>
               <p className="text-lg text-gray-700 mb-6">
-                Over the years, Horizon Fix has been recognized for our commitment to excellence, quick response times, and
-                quality workmanship in home services. We&apos;re proud of the trust our customers place in us.
+                Over the years, Horizon Fix has earned trust for fast response, skilled plumbing work, and dependable
+                service. We are proud of the relationships we have built with local homeowners and businesses.
               </p>
 
               <div className="space-y-4">
@@ -146,21 +151,21 @@ export default function AboutPage() {
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold">Comprehensive Training</h3>
-                    <p className="text-gray-600">Our team undergoes regular training to stay updated on best practices in customer service and the latest industry trends.</p>
+                    <p className="text-gray-600">Our team trains continuously on current plumbing codes, new fixtures, and modern repair methods.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold">Advanced Technology Integration</h3>
-                    <p className="text-gray-600">Utilizing cuttin-edge tools to streamline proecesses and improve communication with our clients</p>
+                    <p className="text-gray-600">We use camera inspections, leak detection equipment, and digital estimates to speed up service.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold">Feedback-Driven Improvements</h3>
-                    <p className="text-gray-600">Actively seeking and analyzing client feedback to continually refine our services and address any areas for improvement.</p>
+                    <p className="text-gray-600">Customer feedback shapes how we improve scheduling, communication, and workmanship.</p>
                   </div>
                 </div>
               </div>
@@ -178,7 +183,7 @@ export default function AboutPage() {
               <div className="relative h-64 rounded-lg overflow-hidden">
                 <Image
                   src="https://files.manuscdn.com/user_upload_by_module/session_file/110397790/ePwFtRArjRhKTYan.webp"
-                  alt="Expert Handyman Services"
+                  alt="Expert Plumbing Services"
                   fill
                   className="object-cover"
                 />
@@ -186,7 +191,7 @@ export default function AboutPage() {
               <div className="relative h-64 rounded-lg overflow-hidden">
                 <Image
                   src="https://files.manuscdn.com/user_upload_by_module/session_file/110397790/TVTfgVmTqsleMkAd.jpg"
-                  alt="Completed Renovation Project"
+                  alt="Completed Plumbing Project"
                   fill
                   className="object-cover"
                 />
@@ -202,7 +207,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Work With Us?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Contact us today to discuss your project needs and discover how Horizon Fix can bring your vision to life.
+            Contact us today to discuss your plumbing needs and get a clear plan from our team.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link

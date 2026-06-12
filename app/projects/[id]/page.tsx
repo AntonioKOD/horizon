@@ -26,138 +26,162 @@ const getProjectData = (id: number): Project | undefined => {
   const projects: Project[] = [
     {
         id: 1,
-        title: "Modern Apartment Complex",
-        description: "A luxury apartment complex featuring modern amenities and sustainable design elements.",
-        category: "residential",
+        title: "Basement Flood Emergency Repair",
+        description: "Emergency response to a burst supply line with immediate shutoff and same-day pipe replacement.",
+        category: "emergency",
         image:
-          "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        location: "New York, NY",
-        year: "2023",
-        client: "Urban Living Developers",
+          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        location: "Quincy, MA",
+        year: "2025",
+        client: "Single-Family Home",
         featured: true,
+        fullDescription:
+          "A homeowner called after discovering several inches of water in their finished basement from a burst copper supply line. Our team guided them through the emergency shutoff over the phone, arrived within the hour, and replaced the failed pipe section the same day. We also inspected the remaining supply lines and added insulation to prevent future freeze damage.",
       },
       {
         id: 2,
-        title: "Corporate Office Tower",
-        description: "A state-of-the-art office building designed for productivity and employee well-being.",
-        category: "commercial",
+        title: "Whole-Home Drain Cleaning",
+        description: "Hydro-jetting and camera inspection to remove recurring clogs in a multi-bathroom property.",
+        category: "drain",
         image:
-          "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        location: "Chicago, IL",
-        year: "2022",
-        client: "Global Business Solutions",
+          "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        location: "Weymouth, MA",
+        year: "2025",
+        client: "Townhome Owner",
         featured: true,
+        fullDescription:
+          "This townhome suffered from recurring slow drains across multiple bathrooms despite repeated snaking by other companies. We ran a camera inspection to locate heavy buildup in the branch lines, hydro-jetted the entire drain system, and verified clear flow on camera. The owner now has a yearly maintenance plan to keep the lines clean.",
       },
       {
         id: 3,
-        title: "Manufacturing Facility",
-        description: "An efficient and sustainable manufacturing facility with state-of-the-art equipment.",
-        category: "industrial",
+        title: "Tankless Water Heater Upgrade",
+        description: "Replaced an aging tank system with a high-efficiency tankless unit and recirculation setup.",
+        category: "water-heater",
         image:
-          "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        location: "Detroit, MI",
-        year: "2022",
-        client: "American Manufacturing Co.",
+          "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        location: "Hingham, MA",
+        year: "2024",
+        client: "Family Residence",
+        fullDescription:
+          "A growing family was constantly running out of hot water with their aging 40-gallon tank. We installed a high-efficiency tankless water heater with a recirculation loop for instant hot water at distant fixtures, upgraded the gas line to support the new unit, and walked the owners through annual descaling maintenance.",
       },
       {
         id: 4,
-        title: "Luxury Villa Renovation",
-        description: "Complete renovation of a historic villa, preserving its character while adding modern comforts.",
-        category: "renovation",
+        title: "Emergency Sewer Backup Cleanup",
+        description: "Rapid sewer line clearing and backflow prevention recommendations after a weekend backup.",
+        category: "emergency",
         image:
-          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        location: "Miami, FL",
-        year: "2023",
-        client: "Private Owner",
+          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        location: "Scituate, MA",
+        year: "2025",
+        client: "Condo Association",
         featured: true,
+        fullDescription:
+          "A condo association faced a weekend sewer backup affecting several ground-floor units. We dispatched an emergency crew, cleared the main line obstruction, and camera-inspected the full run to document the condition of the shared sewer. We then provided the association with backflow prevention recommendations to protect the building going forward.",
       },
       {
         id: 5,
-        title: "Shopping Mall Development",
-        description: "A modern shopping mall with a focus on customer experience and sustainable design.",
-        category: "commercial",
+        title: "Bathroom Fixture Refresh",
+        description: "Installed new toilet, vanity faucet, and shower valve for a full bathroom refresh.",
+        category: "fixtures",
         image:
-          "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        location: "Los Angeles, CA",
-        year: "2021",
-        client: "Retail Ventures Inc.",
+          "https://images.unsplash.com/photo-1581578731548-c6a0c3f2f2c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        location: "Plymouth, MA",
+        year: "2024",
+        client: "Homeowner",
+        fullDescription:
+          "As part of a bathroom refresh, we replaced an inefficient toilet with a modern dual-flush model, installed a new vanity faucet with updated shutoff valves, and swapped a failing shower valve for a pressure-balanced unit. Every connection was leak-tested before we left, and the old fixtures were hauled away.",
       },
       {
         id: 6,
-        title: "Warehouse Construction",
-        description: "A large-scale warehouse with advanced logistics systems and energy-efficient features.",
-        category: "industrial",
+        title: "Main Line Root Removal",
+        description: "Cleared invasive roots from main sewer line and restored proper drainage flow.",
+        category: "drain",
         image:
-          "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        location: "Seattle, WA",
-        year: "2022",
-        client: "Global Logistics Partners",
+          "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        location: "Kingston, MA",
+        year: "2024",
+        client: "Two-Family Property",
+        fullDescription:
+          "Tree roots had invaded the clay sewer line of this two-family property, causing repeated backups. We mechanically cut the roots out of the line, flushed the debris, and confirmed full flow with a camera inspection. The owner received a video of the line's condition along with options for a long-term liner repair.",
       },
       {
         id: 7,
-        title: "Eco-Friendly Residential Complex",
-        description: "A sustainable residential complex with solar panels, green roofs, and energy-efficient design.",
-        category: "residential",
+        title: "Commercial Restroom Repipe",
+        description: "Replaced aging supply lines and shutoff valves for a busy retail location.",
+        category: "fixtures",
         image:
-          "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        location: "Portland, OR",
-        year: "2023",
-        client: "Green Living Developers",
+          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        location: "Braintree, MA",
+        year: "2024",
+        client: "Retail Business",
+        fullDescription:
+          "Corroded supply lines were causing low pressure and intermittent leaks in this retail store's customer restrooms. Working overnight to avoid business disruption, we repiped the restroom supply lines, installed new quarter-turn shutoff valves at every fixture, and pressure-tested the entire system before opening time.",
       },
       {
         id: 8,
-        title: "Historic Building Restoration",
-        description: "Careful restoration of a historic building, preserving its architectural heritage.",
-        category: "renovation",
+        title: "Leaking Water Heater Replacement",
+        description: "Emergency replacement of a failed gas water heater with upgraded safety controls.",
+        category: "water-heater",
         image:
-          "https://images.unsplash.com/photo-1577495508326-19a1b3cf65b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        location: "Boston, MA",
-        year: "2021",
-        client: "Heritage Preservation Society",
+          "https://images.unsplash.com/photo-1581578731548-c6a0c3f2f2c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        location: "Cohasset, MA",
+        year: "2025",
+        client: "Homeowner",
+        fullDescription:
+          "A failed gas water heater was actively leaking onto the utility room floor when the homeowner called. We removed the old unit the same day, installed a new high-efficiency gas water heater with an expansion tank and drain pan, and brought the venting and gas connections up to current code.",
       },
       {
         id: 9,
-        title: "Modern Healthcare Facility",
-        description: "A state-of-the-art healthcare facility designed for patient comfort and operational efficiency.",
-        category: "commercial",
+        title: "Storm Drainage Failure Response",
+        description: "Diagnosed and repaired exterior drainage tie-in causing repeated basement seepage.",
+        category: "emergency",
         image:
-          "https://images.unsplash.com/photo-1629131726692-1accd0c53ce0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        location: "Denver, CO",
-        year: "2022",
-        client: "Healthcare Partners Group",
+          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        location: "Duxbury, MA",
+        year: "2025",
+        client: "Coastal Homeowner",
+        fullDescription:
+          "After every major storm, this coastal home's basement took on water. We traced the problem to a collapsed exterior drainage tie-in, excavated and repaired the damaged section, and confirmed proper flow away from the foundation. The basement has stayed dry through subsequent nor'easters.",
       },
       {
         id: 10,
-        title: "Luxury Condominium Tower",
-        description: "A high-rise luxury condominium with panoramic views and premium amenities.",
-        category: "residential",
+        title: "Kitchen Sink and Disposal Upgrade",
+        description: "Installed new sink, disposal, trap, and shutoff valves during a kitchen refresh.",
+        category: "fixtures",
         image:
-          "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        location: "San Francisco, CA",
-        year: "2023",
-        client: "Bay Area Developments",
+          "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        location: "Marshfield, MA",
+        year: "2024",
+        client: "Single-Family Home",
+        fullDescription:
+          "During a kitchen refresh, we installed a new undermount sink, a quiet half-horsepower garbage disposal, a properly sloped trap assembly, and new quarter-turn shutoff valves. We also corrected an improperly vented drain that had been causing gurgling and slow drainage for years.",
       },
       {
         id: 11,
-        title: "Food Processing Plant",
-        description: "A modern food processing facility with advanced equipment and strict hygiene standards.",
-        category: "industrial",
+        title: "Boiler-fed Hot Water Repair",
+        description: "Restored domestic hot water by replacing failed mixing valve and circulation pump.",
+        category: "water-heater",
         image:
-          "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        location: "Austin, TX",
-        year: "2022",
-        client: "Fresh Foods Inc.",
+          "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        location: "Norwell, MA",
+        year: "2024",
+        client: "Townhouse Owner",
+        fullDescription:
+          "This townhouse's boiler-fed indirect water heater was delivering lukewarm water at best. We diagnosed a failed thermostatic mixing valve and a seized circulation pump, replaced both components, and rebalanced the system. Hot water delivery was fully restored with safe, consistent temperatures at every tap.",
       },
       {
         id: 12,
-        title: "Boutique Hotel Conversion",
-        description: "Conversion of a historic building into a luxury boutique hotel with unique character.",
-        category: "renovation",
+        title: "Laundry Standpipe and Vent Repair",
+        description: "Corrected improper venting and overflowing standpipe causing repeated laundry backups.",
+        category: "drain",
         image:
-          "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        location: "New Orleans, LA",
-        year: "2023",
-        client: "Heritage Hospitality Group",
+          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        location: "Hanover, MA",
+        year: "2025",
+        client: "Homeowner",
+        fullDescription:
+          "Every laundry cycle ended with water overflowing from the standpipe. We found an undersized, improperly vented drain configuration left over from a previous DIY install. We rebuilt the standpipe to code with correct sizing and venting, and the washer now drains at full speed without backups.",
       },
     // Add more projects as needed
   ]
@@ -172,13 +196,13 @@ const resolvedParams = await params
 
   if (!project) {
     return {
-      title: "Project Not Found - Horizon Fix",
+      title: "Project Not Found - Horizon Fix Plumbing",
       description: "The requested project could not be found.",
     }
   }
 
   return {
-    title: `${project.title} - Horizon Fix Projects`,
+    title: `${project.title} - Horizon Fix Plumbing Projects`,
     description: project.description,
   }
 }
@@ -328,16 +352,16 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="relative h-64 overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                  alt="Luxury Villa Renovation"
+                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                  alt="Emergency Sewer Backup Cleanup"
                   fill
                   className="object-cover transition-transform duration-500 hover:scale-110"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Luxury Villa Renovation</h3>
+                <h3 className="text-xl font-semibold mb-2">Emergency Sewer Backup Cleanup</h3>
                 <p className="text-gray-600 mb-4">
-                  Complete renovation of a historic villa, preserving its character while adding modern comforts.
+                  Rapid sewer line clearing and backflow prevention recommendations after a weekend backup.
                 </p>
                 <Link href="/projects/4" className="text-primary font-medium hover:underline inline-flex items-center">
                   View Project <ArrowLeft className="ml-1 h-4 w-4 rotate-180" />
@@ -348,16 +372,16 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="relative h-64 overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                  alt="Eco-Friendly Residential Complex"
+                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                  alt="Commercial Restroom Repipe"
                   fill
                   className="object-cover transition-transform duration-500 hover:scale-110"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Eco-Friendly Residential Complex</h3>
+                <h3 className="text-xl font-semibold mb-2">Commercial Restroom Repipe</h3>
                 <p className="text-gray-600 mb-4">
-                  A sustainable residential complex with solar panels, green roofs, and energy-efficient design.
+                  Replaced aging supply lines and shutoff valves for a busy retail location.
                 </p>
                 <Link href="/projects/7" className="text-primary font-medium hover:underline inline-flex items-center">
                   View Project <ArrowLeft className="ml-1 h-4 w-4 rotate-180" />
@@ -368,16 +392,16 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="relative h-64 overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                  alt="Luxury Condominium Tower"
+                  src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                  alt="Kitchen Sink and Disposal Upgrade"
                   fill
                   className="object-cover transition-transform duration-500 hover:scale-110"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Luxury Condominium Tower</h3>
+                <h3 className="text-xl font-semibold mb-2">Kitchen Sink and Disposal Upgrade</h3>
                 <p className="text-gray-600 mb-4">
-                  A high-rise luxury condominium with panoramic views and premium amenities.
+                  Installed new sink, disposal, trap, and shutoff valves during a kitchen refresh.
                 </p>
                 <Link href="/projects/10" className="text-primary font-medium hover:underline inline-flex items-center">
                   View Project <ArrowLeft className="ml-1 h-4 w-4 rotate-180" />

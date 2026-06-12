@@ -4,14 +4,14 @@ import { Phone, Clock, ShieldAlert, AlertTriangle } from "lucide-react"
 import Head from "next/head"
 export const metadata = {
   title: "Emergency Services - Horizon Fix | South Shore MA",
-  description: "24/7 emergency construction and repair services from Horizon Fix throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns.",
+  description: "24/7 emergency plumbing services from Horizon Fix throughout the South Shore of Massachusetts.",
 }
 
 export default function EmergencyPage() {
   const emergencyServices = [
     {
-      title: "HVAC Emergencies",
-      description: "24/7 emergency HVAC service for heating and cooling failures, especially during extreme weather conditions.",
+      title: "Burst Pipe Emergencies",
+      description: "Fast response to burst or frozen pipes to reduce water damage and restore safe operation.",
       icon: <ShieldAlert className="h-10 w-10 text-red-500" />,
     },
     {
@@ -20,13 +20,13 @@ export default function EmergencyPage() {
       icon: <AlertTriangle className="h-10 w-10 text-red-500" />,
     },
     {
-      title: "Electrical Emergencies",
-      description: "Emergency electrical repairs to restore power and address safety hazards, including outages and sparking.",
+      title: "Sewer Backup Emergencies",
+      description: "Urgent support for sewage backups and blocked main lines to protect health and property.",
       icon: <AlertTriangle className="h-10 w-10 text-red-500" />,
     },
     {
-      title: "Masonry & Structural",
-      description: "Immediate assessment and temporary solutions for structural issues, foundation problems, and masonry damage that pose safety risks.",
+      title: "Water Heater Emergencies",
+      description: "Immediate help for leaking tanks, failed heaters, and unsafe hot water systems.",
       icon: <ShieldAlert className="h-10 w-10 text-red-500" />,
     },
   ]
@@ -34,18 +34,18 @@ export default function EmergencyPage() {
   return (
     <>
     <Head>
-        <title>Emergency Services | Horizon Fix – 24/7 Rapid Repairs & Support | South Shore MA</title>
-        <meta name="description" content="When emergencies strike, Horizon Fix is here 24/7 to deliver rapid, reliable repairs in HVAC, plumbing, electrical, masonry, and handyman services throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. Always on call, always ready to help." />
+        <title>Emergency Plumbing | Horizon Fix Plumbing | South Shore MA</title>
+        <meta name="description" content="When plumbing emergencies strike, Horizon Fix is available 24/7 for burst pipes, sewer backups, flooding, and water heater failures throughout South Shore Massachusetts." />
         <link rel="canonical" href="https://horizonfix.com/emergency" />
         {/* Open Graph Tags */}
-        <meta property="og:title" content="Emergency Services | Horizon Fix – 24/7 Rapid Repairs & Support | South Shore MA" />
-        <meta property="og:description" content="For urgent repairs in HVAC, plumbing, electrical, masonry, or handyman services throughout the South Shore of Massachusetts, trust Horizon Fix's emergency services. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. We provide swift, expert support around the clock." />
+        <meta property="og:title" content="Emergency Plumbing | Horizon Fix Plumbing | South Shore MA" />
+        <meta property="og:description" content="24/7 emergency plumbers for burst pipes, sewer backups, major leaks, and water heater failures." />
         <meta property="og:url" content="https://horizonfix.com/emergency" />
         <meta property="og:type" content="website" />
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Emergency Services | Horizon Fix – 24/7 Rapid Repairs & Support | South Shore MA" />
-        <meta name="twitter:description" content="Need immediate repairs? Horizon Fix offers 24/7 emergency services for HVAC, plumbing, electrical, masonry, and handyman needs throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. Ensuring your home stays safe and comfortable." />
+        <meta name="twitter:title" content="Emergency Plumbing | Horizon Fix Plumbing | South Shore MA" />
+        <meta name="twitter:description" content="Need an emergency plumber now? Horizon Fix provides 24/7 rapid plumbing response across South Shore MA." />
       </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
@@ -84,7 +84,7 @@ export default function EmergencyPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Our Emergency Services</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              We provide rapid response to urgent HVAC, plumbing, electrical, masonry, and handyman emergencies to protect your property and ensure safety. Always on call, always ready.
+              We provide rapid response to urgent plumbing emergencies to protect your property and reduce downtime.
             </p>
           </div>
 
@@ -211,8 +211,8 @@ export default function EmergencyPage() {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-3">How does Horizon Fix handle emergency service requests?</h3>
               <p className="text-gray-600">
-              At Horizon Fix, we understand that emergencies can occur at any time. We&apos;re always on call with expert tradespeople available 24/7
-              to address urgent HVAC, plumbing, electrical, masonry, and handyman issues promptly. When you call our emergency line, we prioritize your request and dispatch the right professional to your location for a swift response.
+              At Horizon Fix, we know plumbing emergencies can happen at any hour. When you call our emergency line,
+              we prioritize your request, assess the issue quickly, and dispatch a plumber for a fast response.
               </p>
             </div>
 

@@ -19,7 +19,7 @@ export function TestimonialsSection() {
       image:
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
       quote:
-        "Horizon Fix transformed our outdated home into a modern masterpiece. Their attention to detail and commitment to quality exceeded our expectations.",
+        "A pipe burst on a Sunday night and Horizon Fix Plumbing had a plumber at our door within the hour. They stopped the flooding and fixed it the same day.",
     },
     {
       id: 2,
@@ -28,16 +28,16 @@ export function TestimonialsSection() {
       image:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
       quote:
-        "Working with Horizon Fix on our office renovation was a seamless experience. They delivered on time and within budget, with exceptional craftsmanship.",
+        "Our kitchen drains kept backing up during business hours. Horizon Fix Plumbing hydro-jetted the lines and we haven't had a single clog since.",
     },
     {
       id: 3,
       name: "Emily Rodriguez",
-      role: "Property Developer",
+      role: "Property Manager",
       image:
         "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
       quote:
-        "As a developer, I've worked with many construction firms, but Horizon Fix stands out for their reliability, expertise, and innovative solutions.",
+        "I've worked with many plumbing companies across our properties, but Horizon Fix Plumbing stands out for their reliability, expertise, and honest pricing.",
     },
   ]
 

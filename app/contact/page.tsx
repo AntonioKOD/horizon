@@ -4,7 +4,7 @@ import Head from "next/head"
 
 export const metadata = {
   title: "Contact Us - Horizon Fix",
-  description: "Get in touch with Horizon Fix for all your HVAC, plumbing, electrical, masonry, handyman, and home renovation needs. Always on call, always ready to help.",
+  description: "Get in touch with Horizon Fix Plumbing for emergency repairs, drain cleaning, water heater service, and fixture installation.",
 }
 
 export default function ContactPage() {
@@ -29,18 +29,18 @@ export default function ContactPage() {
   return (
     <>
     <Head>
-        <title>Contact Horizon Fix | Always On Call Handyman & Home Service Experts | South Shore MA</title>
-        <meta name="description" content="Reach out to Horizon Fix for HVAC, plumbing, electrical, masonry, handyman, and home renovation services throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. Always on call, quick response times, expert tradespeople available 24/7." />
+        <title>Contact Horizon Fix Plumbing | South Shore MA</title>
+        <meta name="description" content="Reach out to Horizon Fix Plumbing for emergency service, leak repair, drain cleaning, water heater work, and plumbing inspections throughout South Shore Massachusetts." />
         <link rel="canonical" href="https://horizonfix.com/contact" />
         {/* Open Graph Tags */}
-        <meta property="og:title" content="Contact Horizon Fix | Always On Call Handyman & Home Service Experts | South Shore MA" />
-        <meta property="og:description" content="Contact Horizon Fix today for expert HVAC, plumbing, electrical, masonry, handyman, and home renovation services throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. Always on call, always ready to help." />
+        <meta property="og:title" content="Contact Horizon Fix Plumbing | South Shore MA" />
+        <meta property="og:description" content="Need a plumber? Contact Horizon Fix Plumbing for fast service, clear communication, and reliable repairs." />
         <meta property="og:url" content="https://horizonfix.com/contact" />
         <meta property="og:type" content="website" />
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact Horizon Fix | Always On Call Handyman & Home Service Experts | South Shore MA" />
-        <meta name="twitter:description" content="Reach out to Horizon Fix for expert HVAC, plumbing, electrical, masonry, handyman, and home renovation services throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. Always on call, quick response times." />
+        <meta name="twitter:title" content="Contact Horizon Fix Plumbing | South Shore MA" />
+        <meta name="twitter:description" content="Contact Horizon Fix Plumbing for emergency plumbing, clogs, leaks, water heaters, and fixture installation." />
       </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
@@ -58,7 +58,7 @@ export default function ContactPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-5xl font-bold mb-4">Contact Us</h1>
             <p className="text-lg md:text-xl text-gray-300">
-              Always on call for all your home service needs. Have questions or ready to start your project? Get in touch with our team today.
+              Need plumbing support? Get in touch with our team for fast service and clear next steps.
             </p>
           </div>
         </div>
@@ -102,7 +102,7 @@ export default function ContactPage() {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-3">What areas do you serve?</h3>
               <p className="text-gray-600">
-                We primarily serve the South Shore area of Massachusetts, including communities from Quincy to Plymouth and surrounding towns. For larger projects, we may consider locations outside of our
+                We primarily serve the South Shore area of Massachusetts, including communities from Quincy to Plymouth and surrounding towns. For larger plumbing jobs, we may consider locations outside of our
                 primary service area.
               </p>
             </div>
@@ -111,24 +111,23 @@ export default function ContactPage() {
               <h3 className="text-xl font-semibold mb-3">How do I get a quote for my project?</h3>
               <p className="text-gray-600">
                 You can request a quote by filling out our contact form, calling our office, or sending us an email.
-                We&apos;ll schedule a consultation to discuss your project requirements and provide you with a detailed
-                estimate.
+                We&apos;ll review your plumbing issue and provide a clear estimate.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-3">How does Horizon Fix ensure that professionals are licensed and insured</h3>
               <p className="text-gray-600">
-              At Horizon Fix, we prioritize connecting you with professionals who meet your project&apos;s specific requirements. While we strive to match you with qualified experts, it’s essential to verify that any professional you consider hiring possesses the necessary licenses and insurance for your area. We recommend discussing these credentials directly with the professional and, if needed, contacting their licensing authority or insurance provider for confirmation.
+              Our plumbing team is vetted for experience and professionalism. If your municipality requires specific
+              licensing details, we can provide documentation during scheduling.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-3">How long will my project take?</h3>
               <p className="text-gray-600">
-                Project timelines vary depending on the scope and complexity of the work. During our initial
-                consultation, we&apos;ll provide you with an estimated timeline for your specific project. We pride ourselves
-                on completing projects on schedule.
+                Timelines vary based on the issue. Many plumbing repairs are completed in one visit, while larger
+                replacements may require additional time. We always provide a realistic timeline before work begins.
               </p>
             </div>
           </div>

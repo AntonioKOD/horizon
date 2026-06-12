@@ -15,7 +15,8 @@ export function Footer() {
               </div>
             </Link>
             <p className="mb-4">
-              Your trusted partner for handyman services and smart home automation solutions. Quality work, reliable service, and innovative technology.
+              Your trusted local plumbing team for emergency repairs, drain cleaning, leak detection, water heaters,
+              and fixture installation.
             </p>
           </div>
 
@@ -54,18 +55,18 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-primary transition-colors">
-                  Electrical
+                <Link href="/services#emergency-plumbing" className="hover:text-primary transition-colors">
+                  Emergency Plumbing
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-primary transition-colors">
-                  Roofing
+                <Link href="/services#drain-cleaning" className="hover:text-primary transition-colors">
+                  Drain Cleaning
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-primary transition-colors">
-                  HVAC
+                <Link href="/services#water-heater-services" className="hover:text-primary transition-colors">
+                  Water Heaters
                 </Link>
               </li>
             </ul>

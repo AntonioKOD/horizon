@@ -1,159 +1,109 @@
 import Image from "next/image"
 import Link from "next/link"
-import { CheckCircle, Wrench, Home, Wind, Droplet, Zap, Building, Paintbrush, Building2 } from "lucide-react"
+import { CheckCircle, Wrench, Flame, Droplet, Waves, ShowerHead, AlertTriangle } from "lucide-react"
 import Head from "next/head"
 
 export const metadata = {
-  title: "Services - Horizon Fix | South Shore MA",
-  description: "Explore our comprehensive range of handyman and home automation services throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns.",
+  title: "Plumbing Services - Horizon Fix | South Shore MA",
+  description: "Explore plumbing services from Horizon Fix, including emergency plumbing, drain cleaning, water heater repair, leak detection, and fixture installation throughout South Shore Massachusetts.",
 }
-
-
 
 export default function ServicesPage() {
   const services = [
     {
-      id: "hvac-services",
-      title: "HVAC Services",
-      description: "Expert HVAC repairs, maintenance, and installations. Always on call for heating and cooling emergencies. Quick response times for all your HVAC needs.",
-      icon: <Wind className="h-12 w-12 text-primary" />,
+      id: "emergency-plumbing",
+      title: "Emergency Plumbing",
+      description: "Immediate plumbing response for burst pipes, flooding fixtures, and urgent leaks. Licensed plumbers available 24/7 across the South Shore.",
+      icon: <AlertTriangle className="h-12 w-12 text-primary" />,
       image:
-        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/eTzBJAcNEkNEblop.jpg",
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       features: [
-        "AC repair and maintenance",
-        "Heating system repairs",
-        "Ductwork cleaning",
-        "Thermostat installation",
-        "Filter replacement",
-        "Emergency HVAC service",
+        "Burst pipe repairs",
+        "Emergency shutoff guidance",
+        "Overflowing fixture response",
+        "After-hours dispatch",
+        "Water damage prevention",
+        "Rapid on-site diagnostics",
       ],
     },
     {
-      id: "plumbing-services",
-      title: "Plumbing Services",
-      description: "Quick response plumbing services for leaks, repairs, and installations. No job too small. Licensed plumbers available 24/7 for all your plumbing needs.",
+      id: "drain-cleaning",
+      title: "Drain Cleaning",
+      description: "Clear slow and blocked drains in kitchens, bathrooms, and main lines with professional equipment and camera-verified results.",
       icon: <Droplet className="h-12 w-12 text-primary" />,
       image:
-        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/VLwawltljfTVIhKk.jpg",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       features: [
-        "Leak repairs",
-        "Faucet and fixture installation",
-        "Drain cleaning",
-        "Toilet repair",
-        "Pipe repairs",
-        "Water heater service",
+        "Kitchen sink clogs",
+        "Shower and tub clogs",
+        "Main line cleaning",
+        "Hydro-jetting",
+        "Camera inspections",
+        "Preventive maintenance",
       ],
     },
     {
-      id: "electrical-services",
-      title: "Electrical Services",
-      description: "Licensed electricians for outlets, switches, repairs, and safety inspections. Always available for electrical emergencies and routine work.",
-      icon: <Zap className="h-12 w-12 text-primary" />,
+      id: "water-heater-services",
+      title: "Water Heater Services",
+      description: "Repair, replacement, and maintenance for tank and tankless water heaters so you never run out of hot water.",
+      icon: <Flame className="h-12 w-12 text-primary" />,
       image:
-        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/yfVBWFIqlCOmzCZq.jpg",
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       features: [
-        "Outlet and switch installation",
-        "Circuit breaker repairs",
-        "Lighting installation",
-        "Electrical troubleshooting",
-        "Panel upgrades",
-        "Safety inspections",
+        "No-hot-water diagnosis",
+        "Pilot and thermostat repairs",
+        "Anode rod replacement",
+        "Tankless descaling",
+        "New water heater installation",
+        "Efficiency optimization",
       ],
     },
     {
-      id: "masonry-services",
-      title: "Masonry Services",
-      description: "Expert masonry work from small repairs to larger projects. Brick, stone, and concrete specialists. Quality craftsmanship for all your masonry needs.",
-      icon: <Building className="h-12 w-12 text-primary" />,
-      image:
-        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/oqDtRorPcRNtKeAK.jpg",
-      features: [
-        "Brick and stone repairs",
-        "Chimney repair",
-        "Patio and walkway work",
-        "Foundation repairs",
-        "Tuckpointing",
-        "Masonry restoration",
-      ],
-    },
-    {
-      id: "handyman-services",
-      title: "Handyman Services",
-      description: "Complete handyman solutions for all your home repair and maintenance needs. No job too small! Quick, reliable service for all your odd jobs.",
+      id: "pipe-leak-repair",
+      title: "Pipe and Leak Repair",
+      description: "Find and fix hidden leaks, corroded piping, and persistent water pressure issues before they cause costly damage.",
       icon: <Wrench className="h-12 w-12 text-primary" />,
       image:
-        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/ePwFtRArjRhKTYan.webp",
+        "https://images.unsplash.com/photo-1581578731548-c6a0c3f2f2c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       features: [
-        "Furniture assembly",
-        "Door and window repairs",
-        "Cabinet work",
-        "Painting and touch-ups",
-        "Drywall repairs",
-        "General maintenance",
+        "Leak detection",
+        "Pipe section replacement",
+        "Frozen pipe repair",
+        "Water pressure troubleshooting",
+        "Repiping planning",
+        "Slab leak support",
       ],
     },
     {
-      id: "home-renovations",
-      title: "Home Renovations",
-      description: "Full-service home renovations from kitchen and bathroom remodels to complete home transformations. Expert project management from start to finish.",
-      icon: <Home className="h-12 w-12 text-primary" />,
+      id: "fixture-installation",
+      title: "Fixture Installation",
+      description: "Install and replace faucets, toilets, sinks, disposals, and shower valves with clean workmanship and tested results.",
+      icon: <ShowerHead className="h-12 w-12 text-primary" />,
       image:
-        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/TVTfgVmTqsleMkAd.jpg",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       features: [
-        "Kitchen renovations",
-        "Bathroom renovations",
-        "Room additions",
-        "Basement finishing",
-        "Whole home renovations",
-        "Design consultation",
+        "Faucet upgrades",
+        "Toilet installation",
+        "Sink replacement",
+        "Garbage disposal installs",
+        "Shower valve replacement",
+        "Final leak testing",
       ],
     },
     {
-      id: "painting-services",
-      title: "Painting Services",
-      description: "Professional interior and exterior painting services. Quality finishes for your home or business. Expert painters with attention to detail.",
-      icon: <Paintbrush className="h-12 w-12 text-primary" />,
+      id: "sewer-line-services",
+      title: "Sewer and Main Line Services",
+      description: "Diagnose and resolve sewer backups, root intrusion, and main line damage with camera inspections and lasting repairs.",
+      icon: <Waves className="h-12 w-12 text-primary" />,
       image:
-        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/vyOzVoPWZGJBPMWg.jpg",
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       features: [
-        "Interior painting",
-        "Exterior painting",
-        "Cabinet painting",
-        "Deck and fence staining",
-        "Color consultation",
-        "Pressure washing prep",
-      ],
-    },
-    {
-      id: "roofing-services",
-      title: "Roofing Services",
-      description: "Expert roofing installation, repair, and maintenance. Protect your home with quality roofing solutions. Licensed and insured roofers.",
-      icon: <Home className="h-12 w-12 text-primary" />,
-      image:
-        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/RFnZpnSPcjCwERUt.jpg",
-      features: [
-        "Roof installation",
-        "Roof repairs",
-        "Roof replacement",
-        "Leak detection and repair",
-        "Gutter installation",
-        "Roof inspections",
-      ],
-    },
-    {
-      id: "siding-services",
-      title: "Siding Services",
-      description: "Professional siding installation and repair. Enhance your home's curb appeal and protection. Expert installation for all siding types.",
-      icon: <Building2 className="h-12 w-12 text-primary" />,
-      image:
-        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/yEUwZqMREbANDbkM.jpg",
-      features: [
-        "Siding installation",
-        "Siding repair",
-        "Siding replacement",
-        "Vinyl siding",
-        "Fiber cement siding",
-        "Siding maintenance",
+        "Sewer camera inspections",
+        "Main line clog removal",
+        "Root intrusion clearing",
+        "Backflow prevention",
+        "Sewer odor diagnosis",
+        "Line repair coordination",
       ],
     },
   ]
@@ -161,18 +111,18 @@ export default function ServicesPage() {
   return (
     <>
     <Head>
-        <title>Our Services | Horizon Fix – Always On Call Handyman & Home Service Experts | South Shore MA</title>
-        <meta name="description" content="Always on call for HVAC, plumbing, electrical, masonry, handyman services, painting, roofing, siding, and home renovations throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. No job too small. Expert tradespeople available 24/7 for all your home service needs." />
+        <title>Plumbing Services | Horizon Fix Plumbing | South Shore MA</title>
+        <meta name="description" content="Explore our full plumbing service list: emergency plumbing, drain cleaning, water heater repair, leak detection, sewer support, and fixture installation across South Shore Massachusetts." />
         <link rel="canonical" href="https://horizonfix.com/services" />
         {/* Open Graph Tags */}
-        <meta property="og:title" content="Our Services | Horizon Fix – Always On Call Handyman & Home Service Experts | South Shore MA" />
-        <meta property="og:description" content="Discover expert HVAC, plumbing, electrical, masonry, handyman, painting, roofing, siding, and home renovation services at Horizon Fix throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. Always on call, quick response times, no job too small." />
+        <meta property="og:title" content="Plumbing Services | Horizon Fix Plumbing | South Shore MA" />
+        <meta property="og:description" content="Need dependable plumbing service? We provide emergency repairs, clog removal, water heater work, and leak solutions for homes and small businesses." />
         <meta property="og:url" content="https://horizonfix.com/services" />
         <meta property="og:type" content="website" />
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Our Services | Horizon Fix – Always On Call Handyman & Home Service Experts | South Shore MA" />
-        <meta name="twitter:description" content="Always on call for HVAC, plumbing, electrical, masonry, handyman services, painting, roofing, siding, and home renovations throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. Expert tradespeople available 24/7." />
+        <meta name="twitter:title" content="Plumbing Services | Horizon Fix Plumbing | South Shore MA" />
+        <meta name="twitter:description" content="From urgent leaks to planned installations, Horizon Fix Plumbing delivers fast, professional plumbing services across South Shore MA." />
       </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
@@ -190,7 +140,7 @@ export default function ServicesPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-5xl font-bold mb-6">Our Services</h1>
             <p className="text-lg md:text-xl text-gray-300">
-              Always on call for HVAC, plumbing, electrical, masonry, handyman services, painting, roofing, siding, and home renovations. No job too small—quick response times, expert tradespeople available 24/7.
+              Plumbing only. Fast response times, honest recommendations, and durable repairs done right.
             </p>
           </div>
         </div>
@@ -200,9 +150,10 @@ export default function ServicesPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Comprehensive Home Solutions</h2>
+            <h2 className="text-3xl font-bold mb-4">Complete Plumbing Solutions</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              From small repairs to full home renovations, we provide expert services across all trades including HVAC, plumbing, electrical, masonry, handyman, painting, roofing, and siding. Always on call, quick response times, and no job too small.
+              From quick repairs to full system upgrades, we handle residential and light commercial plumbing with
+              professionalism and care.
             </p>
           </div>
 
@@ -263,9 +214,9 @@ export default function ServicesPage() {
       {/* CTA Section */}
       <section className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4 md:px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Need Plumbing Help Today?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Contact us today to discuss your HVAC, plumbing, electrical, masonry, handyman, painting, roofing, siding, or renovation needs. Always on call, always ready to help.
+            Contact us now for emergency plumbing, maintenance, or fixture installation. We are ready to help.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
@@ -287,4 +238,3 @@ export default function ServicesPage() {
     </>
   )
 }
-

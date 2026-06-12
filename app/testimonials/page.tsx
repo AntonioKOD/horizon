@@ -3,8 +3,8 @@ import Link from "next/link"
 import { TestimonialForm } from "@/components/testimonial-form"
 
 export const metadata = {
-  title: "Testimonials - Horizon Fix | South Shore MA",
-  description: "Read what our clients say about their experience working with Horizon Fix for HVAC, plumbing, electrical, masonry, handyman, and home renovation services throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns.",
+  title: "Testimonials - Horizon Fix Plumbing | South Shore MA",
+  description: "Read what our clients say about their experience working with Horizon Fix Plumbing for emergency plumbing, drain cleaning, water heater service, leak repair, and fixture installation throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns.",
 }
 
 export default function TestimonialsPage() {
@@ -16,8 +16,8 @@ export default function TestimonialsPage() {
       image:
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
       quote:
-        "Horizon Fix transformed our outdated home into a modern masterpiece. Their attention to detail and commitment to quality exceeded our expectations. The team was professional, communicative, and completed the project on time and within budget.",
-      project: "Home Renovation",
+        "A pipe burst in our basement on a Sunday night and Horizon Fix Plumbing had a plumber at our door within the hour. They stopped the flooding, replaced the damaged section, and walked us through preventing it from happening again. Incredible response time.",
+      project: "Emergency Burst Pipe Repair",
       rating: 5,
     },
     {
@@ -27,30 +27,30 @@ export default function TestimonialsPage() {
       image:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
       quote:
-        "Working with Horizon Fix on our office renovation was a seamless experience. They delivered on time and within budget, with exceptional craftsmanship. Their team understood our vision and brought it to life with innovative solutions and quality materials.",
-      project: "Office Renovation",
+        "Our restaurant's kitchen drains kept backing up during service. Horizon Fix Plumbing hydro-jetted the lines, ran a camera inspection, and set us up on a maintenance schedule. We haven't had a single backup since. Professional, fast, and fairly priced.",
+      project: "Commercial Drain Cleaning",
       rating: 5,
     },
     {
       id: 3,
       name: "Emily Rodriguez",
-      role: "Property Developer",
+      role: "Property Manager",
       image:
         "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
       quote:
-        "As a developer, I've worked with many construction firms, but Horizon Fix stands out for their reliability, expertise, and innovative solutions. They've completed multiple projects for us, each one delivered with the highest standards of quality and professionalism.",
-      project: "Commercial Development",
+        "As a property manager, I've worked with many plumbing companies, but Horizon Fix Plumbing stands out for their reliability and clear communication. They handle everything from leaky faucets to water heater replacements across our units, always on schedule.",
+      project: "Multi-Unit Plumbing Maintenance",
       rating: 5,
     },
     {
       id: 4,
       name: "David Thompson",
-      role: "Restaurant Owner",
+      role: "Homeowner",
       image:
         "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
       quote:
-        "The renovation of our restaurant by Horizon Fix was exceptional. They understood the unique requirements of a food service establishment and created a space that is both functional and aesthetically pleasing. Our customers love the new design!",
-      project: "Restaurant Renovation",
+        "Horizon Fix Plumbing replaced our failing water heater with a tankless unit. They explained our options honestly, never upsold us, and left the utility room cleaner than they found it. Endless hot water and a lower gas bill — couldn't be happier.",
+      project: "Tankless Water Heater Installation",
       rating: 4,
     },
     {
@@ -60,8 +60,8 @@ export default function TestimonialsPage() {
       image:
         "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
       quote:
-        "Horizon Fix built our dream home from the ground up. The attention to detail, quality of work, and customer service were all outstanding. They guided us through every step of the process and were always available to answer our questions.",
-      project: "Custom Home Construction",
+        "We had a mystery leak that two other companies couldn't find. Horizon Fix Plumbing located it behind our shower wall with detection equipment, repaired the pipe, and saved us from tearing up half the bathroom. Their expertise is worth every penny.",
+      project: "Leak Detection and Repair",
       rating: 5,
     },
     {
@@ -71,8 +71,8 @@ export default function TestimonialsPage() {
       image:
         "https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
       quote:
-        "Our retail space needed a complete overhaul, and Horizon Fix delivered beyond our expectations. They minimized disruption to our business and created a modern, inviting space that has helped increase our foot traffic and sales.",
-      project: "Retail Space Renovation",
+        "Our store's restroom plumbing needed a full update, and Horizon Fix Plumbing worked around our business hours to avoid disruption. New fixtures, new supply lines, zero downtime for our customers. Quick, tidy, and professional from start to finish.",
+      project: "Commercial Fixture Replacement",
       rating: 4,
     },
   ]
@@ -186,7 +186,7 @@ export default function TestimonialsPage() {
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Experience Our Quality Service?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Join our satisfied clients and let us help you bring your construction or renovation project to life.
+            Join our satisfied clients and let us handle your next plumbing repair, installation, or emergency.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link

@@ -13,53 +13,54 @@ export function ProjectsSection() {
 
   const categories = [
     { id: "all", label: "All Projects" },
-    { id: "residential", label: "Residential" },
-    { id: "commercial", label: "Commercial" },
-    { id: "industrial", label: "Industrial" },
+    { id: "emergency", label: "Emergency" },
+    { id: "drain", label: "Drain and Sewer" },
+    { id: "water-heater", label: "Water Heaters" },
+    { id: "fixtures", label: "Fixtures" },
   ]
 
   const projects = [
     {
       id: 1,
-      title: "Modern Apartment Complex",
-      category: "residential",
+      title: "Basement Flood Emergency Repair",
+      category: "emergency",
       image:
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
     },
     {
       id: 2,
-      title: "Corporate Office Tower",
-      category: "commercial",
+      title: "Whole-Home Drain Cleaning",
+      category: "drain",
       image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
     },
     {
       id: 3,
-      title: "Manufacturing Facility",
-      category: "industrial",
+      title: "Tankless Water Heater Upgrade",
+      category: "water-heater",
       image:
-        "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
     },
     {
       id: 4,
-      title: "Luxury Villa Renovation",
-      category: "residential",
+      title: "Emergency Sewer Backup Cleanup",
+      category: "emergency",
       image:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
     },
     {
       id: 5,
-      title: "Shopping Mall Development",
-      category: "commercial",
+      title: "Bathroom Fixture Refresh",
+      category: "fixtures",
       image:
-        "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1581578731548-c6a0c3f2f2c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
     },
     {
       id: 6,
-      title: "Warehouse Construction",
-      category: "industrial",
+      title: "Main Line Root Removal",
+      category: "drain",
       image:
-        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
     },
   ]
 
@@ -137,7 +138,7 @@ export function ProjectsSection() {
         <div className="text-center mb-12">
           <h2 className="projects-title text-3xl md:text-4xl font-bold mb-4">Our Projects</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Explore our portfolio of completed projects showcasing our expertise and quality craftsmanship.
+            Explore our portfolio of completed plumbing projects showcasing our expertise and quality workmanship.
           </p>
         </div>
 

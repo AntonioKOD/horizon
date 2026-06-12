@@ -9,10 +9,10 @@ export function StatsSection() {
   const [counted, setCounted] = useState(false)
 
   const stats = useMemo(() => [
-    { value: 500, label: "Projects Completed", suffix: "+" },
-    { value: 25, label: "Years of Experience", suffix: "+" },
-    { value: 100, label: "Professional Team Members", suffix: "+" },
-    { value: 98, label: "Client Satisfaction", suffix: "%" },
+    { value: 1200, label: "Plumbing Jobs Completed", suffix: "+" },
+    { value: 20, label: "Years of Plumbing Experience", suffix: "+" },
+    { value: 60, label: "Minute Average Callback", suffix: "" },
+    { value: 98, label: "Customer Satisfaction", suffix: "%" },
   ], [])
 
   useEffect(() => {

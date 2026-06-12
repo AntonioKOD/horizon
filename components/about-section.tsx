@@ -72,9 +72,9 @@ export function AboutSection() {
 
   const features = [
     "Always on call - 24/7 availability",
-    "Expert tradespeople in all fields",
-    "No job too small",
-    "Quick response times",
+    "Licensed and experienced plumbers",
+    "Clean work and upfront pricing",
+    "Fast response times",
   ]
 
   return (
@@ -93,8 +93,9 @@ export function AboutSection() {
           <div className="about-content">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">About Horizon Fix</h2>
             <p className="text-lg text-gray-700 mb-4">
-              Horizon Fix is your trusted partner for all home service needs. We&apos;re always on call for HVAC, plumbing, electrical, masonry, and handyman services. 
-              From small repairs to home renovations, we provide expert tradespeople who respond quickly and deliver quality work. No job is too small—we&apos;re here 24/7.
+              Horizon Fix is a plumbing-first company focused on dependable service and quality workmanship.
+              From small leaks to emergency pipe repairs, our team responds quickly, explains the work clearly,
+              and completes every job with care.
             </p>
 
             <div className="about-features grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">

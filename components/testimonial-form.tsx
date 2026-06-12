@@ -137,7 +137,7 @@ export function TestimonialForm() {
             </div>
             <div>
               <label htmlFor="project" className="block text-sm font-medium text-gray-700 mb-1">
-                Project Type
+                Service Type
               </label>
               <select
                 id="project"
@@ -146,12 +146,13 @@ export function TestimonialForm() {
                 onChange={handleChange}
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"
               >
-                <option value="">Select a project type</option>
-                <option value="Home Renovation">Home Renovation</option>
-                <option value="Commercial Construction">Commercial Construction</option>
-                <option value="Interior Design">Interior Design</option>
-                <option value="Custom Home">Custom Home</option>
-                <option value="Office Renovation">Office Renovation</option>
+                <option value="">Select a service type</option>
+                <option value="Emergency Plumbing">Emergency Plumbing</option>
+                <option value="Drain Cleaning">Drain Cleaning</option>
+                <option value="Water Heater Service">Water Heater Service</option>
+                <option value="Pipe and Leak Repair">Pipe and Leak Repair</option>
+                <option value="Fixture Installation">Fixture Installation</option>
+                <option value="Sewer and Main Line">Sewer and Main Line</option>
                 <option value="Other">Other</option>
               </select>
             </div>
@@ -195,7 +196,7 @@ export function TestimonialForm() {
               value={formData.testimonial}
               onChange={handleChange}
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"
-              placeholder="Share your experience working with Horizon Fix..."
+              placeholder="Share your experience working with Horizon Fix Plumbing..."
               required
             ></textarea>
           </div>
@@ -208,7 +209,7 @@ export function TestimonialForm() {
               required
             />
             <label htmlFor="consent" className="ml-2 block text-sm text-gray-700">
-              I consent to having my testimonial and name displayed on the Horizon Fix website.
+              I consent to having my testimonial and name displayed on the Horizon Fix Plumbing website.
             </label>
           </div>
 

@@ -113,7 +113,7 @@ export const TestimonialEmailTemplate: React.FC<TestimonialEmailProps> = ({
             {isConfirmation ? (
               <Section style={ctaContainerStyle}>
                 <Text style={paragraphStyle}>
-                  We&apos;re committed to providing exceptional construction and renovation services to all our clients. If
+                  We&apos;re committed to providing exceptional plumbing services to all our clients. If
                   you have any other feedback or questions, please don&apos;t hesitate to contact us.
                 </Text>
                 <Link href="https://horizon-fix.com/contact" style={ctaButtonStyle}>
@@ -133,8 +133,8 @@ export const TestimonialEmailTemplate: React.FC<TestimonialEmailProps> = ({
 
           {/* Footer */}
           <Section style={footerStyle}>
-            <Text style={footerTextStyle}>© {new Date().getFullYear()} Horizon Fix. All rights reserved.</Text>
-            <Text style={footerTextStyle}>123 Construction Avenue, Building District, NY 10001</Text>
+            <Text style={footerTextStyle}>© {new Date().getFullYear()} Horizon Fix Plumbing. All rights reserved.</Text>
+            <Text style={footerTextStyle}>Serving the South Shore of Massachusetts</Text>
             <Text style={footerTextStyle}>
               <Link href="https://horizon-fix.com" style={footerLinkStyle}>
                 Website

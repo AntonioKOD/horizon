@@ -122,7 +122,7 @@ export function ContactSectionHome() {
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Ready to start your project? Contact us today for a free consultation and quote.
+            Need a plumber? Contact us today for a fast diagnosis and clear quote.
           </p>
         </div>
 
@@ -249,16 +249,13 @@ export function ContactSectionHome() {
                         className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"
                       >
                         <option value="">Select a service</option>
-                        <option value="hvac">HVAC Services</option>
-                        <option value="plumbing">Plumbing Services</option>
-                        <option value="electrical">Electrical Services</option>
-                        <option value="masonry">Masonry Services</option>
-                        <option value="handyman">Handyman Services</option>
-                        <option value="painting">Painting Services</option>
-                        <option value="roofing">Roofing Services</option>
-                        <option value="siding">Siding Services</option>
-                        <option value="renovations">Home Renovations</option>
-                        <option value="emergency">Emergency Services</option>
+                        <option value="emergency-plumbing">Emergency Plumbing</option>
+                        <option value="drain-cleaning">Drain Cleaning</option>
+                        <option value="leak-repair">Leak Repair</option>
+                        <option value="water-heater">Water Heater Service</option>
+                        <option value="fixtures">Fixture Installation</option>
+                        <option value="sewer">Sewer and Main Line</option>
+                        <option value="inspection">Plumbing Inspection</option>
                         <option value="other">Other</option>
                       </select>
                     </div>
@@ -274,7 +271,7 @@ export function ContactSectionHome() {
                         value={formData.message}
                         onChange={handleChange}
                         className={`w-full px-4 py-2 border ${errors.message ? "border-red-500 bg-red-50" : "border-gray-300"} rounded-md focus:ring-primary focus:border-primary`}
-                        placeholder="Tell us about your project..."
+                        placeholder="Tell us about your plumbing issue..."
                       ></textarea>
                       {errors.message && <p className="mt-1 text-sm text-red-500">{errors.message}</p>}
                     </div>

@@ -5,25 +5,25 @@ import Head from "next/head"
 export const metadata = {
   title: "Our Projects - Horizon Fix | South Shore MA",
   description:
-    "Explore our portfolio of completed construction and renovation projects throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. Showcasing our expertise and craftsmanship.",
+    "Explore our portfolio of completed plumbing projects throughout the South Shore of Massachusetts.",
 }
 
 export default function ProjectsPage() {
   return (
     <>
     <Head>
-        <title>Our Projects | Horizon Fix – Innovative Construction & Renovation Portfolio | South Shore MA</title>
-        <meta name="description" content="Browse our portfolio to see how Horizon Fix brings visions to life with expert craftsmanship in construction, renovation, plumbing, electrical, HVAC, and remodeling projects throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns." />
+        <title>Our Plumbing Projects | Horizon Fix Plumbing | South Shore MA</title>
+        <meta name="description" content="Browse our plumbing project portfolio including leak repairs, repiping, drain solutions, water heater upgrades, and fixture installations." />
         <link rel="canonical" href="https://horizonfix.com/projects" />
         {/* Open Graph Tags */}
-        <meta property="og:title" content="Our Projects | Horizon Fix – Innovative Construction & Renovation Portfolio | South Shore MA" />
-        <meta property="og:description" content="View our diverse portfolio showcasing quality construction, renovation, and remodeling projects throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns. See examples of our work in plumbing, electrical, HVAC, and more." />
+        <meta property="og:title" content="Our Plumbing Projects | Horizon Fix Plumbing | South Shore MA" />
+        <meta property="og:description" content="See real plumbing projects from emergency repairs to full system upgrades completed by Horizon Fix Plumbing." />
         <meta property="og:url" content="https://horizonfix.com/projects" />
         <meta property="og:type" content="website" />
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Our Projects | Horizon Fix – Innovative Construction & Renovation Portfolio | South Shore MA" />
-        <meta name="twitter:description" content="Explore Horizon Fix’s portfolio of innovative projects covering construction, renovation, plumbing, electrical, HVAC, and remodeling services throughout the South Shore of Massachusetts. Serving Quincy, Plymouth, Weymouth, Hingham, Cohasset, Scituate, Duxbury, Kingston, and surrounding towns." />
+        <meta name="twitter:title" content="Our Plumbing Projects | Horizon Fix Plumbing | South Shore MA" />
+        <meta name="twitter:description" content="Explore plumbing case studies from Horizon Fix Plumbing across South Shore Massachusetts." />
       </Head>
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
@@ -41,8 +41,7 @@ export default function ProjectsPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-5xl font-bold mb-6">Our Projects</h1>
             <p className="text-lg md:text-xl text-gray-300">
-              Explore our portfolio of completed projects showcasing our expertise, innovation, and quality
-              craftsmanship.
+              Explore completed plumbing projects that showcase our craftsmanship and problem-solving.
             </p>
           </div>
         </div>
@@ -56,7 +55,7 @@ export default function ProjectsPage() {
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Contact us today to discuss your construction or renovation needs and get a free consultation.
+            Contact us today to discuss your plumbing needs and get a free consultation.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link

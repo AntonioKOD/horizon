@@ -63,17 +63,17 @@ export function HeroSection() {
       <div className="hero-overlay absolute inset-0 bg-black opacity-70"></div>
       <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
         <h1 className="hero-title text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-          Your Trusted Handyman & Home Service Experts
+          Trusted Local Plumbers, Day and Night
         </h1>
         <p className="hero-subtitle text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
-          Always on call for HVAC, plumbing, electrical, masonry, and handyman services. No job too small—from quick repairs to home renovations, we&apos;re here 24/7.
+          We handle emergency plumbing, drain clogs, leaks, water heaters, and fixture installs with fast response times and clean, professional work.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link
             href="/services"
             className="hero-button bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-md text-lg font-medium transition-colors"
           >
-            Our Services
+            Plumbing Services
           </Link>
           <Link
             href="#contact"

@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react"
 import Link from "next/link"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { ArrowRight, Wrench, Home, Wind, Droplet, Zap, Building, Paintbrush, Building2 } from "lucide-react"
+import { ArrowRight, Droplet, Wrench, Flame, ShowerHead, Waves } from "lucide-react"
 
 export function ServicesSection() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -54,147 +54,83 @@ export function ServicesSection() {
 
   const services = [
     {
-      id: "hvac-services",
-      title: "HVAC Services",
-      description: "Expert HVAC repairs, maintenance, and installations. Always on call for heating and cooling emergencies.",
-      icon: <Wind className="h-12 w-12 text-primary" />,
+      id: "emergency-plumbing",
+      title: "Emergency Plumbing",
+      description: "24/7 rapid response for burst pipes, overflowing toilets, and urgent leaks.",
+      icon: <Waves className="h-12 w-12 text-primary" />,
       image:
         "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/eTzBJAcNEkNEblop.jpg",
       features: [
-        "AC repair and maintenance",
-        "Heating system repairs",
-        "Ductwork cleaning",
-        "Thermostat installation",
-        "Filter replacement",
-        "Emergency HVAC service",
+        "Burst pipe repairs",
+        "Emergency shutoff support",
+        "Overflowing fixture response",
+        "After-hours dispatch",
+        "Leak containment",
+        "Same-day diagnostics",
       ],
     },
     {
-      id: "plumbing-services",
-      title: "Plumbing Services",
-      description: "Quick response plumbing services for leaks, repairs, and installations. No job too small.",
+      id: "drain-cleaning",
+      title: "Drain Cleaning",
+      description: "Clear blocked sinks, tubs, showers, and main lines with professional tools.",
       icon: <Droplet className="h-12 w-12 text-primary" />,
       image:
         "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/VLwawltljfTVIhKk.jpg",
       features: [
-        "Leak repairs",
-        "Faucet and fixture installation",
-        "Drain cleaning",
-        "Toilet repair",
-        "Pipe repairs",
-        "Water heater service",
+        "Kitchen drain clogs",
+        "Bathroom drain clogs",
+        "Main line cleaning",
+        "Hydro-jetting",
+        "Root intrusion removal",
+        "Preventive maintenance",
       ],
     },
     {
-      id: "electrical-services",
-      title: "Electrical Services",
-      description: "Licensed electricians for outlets, switches, repairs, and safety inspections. Always available.",
-      icon: <Zap className="h-12 w-12 text-primary" />,
+      id: "water-heater-services",
+      title: "Water Heater Services",
+      description: "Repair, replacement, and maintenance for tank and tankless water heaters.",
+      icon: <Flame className="h-12 w-12 text-primary" />,
       image:
         "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/yfVBWFIqlCOmzCZq.jpg",
       features: [
-        "Outlet and switch installation",
-        "Circuit breaker repairs",
-        "Lighting installation",
-        "Electrical troubleshooting",
-        "Panel upgrades",
-        "Safety inspections",
+        "No hot water diagnosis",
+        "Anode rod replacement",
+        "Tankless descaling",
+        "Pilot and thermostat repair",
+        "New unit installation",
+        "Efficiency tuning",
       ],
     },
     {
-      id: "masonry-services",
-      title: "Masonry Services",
-      description: "Expert masonry work from small repairs to larger projects. Brick, stone, and concrete specialists.",
-      icon: <Building className="h-12 w-12 text-primary" />,
+      id: "pipe-leak-repair",
+      title: "Pipe and Leak Repair",
+      description: "Detect and repair hidden leaks, corroded pipes, and recurring water pressure issues.",
+      icon: <Wrench className="h-12 w-12 text-primary" />,
       image:
         "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/oqDtRorPcRNtKeAK.jpg",
       features: [
-        "Brick and stone repairs",
-        "Chimney repair",
-        "Patio and walkway work",
-        "Foundation repairs",
-        "Tuckpointing",
-        "Masonry restoration",
+        "Slab leak detection",
+        "Pipe section replacement",
+        "Pressure troubleshooting",
+        "Frozen pipe repair",
+        "Repiping planning",
+        "Water damage prevention",
       ],
     },
     {
-      id: "handyman-services",
-      title: "Handyman Services",
-      description: "Complete handyman solutions for all your home repair and maintenance needs. No job too small!",
-      icon: <Wrench className="h-12 w-12 text-primary" />,
+      id: "bath-kitchen-fixtures",
+      title: "Bathroom and Kitchen Fixtures",
+      description: "Install or replace faucets, toilets, sinks, garbage disposals, and shower valves.",
+      icon: <ShowerHead className="h-12 w-12 text-primary" />,
       image:
         "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/ePwFtRArjRhKTYan.webp",
       features: [
-        "Furniture assembly",
-        "Door and window repairs",
-        "Cabinet work",
-        "Painting and touch-ups",
-        "Drywall repairs",
-        "General maintenance",
-      ],
-    },
-    {
-      id: "home-renovations",
-      title: "Home Renovations",
-      description: "Full-service home renovations from kitchen and bathroom remodels to complete home transformations.",
-      icon: <Home className="h-12 w-12 text-primary" />,
-      image:
-        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/TVTfgVmTqsleMkAd.jpg",
-      features: [
-        "Kitchen renovations",
-        "Bathroom renovations",
-        "Room additions",
-        "Basement finishing",
-        "Whole home renovations",
-        "Design consultation",
-      ],
-    },
-    {
-      id: "painting-services",
-      title: "Painting Services",
-      description: "Professional interior and exterior painting services. Quality finishes for your home or business.",
-      icon: <Paintbrush className="h-12 w-12 text-primary" />,
-      image:
-        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/vyOzVoPWZGJBPMWg.jpg",
-      features: [
-        "Interior painting",
-        "Exterior painting",
-        "Cabinet painting",
-        "Deck and fence staining",
-        "Color consultation",
-        "Pressure washing prep",
-      ],
-    },
-    {
-      id: "roofing-services",
-      title: "Roofing Services",
-      description: "Expert roofing installation, repair, and maintenance. Protect your home with quality roofing solutions.",
-      icon: <Home className="h-12 w-12 text-primary" />,
-      image:
-        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/RFnZpnSPcjCwERUt.jpg",
-      features: [
-        "Roof installation",
-        "Roof repairs",
-        "Roof replacement",
-        "Leak detection and repair",
-        "Gutter installation",
-        "Roof inspections",
-      ],
-    },
-    {
-      id: "siding-services",
-      title: "Siding Services",
-      description: "Professional siding installation and repair. Enhance your home's curb appeal and protection.",
-      icon: <Building2 className="h-12 w-12 text-primary" />,
-      image:
-        "https://files.manuscdn.com/user_upload_by_module/session_file/110397790/yEUwZqMREbANDbkM.jpg",
-      features: [
-        "Siding installation",
-        "Siding repair",
-        "Siding replacement",
-        "Vinyl siding",
-        "Fiber cement siding",
-        "Siding maintenance",
+        "Faucet replacement",
+        "Toilet installation",
+        "Sink and trap upgrades",
+        "Disposal installation",
+        "Shower valve replacement",
+        "Fixture leak fixes",
       ],
     },
   ]
@@ -218,7 +154,7 @@ export function ServicesSection() {
         <div className="text-center mb-10">
           <h2 className="services-title text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Always on call for HVAC, plumbing, electrical, masonry, handyman services, painting, roofing, siding, and home renovations. No job too small—quick response times, expert tradespeople.
+            Plumbing only. Fast response, honest communication, and long-lasting repairs for homes and small businesses.
           </p>
         </div>
 

@@ -86,7 +86,7 @@ export function ContactSection() {
         <div className="text-center mb-16">
           <h2 className="contact-title text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Ready to start your project? Get in touch with us today for a free consultation and quote.
+            Need a plumber? Get in touch with us today for a free consultation and quote.
           </p>
         </div>
 
@@ -99,9 +99,9 @@ export function ContactSection() {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Our Location</h3>
                 <p className="text-gray-600">
-                  123 Construction Avenue
+                  Serving the South Shore
                   <br />
-                  Building District, NY 10001
+                  Quincy to Plymouth, MA
                 </p>
               </div>
             </div>
@@ -201,16 +201,12 @@ export function ContactSection() {
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"
                 >
                   <option value="">Select a service</option>
-                  <option value="hvac">HVAC Services</option>
-                  <option value="plumbing">Plumbing Services</option>
-                  <option value="electrical">Electrical Services</option>
-                  <option value="masonry">Masonry Services</option>
-                  <option value="handyman">Handyman Services</option>
-                  <option value="painting">Painting Services</option>
-                  <option value="roofing">Roofing Services</option>
-                  <option value="siding">Siding Services</option>
-                  <option value="renovations">Home Renovations</option>
-                  <option value="emergency">Emergency Services</option>
+                  <option value="emergency">Emergency Plumbing</option>
+                  <option value="drain-cleaning">Drain Cleaning</option>
+                  <option value="water-heater">Water Heater Services</option>
+                  <option value="leak-repair">Pipe and Leak Repair</option>
+                  <option value="fixtures">Fixture Installation</option>
+                  <option value="sewer">Sewer and Main Line</option>
                   <option value="other">Other</option>
                 </select>
               </div>
@@ -223,7 +219,7 @@ export function ContactSection() {
                   id="message"
                   rows={4}
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"
-                  placeholder="Tell us about your project..."
+                  placeholder="Tell us about your plumbing issue..."
                 ></textarea>
               </div>
 
